@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    background: black;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title {
+            width: 60%;
+            h1 {
+                margin: 0;
+                line-height: 1.15;
+                font-size: 4.8vw;
+                color: white;
+                font-weight: 200;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+}
