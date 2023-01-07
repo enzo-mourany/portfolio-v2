@@ -1,0 +1,27 @@
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 24px;
+    .hamburger__box {
+        background-color: green;
+        .hamburger__inner {
+            background-color: white;
+            content: "";
+            display: block;
+            height: 2px;
+            margin-bottom: 4px;
+            position: relative;
+            transition: background 0.2s ease-out, transform 0.2s ease-out;
+            width: 18px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
