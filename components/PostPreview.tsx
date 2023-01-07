@@ -12,4 +12,4 @@ const postPreview = (props: PostMetadata) => {
         )
     };
     
-    export default postPreview;
+export default postPreview;
