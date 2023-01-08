@@ -1,4 +1,5 @@
 import styles from '../styles/HomePage.module.scss';
+import LineButton from '../components/input/LineButton';
 
 const HomePage = () => {
   return (
@@ -11,7 +12,9 @@ const HomePage = () => {
           <p>Frontend web and web mobile developer</p>
         </div>
         <div className={styles.right}>
-
+          <div className={styles.line}></div>
+          <div className={styles.description}></div>
+          <LineButton text="Let's Talk" />
         </div>
       </div>
     </div>
