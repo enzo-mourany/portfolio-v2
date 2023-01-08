@@ -1,17 +1,17 @@
 .button {
-    background-color: #000;
+    width: fit-content;
+    cursor: pointer;
     border: 1px solid #fff;
     border-radius: 25px;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    &:hover {
-        background-color: #fff;
-        color: #000;
-    }
     .button_text {
         color: #fff;
+    }
+    &:hover {
+        background-color: #fff;
+        p {
+            color: #000;
+        }
     }
 }
