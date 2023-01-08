@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    p {
+        font-size: 1.2vw;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+}
