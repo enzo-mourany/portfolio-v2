@@ -1,13 +1,16 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 90%;
+    gap: 2rem;
     .title {
-        font-size: 3vw;
+        font-size: 1.2vw;
+        text-transform: uppercase;
     }
     .description {
         font-size: 2vw;
-        line-height: 1.2;
+        line-height: 1.4;
+        text-transform: uppercase;
     }
 }
