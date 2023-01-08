@@ -1,6 +1,7 @@
 import styles from '../styles/HomePage.module.scss';
 import LineButton from '../components/input/LineButton';
 import About from '../components/About';
+import SelectedProjects from '../components/SelectedProjects';
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
         </div>
       </div>
       <About />
+      <SelectedProjects />
     </div>
   );
 };

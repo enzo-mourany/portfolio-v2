@@ -1,16 +1,28 @@
+@import './responsive.scss';
+
 .wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 90%;
     gap: 2rem;
+    margin-bottom: 50px;
+    @include mobile {
+        align-items: center;
+    }
     .title {
         font-size: 1.2vw;
         text-transform: uppercase;
+        @include tablet {
+            font-size: 0.7rem;
+        }
     }
     .description {
         font-size: 2vw;
         line-height: 1.4;
         text-transform: uppercase;
+        @include tablet {
+            font-size: 0.9rem;
+        }
     }
 }
