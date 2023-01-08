@@ -1,5 +1,6 @@
 import styles from '../styles/HomePage.module.scss';
 import LineButton from '../components/input/LineButton';
+import About from '../components/About';
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
           <LineButton text="Let's Talk" />
         </div>
       </div>
+      <About />
     </div>
   );
 };
