@@ -9,11 +9,14 @@ const HomePage = () => {
           <div className={styles.name}>
             <p>Hi, I am Enzo Mourany</p>
           </div>
-          <p>Frontend web and web mobile developer</p>
+          <div className={styles.presentation}>
+            <p>Frontend web and web mobile developer</p>
+          </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.line}></div>
-          <div className={styles.description}></div>
+          <div className={styles.description}>
+            <p>I create inclusive, accessible digital products, with experience working with startups and enterprise products. I believe in using product design as a tool to elevate human interaction with technology that scale .</p>
+          </div>
           <LineButton text="Let's Talk" />
         </div>
       </div>

@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&display=swap');
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
     padding: 0 0.5rem;
     background: black;
@@ -10,17 +11,56 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .title {
+        width: 90%;
+        padding-top: 150px;
+        .left {
+            display: flex;
+            flex-direction: column;
             width: 60%;
-            h1 {
-                margin: 0;
-                line-height: 1.15;
-                font-size: 4.8vw;
-                color: white;
-                font-weight: 200;
-                font-family: 'Lato', sans-serif;
-                text-transform: uppercase;
-                text-align: center;
+            .name {
+                padding: 20px;
+                p {
+                    font-size: 1.3rem;
+                }
+                p:before {
+                    content: '';
+                    display: inline-block;
+                    width: 50px;
+                    height: 3px;
+                    background-color: #fff;
+                    margin-right: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+            .presentation {
+                padding-right: 80px;
+                p {
+                    font-size: 6.5vw;
+                    line-height: 1;
+                    font-family: 'Source Serif 4', serif;
+                }
+            }
+            
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            .description {
+                margin-bottom: 50px;
+                p {
+                    font-size: 2vw;
+                    line-height: 1.2;
+                }
+            }
+            .description::before {
+                content: '';
+                display: inline-block;
+                width: 50px;
+                height: 3px;
+                background-color: #fff;
+                margin-right: 10px;
+                margin-bottom: 5px;
             }
         }
     }
