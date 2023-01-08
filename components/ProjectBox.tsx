@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '../styles/ProjectBox.module.scss';
 
+import TechItem from './TechItem';
+
 const ProjectBox: React.FC = () => {
     return (
         <div className={styles.box}>
@@ -13,10 +15,10 @@ const ProjectBox: React.FC = () => {
             </div>
             <div className={styles.footer}>
                 <div className={styles.item}>
-                    <p>Techno 1</p>
+                    <TechItem techName="React Native" />
                 </div>
                 <div className={styles.item}>
-                    <p>Techno 2</p>
+                    <TechItem techName="Typescript" />
                 </div>
             </div>
         </div>

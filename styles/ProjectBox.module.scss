@@ -32,10 +32,6 @@
     .footer {
         display: flex;
         flex-direction: row;
-        .item {
-            p {
-
-            }
-        }
+        gap: 1rem;
     }
 }
