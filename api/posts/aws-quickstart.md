@@ -2,8 +2,11 @@
 title: "Getting"
 subtitle: "Create an AWS account and set up CLI/SDK access."
 date: "2020"
-preview: false
+pinned: false
 techs: ["Java"]
+role: "Developer"
+githubLink: "https://github.com/enzo-mourany/typescript-markdown-visualizer"
+type: "Desktop App"
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.

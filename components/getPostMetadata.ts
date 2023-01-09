@@ -15,8 +15,11 @@ const getPostMetadata = (): PostMetadata[] => {
         title: matterResult.data.title,
         date: matterResult.data.date,
         subtitle: matterResult.data.subtitle,
-        preview: matterResult.data.preview,
+        pinned: matterResult.data.pinned,
         techs: matterResult.data.techs,
+        role: matterResult.data.role,
+        githubLink: matterResult.data.githubLink,
+        type: matterResult.data.type,
         slug: fileName.replace('.md', ''),
       };
     });
