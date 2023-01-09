@@ -3,7 +3,6 @@
 import Link from 'next/link';
 
 import '../styles/globals.css';
-import HomePage from './HomePage';
 import Hamburger from '../components/input/Hamburger';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -30,7 +29,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body className="bg-white dark:bg-black">
             <div>
                 {header}
-                <HomePage />
                 {children}
             </div>
         </body>
