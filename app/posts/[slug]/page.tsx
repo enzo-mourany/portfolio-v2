@@ -7,7 +7,7 @@ import '../../../styles/globals.css';
 import getPostMetadata from '../../../components/getPostMetadata';
 
 const getPostContent = (slug: string) => {
-  const folder = 'api/posts/';
+  const folder = 'posts/';
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, 'utf8');
   const matterResult = matter(content);

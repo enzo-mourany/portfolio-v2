@@ -5,14 +5,14 @@
     border: 1px solid #fff;
     border-radius: 25px;
     padding: 0.3rem 0.7rem 0.2rem 0.7rem;
-    @include mobile {
+    @include tablet {
         padding: 0.2rem 0.5rem 0.1rem 0.5rem;
     }
     p {
         color: #fff;
         font-size: 14px;
         text-transform: uppercase;
-        @include mobile {
+        @include tablet {
             font-size: 10px;
         }
     }

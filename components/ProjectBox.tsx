@@ -20,7 +20,7 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({ slug, projectType, projectDate,
                 <p>{projectDate}</p>
             </div>
             <div className={styles.title}>
-                <Link href={`api/posts/${slug}`}>
+                <Link href={`posts/${slug}`}>
                     <p>{projectTitle}</p>
                 </Link>
             </div>

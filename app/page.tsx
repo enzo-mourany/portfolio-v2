@@ -4,6 +4,7 @@ import PostPreview from '../components/PostPreview';
 
 import About from '../components/About';
 import HomePage from './HomePage';
+import ScrollingText from '../components/ScrollingText';
 
 const Page = () => {
   const postMetadata = getPostMetadata();
@@ -14,6 +15,7 @@ const Page = () => {
     <div className="flex flex-col items-center bg-zinc-900">
       <HomePage />
       <About />
+      <ScrollingText />
       <div className="flex flex-col items-end w-11/12">
         {postPreview}
       </div>

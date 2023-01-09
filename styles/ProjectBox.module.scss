@@ -24,6 +24,9 @@
         p {
             font-size: 1rem;
             text-transform: uppercase;
+            @include tablet {
+                font-size: 0.8rem;
+            }
             @include mobile {
                 font-size: 0.7rem;
             }
@@ -34,6 +37,9 @@
             font-size: 8vw;
             font-family: 'Source Serif 4', serif;
             text-transform: uppercase;
+            @include tablet {
+                font-size: 5rem;
+            }
             @include mobile {
                 font-size: 3rem;
                 line-height: 2;
