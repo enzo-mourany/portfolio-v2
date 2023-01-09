@@ -16,4 +16,10 @@
     span {
         @apply text-black dark:text-white;
     }
+    h1 {
+        @apply text-black dark:text-white font-manrope;
+    }
+    h2 {
+        @apply text-black dark:text-white font-manrope;
+    }
 }
