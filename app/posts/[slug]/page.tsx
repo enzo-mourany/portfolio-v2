@@ -21,7 +21,13 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const PostPage = (props: any) => {
+interface PostPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const PostPage: React.FC<PostPageProps> = (props) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
