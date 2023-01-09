@@ -1,25 +1,33 @@
 import React from 'react';
+import Link from "next/link";
 import styles from '../styles/ProjectBox.module.scss';
 
 import TechItem from './TechItem';
 
-const ProjectBox: React.FC = () => {
+interface ProjectBoxProps {
+    slug: string;
+    projectType: string;
+    projectDate: string;
+    projectTitle: string;
+    techs: string[];
+}
+
+const ProjectBox: React.FC<ProjectBoxProps> = ({ slug, projectType, projectDate, projectTitle, techs }) => {
     return (
-        <div className={styles.box}>
+        <div className={styles.box} key={slug}>
             <div className={styles.header}>
-                <p>Project Type</p>
-                <p>Project Date</p>
+                <p>{projectType}</p>
+                <p>{projectDate}</p>
             </div>
             <div className={styles.title}>
-                <p>Project Title</p>
+                <Link href={`api/posts/${slug}`}>
+                    <p>{projectTitle}</p>
+                </Link>
             </div>
             <div className={styles.footer}>
-                <div className={styles.item}>
-                    <TechItem techName="React Native" />
-                </div>
-                <div className={styles.item}>
-                    <TechItem techName="Typescript" />
-                </div>
+                {techs.map((tech: string) => (
+                    <TechItem tech={tech} key={tech} />
+                ))}
             </div>
         </div>
     )

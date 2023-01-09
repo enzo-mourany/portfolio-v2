@@ -2,10 +2,12 @@ import React from 'react';
 
 import ProjectBox from './ProjectBox';
 
-const SelectedProjects: React.FC = () => {
+import type { PostMetadata } from "./PostMetadata";
+
+const SelectedProjects: React.FC<PostMetadata> = (props: PostMetadata) => {
     return (
         <div>
-            <ProjectBox />
+            <ProjectBox slug={props.slug} projectType="Test" projectDate={props.date} projectTitle={props.title} techs={["test1", "test2"]} />
         </div>
     )
 };

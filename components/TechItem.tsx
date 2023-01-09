@@ -2,13 +2,13 @@ import React from 'react';
 import styles from '../styles/TechItem.module.scss';
 
 interface TechItemProps {
-    techName: string;
+    tech: string;
 }
 
-const TechItem: React.FC<TechItemProps> = ({ techName }) => {
+const TechItem: React.FC<TechItemProps> = ({ tech }) => {
     return (
         <div className={styles.box}>
-            <p>{techName}</p>
+            <p>{tech}</p>
         </div>
     )
 };

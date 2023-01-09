@@ -1,16 +1,12 @@
-import Link from "next/link";
-
 import '../styles/globals.css';
+
+import ProjectBox from "./ProjectBox";
 
 import type { PostMetadata } from "./PostMetadata";
 
 const postPreview = (props: PostMetadata) => {
     return (
-        <div key={props.slug}>
-        <Link href={`api/posts/${props.slug}`}>
-        <h2>{props.title}</h2>
-        </Link>
-        </div>
+        <ProjectBox slug={props.slug} projectType={props.preview ? 'preview' : 'no preview'} projectDate={props.date} projectTitle={props.title} techs={props.techs} />
         )
     };
     
