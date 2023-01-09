@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '../../styles/LineButton.module.scss';
 
 interface LineButtonProps {

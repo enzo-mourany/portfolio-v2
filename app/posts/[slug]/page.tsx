@@ -2,10 +2,12 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 
+import '../../../styles/globals.css';
+
 import getPostMetadata from '../../../components/getPostMetadata';
 
 const getPostContent = (slug: string) => {
-  const folder = 'posts/';
+  const folder = 'api/posts/';
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, 'utf8');
   const matterResult = matter(content);
