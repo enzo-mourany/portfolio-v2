@@ -4,8 +4,11 @@
 .box {
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    padding-bottom: 30px;
+    width: 60%;
+    padding-bottom: 20px;
+    @include tablet {
+        width: 100%;
+    }
     &::before {
         content: '';
         display: block;
@@ -21,6 +24,9 @@
         p {
             font-size: 1rem;
             text-transform: uppercase;
+            @include mobile {
+                font-size: 0.7rem;
+            }
         }
     }
     .title {
@@ -28,6 +34,10 @@
             font-size: 8vw;
             font-family: 'Source Serif 4', serif;
             text-transform: uppercase;
+            @include mobile {
+                font-size: 3rem;
+                line-height: 2;
+            }
         }
     }
     .footer {

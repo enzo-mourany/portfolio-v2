@@ -11,7 +11,7 @@ const Page = () => {
     <PostPreview key={post.slug} {...post} />
   ));
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-zinc-900">
       <HomePage />
       <About />
       <div className="flex flex-col items-end w-11/12">
