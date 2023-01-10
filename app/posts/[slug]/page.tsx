@@ -35,7 +35,7 @@ const PostPage: React.FC<PostPageProps> = (props) => {
       <h1>{post.data.title}</h1>
       <Markdown>{post.content}</Markdown>
     </div>
-    );
-  };
-  
-  export default PostPage;
+  );
+};
+
+export default PostPage;

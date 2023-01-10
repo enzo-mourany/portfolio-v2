@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from 'react';
 
@@ -9,12 +9,12 @@ interface ScrollingTextProps {
 }
 
 const ScrollingText: React.FC<ScrollingTextProps> = ({ text }) => {
-    return (
-        <div className={styles.container}>
-            <span>- {text} - {text}&nbsp;</span>
-            <span>- {text} - {text}&nbsp;</span>
-        </div>
-    )
+  return (
+    <div className={styles.container}>
+      <span>- {text} - {text}&nbsp;</span>
+      <span>- {text} - {text}&nbsp;</span>
+    </div>
+  )
 }
 
 export default ScrollingText

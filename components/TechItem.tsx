@@ -6,11 +6,11 @@ interface TechItemProps {
 }
 
 const TechItem: React.FC<TechItemProps> = ({ tech }) => {
-    return (
-        <div className={styles.box}>
-            <p>{tech}</p>
-        </div>
-    )
+  return (
+    <div className={styles.box}>
+      <p>{tech}</p>
+    </div>
+  )
 };
 
 export default TechItem;
