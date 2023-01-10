@@ -30,10 +30,17 @@
     }
     span {
         white-space: nowrap;
-        font-size: 250px;
-        animation: scroll 25s linear infinite;
+        font-size: 15vw;
         font-family: 'Source Serif 4', serif;
         line-height: 1.6;
+        text-transform: uppercase;
+        animation: scroll 25s linear infinite;
+        @include tablet {
+            font-size: 180px;
+        }
+        @include mobile {
+            font-size: 120px;
+        }
     }
     @keyframes scroll {
         0% {

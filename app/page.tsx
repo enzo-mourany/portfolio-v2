@@ -15,7 +15,7 @@ const Page = () => {
     <div className="flex flex-col items-center bg-zinc-900">
       <HomePage />
       <About />
-      <ScrollingText />
+      <ScrollingText text="works" />
       <div className="flex flex-col items-end w-11/12">
         {postPreview}
       </div>
