@@ -8,6 +8,6 @@ const InfoBar = () => {
       <p>Collaborator</p>
     </div>
   )
-}
+};
 
-export default InfoBar
+export default InfoBar;
