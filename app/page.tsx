@@ -4,6 +4,7 @@ import PostPreview from '../components/PostPreview';
 
 import About from '../components/About';
 import HomePage from './HomePage';
+import Contact from '../components/Contact';
 import ScrollingText from '../components/ScrollingText';
 
 const Page = () => {
@@ -16,9 +17,11 @@ const Page = () => {
       <HomePage />
       <About />
       <ScrollingText text="works" />
-      <div className="flex flex-col items-end w-11/12">
+      <div className="flex flex-col items-end w-11/12 mb-80">
         {postPreview}
       </div>
+      <ScrollingText text="contact" />
+      <Contact />
     </div>
   )
 };

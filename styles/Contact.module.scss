@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 100px;
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 200px;
+        .text_box {
+            display: flex;
+            width: 200px;
+            justify-content: center;
+            p {
+                text-transform: uppercase;
+            }
+            &:nth-of-type(3) {
+                p {
+                    text-align: end;
+                }
+            }
+        }
+    }
+    .email {
+        a {
+            text-transform: uppercase;
+            font-size: 5vw;
+        }
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
+    }
+}

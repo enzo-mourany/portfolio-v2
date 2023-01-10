@@ -13,6 +13,9 @@
     p {
         @apply text-black dark:text-white font-manrope;
     }
+    a {
+        @apply text-black dark:text-white font-manrope;
+    }
     span {
         @apply text-black dark:text-white;
     }
