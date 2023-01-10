@@ -24,14 +24,16 @@
         position: absolute;
         height: 0.5px;
         width: 90%;
+        bottom: 0;
         background-color: white;
-        margin-bottom: 0.6rem;
+        margin-top: 0.6rem;
     }
     span {
         white-space: nowrap;
         font-size: 250px;
         animation: scroll 25s linear infinite;
         font-family: 'Source Serif 4', serif;
+        line-height: 1.6;
     }
     @keyframes scroll {
         0% {
