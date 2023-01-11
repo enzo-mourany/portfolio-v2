@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
+import LinkBox from '../components/LinkBox';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       initial='closed'
       animate={isMenuOpen ? 'open' : 'closed'}
     >
-      <p>Hello</p>
+      <div>
+        <LinkBox />
+      </div>
     </motion.div>
   )
 
