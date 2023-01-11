@@ -1,17 +1,18 @@
 'use client';
 
-import React, { useState } from 'react';
 import styles from '../../styles/Hamburger.module.scss';
 
-const Hamburger = () => {
-  const [isToggled, setIsToggled] = useState(false);
+interface HamburgerProps {
+  isMenuOpen: boolean;
+}
 
+const Hamburger: React.FC<HamburgerProps> = ({ isMenuOpen }) => {
   return (
     <div
-      className={styles.hamburger}
-      onClick={() => setIsToggled(!isToggled)}
+      className={styles.hamburger__container}
     >
-      <span className={styles.hamburger__box}>
+      <span className={isMenuOpen ? styles.hamburger__box__open : styles.hamburger__box}>
+        <span className={styles.hamburger__inner} />
         <span className={styles.hamburger__inner} />
         <span className={styles.hamburger__inner} />
       </span>

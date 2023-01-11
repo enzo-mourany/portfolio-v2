@@ -30,8 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className='w-48'>
           <p className='text-white text-sm font-extralight uppercase'>Portfolio ©2023</p>
         </div>
-        <div className='w-48' onClick={() => toggleMenu()}>
-          <Hamburger />
+        <div className='flex justify-center w-48' onClick={() => toggleMenu()}>
+          <Hamburger isMenuOpen={isMenuOpen} />
         </div>
       </div>
     </header>
@@ -44,9 +44,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       initial='closed'
       animate={isMenuOpen ? 'open' : 'closed'}
     >
-      <div className='w-48' onClick={() => toggleMenu()}>
-        <Hamburger />
-      </div>
       <p>Hello</p>
     </motion.div>
   )
@@ -56,8 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body className='bg-white dark:bg-black'>
         <div>
-          {header}
           {menu}
+          {header}
           {children}
         </div>
       </body>
