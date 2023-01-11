@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       animate={isMenuOpen ? 'open' : 'closed'}
     >
       <div>
-        <LinkBox />
+        <LinkBox isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       </div>
     </motion.div>
   )

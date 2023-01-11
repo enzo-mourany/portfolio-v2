@@ -5,25 +5,37 @@ import Link from 'next/link';
 
 import styles from '../styles/LinkBox.module.scss';
 
-const LinkBox: React.FC = () => {
+interface LinkBoxProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: (isMenuOpen: boolean) => void;
+}
+
+const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  interface BoxProps {
+    title: string;
+    subtitle: string;
+    link: string;
+  }
+
+  const Box = ({ title, subtitle, link }: BoxProps) => {
+    return (
+      <Link className={styles.linkbox__container} href={link} onClick={() => handleClick()} >
+        <p className={styles.linkbox__subtitle}>{subtitle}</p>
+        <h1 className={styles.linkbox__title}>{title}</h1>
+      </Link>
+    );
+  };
+
   return (
     <div className={styles.wrapper}>
-      <Link className={styles.linkbox__container} href='/' >
-        <p className={styles.linkbox__subtitle}>Introduction</p>
-        <h1 className={styles.linkbox__title}>Home</h1>
-      </Link>
-      <Link className={styles.linkbox__container} href='/about' >
-        <p className={styles.linkbox__subtitle}>Skills and Phylosophy</p>
-        <h1 className={styles.linkbox__title}>About</h1>
-      </Link>
-      <Link className={styles.linkbox__container} href='/works' >
-        <p className={styles.linkbox__subtitle}>Projects and labs</p>
-        <h1 className={styles.linkbox__title}>Works</h1>
-      </Link>
-      <Link className={styles.linkbox__container} href='/contact' >
-        <p className={styles.linkbox__subtitle}>Get in touch</p>
-        <h1 className={styles.linkbox__title}>Contact</h1>
-      </Link>
+      <Box title='Home' subtitle='Introduction' link='/' />
+      <Box title='About' subtitle='Skills and Phylosophy' link='/about' />
+      <Box title='Works' subtitle='Projects and labs' link='/works' />
+      <Box title='Contact' subtitle='Get in touch' link='/contact' />
     </div>
 
   )
