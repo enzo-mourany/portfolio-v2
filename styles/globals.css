@@ -8,7 +8,7 @@
 
 @layer base {
     * {
-        @apply antialiased bg-white dark:bg-zinc-900;
+        @apply antialiased;
     }
     p {
         @apply text-black dark:text-white font-manrope;
