@@ -22,13 +22,26 @@
       font-size: 1vw;
       text-transform: uppercase;
       transition: all 0.2s ease;
+      @include tablet {
+        font-size: 2vw;
+      }
+      @include mobile {
+        font-size: 3vw;
+      }
     }
     .linkbox__title {
       font-size: 5vw;
       text-transform: uppercase;
       line-height: 1;
       font-family: 'Source Serif 4', serif;
+      font-weight: 300;
       transition: all 0.2s ease;
+      @include tablet {
+        font-size: 8vw;
+      }
+      @include mobile {
+        font-size: 11vw;
+      }
     }
     &:hover {
       .linkbox__subtitle {
