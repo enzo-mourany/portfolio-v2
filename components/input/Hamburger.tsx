@@ -8,7 +8,7 @@ const Hamburger = () => {
 
   return (
     <div
-      className={isToggled ? 'hamburger hamburger--toggled' : 'hamburger'}
+      className={styles.hamburger}
       onClick={() => setIsToggled(!isToggled)}
     >
       <span className={styles.hamburger__box}>

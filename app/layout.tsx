@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
-import menu from './menu';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,21 +16,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const variants = {
     open: { display: 'flex', opacity: 1 },
-    closed: { display: 'hidden', opacity: 0 },
+    closed: { opacity: 0, transitionEnd: { display: 'none' } },
   };
 
   const header = (
     <header>
       <div className='flex flex-row justify-between fixed w-full text-center p-8'>
         <div className='w-48'>
-          <Link href='/' onClick={() => toggleMenu()}>
+          <Link href='/'>
             <p className='text-white text-xl font-normal'>Enzo Mourany</p>
           </Link>
         </div>
         <div className='w-48'>
           <p className='text-white text-sm font-extralight uppercase'>Portfolio ©2023</p>
         </div>
-        <div className='w-48'>
+        <div className='w-48' onClick={() => toggleMenu()}>
           <Hamburger />
         </div>
       </div>
@@ -45,6 +44,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       initial='closed'
       animate={isMenuOpen ? 'open' : 'closed'}
     >
+      <div className='w-48' onClick={() => toggleMenu()}>
+        <Hamburger />
+      </div>
       <p>Hello</p>
     </motion.div>
   )
