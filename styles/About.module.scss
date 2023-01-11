@@ -1,12 +1,10 @@
 @import './responsive.scss';
 
-.about__container {
-    background-color: black;
+.wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    width: 90%;
     gap: 2rem;
     margin-bottom: 300px;
     @include mobile {
