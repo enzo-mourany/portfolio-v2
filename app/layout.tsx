@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const header = (
     <header>
-      <div className='flex flex-row justify-between fixed w-full text-center p-8'>
+      <div className='flex flex-row justify-between fixed z-10 w-full text-center p-8'>
         <div className='w-48'>
           <Link href='/'>
             <p className='text-white text-xl font-normal'>Enzo Mourany</p>
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const menu = (
     <motion.div
-      className='hidden flex-col justify-center items-center fixed w-full h-full bg-black opacity-50'
+      className='hidden flex-col justify-center items-center fixed z-10 w-full h-full bg-black opacity-50'
       variants={variants}
       initial='closed'
       animate={isMenuOpen ? 'open' : 'closed'}

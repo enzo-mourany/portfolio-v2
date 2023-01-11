@@ -1,7 +1,33 @@
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 import styles from '../styles/HomePage.module.scss';
+
 import LineButton from '../components/input/LineButton';
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+  const [ref, inView] = useInView({
+    threshold: 0
+  });
+  const controls = useAnimation();
+  const text = [
+    'Ligne 1',
+    'Ligne 2',
+    'Ligne 3',
+    'Ligne 4',
+  ];
+
+  useEffect(() => {
+    if (inView && !animationPlayed) {
+      controls.start('visible');
+      setAnimationPlayed(true);
+    }
+  }, [inView, animationPlayed, controls]);
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -9,7 +35,7 @@ const HomePage = () => {
           <div className={styles.name}>
             <p>Hi, I am Enzo Mourany</p>
           </div>
-          <div className={styles.presentation}>
+          <div className={styles.presentation} ref={ref}>
             <p>Frontend web and web mobile developer</p>
           </div>
         </div>
