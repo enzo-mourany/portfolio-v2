@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   };
 
   const hiddenTextVariants = {
-    hover: { y: -130, opacity: 1, transition: { duration: 0.2 } },
+    hover: { y: -135, opacity: 1, transition: { duration: 0.2 } },
     normal: { y: -50, opacity: 0, transition: { duration: 0.2 } }
   };
 
@@ -42,17 +42,17 @@ const Contact: React.FC = () => {
           rel='noreferrer'
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
-          style={{ display: 'flex', flexDirection: 'column', height: '100px', width: 'fit-content', overflow: 'hidden'}}
+          className={styles.links__link}
         >
           <motion.span
-            style={{ position: 'relative' }}
+            className={styles.links__link__text}
             variants={visibleTextVariants}
             animate={hover ? 'hover' : 'normal'}
           >
             GitHub
           </motion.span>
           <motion.span
-            style={{ position: 'relative' }}
+            className={styles.links__link__text__hover}
             variants={hiddenTextVariants}
             animate={hover ? 'hover' : 'normal'}
           >
