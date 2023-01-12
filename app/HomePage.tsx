@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -43,7 +44,9 @@ const HomePage: React.FC = () => {
           <div className={styles.description}>
             <p>I create inclusive, accessible digital products, with experience working with startups and enterprise products. I believe in using product design as a tool to elevate human interaction with technology that scale .</p>
           </div>
-          <LineButton text="Let's Talk" />
+          <Link href='/contact'>
+            <LineButton text="Let's Talk" />
+          </Link>
         </div>
       </div>
     </div>
