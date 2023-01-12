@@ -1,9 +1,23 @@
-import React from 'react';
+'use client';
+
+import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 
 import styles from '../styles/Contact.module.scss';
 import LineButton from './input/LineButton';
 
 const Contact: React.FC = () => {
+  const [hover, setHover] = useState(false);
+  const visibleTextVariants = {
+    hover: { y: -50, opacity: 0, transition: { duration: 0.2 } },
+    normal: { y: 0, opacity: 1, transition: { duration: 0.2 } }
+  };
+
+  const hiddenTextVariants = {
+    hover: { y: -130, opacity: 1, transition: { duration: 0.2 } },
+    normal: { y: -50, opacity: 0, transition: { duration: 0.2 } }
+  };
+
   return (
     <div className={styles.contact}>
       <div className={styles.header}>
@@ -22,7 +36,29 @@ const Contact: React.FC = () => {
         <a href='mailto:enzo.mourany@outlook.com'>enzo.mourany@outlook.com</a>
       </div>
       <div className={styles.links}>
-        <a href='https://github.com/enzo-mourany' target='_blank' rel='noreferrer' >GitHub</a>
+        <a
+          href='https://github.com/enzo-mourany'
+          target='_blank'
+          rel='noreferrer'
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          style={{ display: 'flex', flexDirection: 'column', height: '100px', width: 'fit-content', overflow: 'hidden'}}
+        >
+          <motion.span
+            style={{ position: 'relative' }}
+            variants={visibleTextVariants}
+            animate={hover ? 'hover' : 'normal'}
+          >
+            GitHub
+          </motion.span>
+          <motion.span
+            style={{ position: 'relative' }}
+            variants={hiddenTextVariants}
+            animate={hover ? 'hover' : 'normal'}
+          >
+            GitHub
+          </motion.span>
+        </a>
         <a href='https://www.linkedin.com/in/enzo-mourany/' target='_blank' rel='noreferrer'>LinkedIn</a>
       </div>
     </div>
