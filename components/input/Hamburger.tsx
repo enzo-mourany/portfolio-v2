@@ -14,7 +14,6 @@ const Hamburger: React.FC<HamburgerProps> = ({ isMenuOpen }) => {
       <span className={isMenuOpen ? styles.hamburger__box__open : styles.hamburger__box}>
         <span className={styles.hamburger__inner} />
         <span className={styles.hamburger__inner} />
-        <span className={styles.hamburger__inner} />
       </span>
     </div>
   );
