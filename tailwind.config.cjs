@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  content: ['./app/**/*.{js,jsx,ts,tsx,md}', './components/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
     fontFamily: {
       manrope: ['Manrope', 'sans-serif'],
+      sourceSerif: ['Source Serif 4', 'serif'],
     },
     screens: {
       xs: '480px',
@@ -14,5 +15,5 @@ module.exports = {
       xl: '1280px',
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 };

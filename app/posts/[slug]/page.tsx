@@ -31,9 +31,11 @@ const PostPage: React.FC<PostPageProps> = (props) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div>
-      <h1>{post.data.title}</h1>
-      <Markdown>{post.content}</Markdown>
+    <div className='flex flex-col items-center'>
+      <article className='prose dark:prose-invert mt-32'>
+        <h1 className='text-center font-sourceSerif'>{post.data.title}</h1>
+        <Markdown>{post.content}</Markdown>
+      </article>
     </div>
   );
 };
