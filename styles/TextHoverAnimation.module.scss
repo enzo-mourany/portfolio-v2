@@ -1,0 +1,14 @@
+.text__container {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: fit-content;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 5rem;
+  cursor: pointer;
+  text-align: center;
+  .text__letter {
+    position: relative;
+  }
+}
