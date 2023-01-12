@@ -22,8 +22,8 @@ const Contact: React.FC = () => {
         <a href='mailto:enzo.mourany@outlook.com'>enzo.mourany@outlook.com</a>
       </div>
       <div className={styles.links}>
-        <a href='https://github.com/enzo-mourany'>GitHub</a>
-        <a href='https://www.linkedin.com/in/enzo-mourany/'>LinkedIn</a>
+        <a href='https://github.com/enzo-mourany' target='_blank' rel='noreferrer' >GitHub</a>
+        <a href='https://www.linkedin.com/in/enzo-mourany/' target='_blank' rel='noreferrer'>LinkedIn</a>
       </div>
     </div>
   )
