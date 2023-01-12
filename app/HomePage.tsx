@@ -10,24 +10,38 @@ import styles from '../styles/HomePage.module.scss';
 import LineButton from '../components/input/LineButton';
 
 const HomePage: React.FC = () => {
-  const [animationPlayed, setAnimationPlayed] = useState(false);
-  const [ref, inView] = useInView({
-    threshold: 0
-  });
-  const controls = useAnimation();
-  const text = [
-    'Ligne 1',
-    'Ligne 2',
-    'Ligne 3',
-    'Ligne 4',
-  ];
+  const presentation = 'Frontend web and web mobile developer';
+  const wordsPresentation = presentation.split(' ');
+  const wordsPresentationWithSpace = wordsPresentation.map((word) => word + ' ');
 
-  useEffect(() => {
-    if (inView && !animationPlayed) {
-      controls.start('visible');
-      setAnimationPlayed(true);
-    }
-  }, [inView, animationPlayed, controls]);
+  const container = {
+    hidden: { opacity: 0 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.12, delayChildren: i * 0.04 },
+    })
+  };
+
+  const child = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'spring',
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: 20,
+      transition: {
+        type: 'spring',
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+  };
 
   return (
     <div className={styles.container}>
@@ -36,8 +50,14 @@ const HomePage: React.FC = () => {
           <div className={styles.name}>
             <p>Hi, I am Enzo Mourany</p>
           </div>
-          <div className={styles.presentation} ref={ref}>
-            <p>Frontend web and web mobile developer</p>
+          <div className={styles.presentation}>
+            <motion.div variants={container} initial='hidden' animate='visible'>
+              {wordsPresentationWithSpace.map((word, index) => (
+                <motion.span variants={child} style={{ marginRight: '5px', wordWrap: 'normal', whiteSpace: 'pre-wrap' }} key={index}>
+                  {word}
+                </motion.span>
+              ))}
+            </motion.div>
           </div>
         </div>
         <div className={styles.right}>

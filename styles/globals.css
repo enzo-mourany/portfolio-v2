@@ -17,7 +17,7 @@
         @apply text-black dark:text-white font-manrope;
     }
     span {
-        @apply text-black dark:text-white;
+        @apply text-black dark:text-white font-manrope;
     }
     h1 {
         @apply text-black dark:text-white font-manrope;
