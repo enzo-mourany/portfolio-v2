@@ -25,6 +25,12 @@
         }
     }
     .email {
+        text-align: center;
+        margin-bottom: 100px;
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
         a {
             text-transform: uppercase;
             font-size: 5vw;
@@ -32,8 +38,13 @@
     }
     .links {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         width: 300px;
+        a {
+            text-transform: uppercase;
+            font-size: 5vw;
+        }
     }
 }

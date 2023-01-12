@@ -18,11 +18,12 @@ const Contact: React.FC = () => {
         </div>
       </div>
       <div className={styles.email}>
+        <p>Send me a message</p>
         <a href='mailto:enzo.mourany@outlook.com'>enzo.mourany@outlook.com</a>
       </div>
       <div className={styles.links}>
-        <LineButton text='Github' />
-        <LineButton text='Linkedin' />
+        <a href='https://github.com/enzo-mourany'>GitHub</a>
+        <a href='https://www.linkedin.com/in/enzo-mourany/'>LinkedIn</a>
       </div>
     </div>
   )
