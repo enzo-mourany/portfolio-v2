@@ -11,4 +11,9 @@
   .text__letter {
     position: relative;
   }
+  .text__letter__hidden {
+    position: relative;
+    font-family: 'Source Serif 4', serif;
+    font-size: 5.5rem;
+  }
 }
