@@ -1,9 +1,8 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 import styles from '../styles/HomePage.module.scss';
 
@@ -62,7 +61,11 @@ const HomePage: React.FC = () => {
               style={{ display: 'flex', flexWrap: 'wrap' }}
             >
               {wordsPresentationWithSpace.map((word, index) => (
-                <motion.span variants={child} style={{ marginRight: '5px', wordWrap: 'normal', whiteSpace: 'pre-wrap'}} key={index}>
+                <motion.span
+                  key={index}
+                  variants={child}
+                  style={{ marginRight: '5px', wordWrap: 'normal', whiteSpace: 'pre-wrap'}}
+                >
                   {word}
                 </motion.span>
               ))}

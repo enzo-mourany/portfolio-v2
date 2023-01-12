@@ -1,29 +1,18 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion, useInView } from 'framer-motion';
 
 import styles from '../styles/About.module.scss';
 import LineButton from './input/LineButton';
 
-const About = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
+const About: React.FC = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const description = 'I create inclusive, accessible digital products, with experience working with startups and enterprise products. I believe in using product design as a tool to elevate human interaction with technology that scale.';
   const linesPresentation = description.split('/n');
-
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
 
   const container = {
     hidden: { opacity: 0 },
@@ -45,7 +34,7 @@ const About = () => {
     },
     hidden: {
       opacity: 0,
-      y: 20,
+      y: 50,
       transition: {
         type: 'spring',
         damping: 12,
@@ -61,13 +50,18 @@ const About = () => {
         ref={ref}
         variants={container}
         initial='hidden'
-        animate='visible'
+        animate={isInView ? 'visible' : 'hidden'}
+        style={{ display: 'flex', flexWrap: 'wrap', overflow: 'hidden' }}
       />
       {linesPresentation.map((line, index) => (
         <motion.p
-          variants={titleVariants}
+          key={index}
           className={styles.description}
-          key={index}>
+          variants={titleVariants}
+          initial='hidden'
+          animate={isInView ? 'visible' : 'hidden'}
+          style={{ marginRight: '5px', wordWrap: 'normal', whiteSpace: 'pre-wrap' }}
+        >
           {line}
         </motion.p>
       ))}
