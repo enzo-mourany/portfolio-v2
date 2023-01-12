@@ -1,7 +1,9 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 import styles from '../styles/LinkBox.module.scss';
 
@@ -15,6 +17,29 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [ref, inView] = useInView({
+    threshold: 0
+  });
+
+  const [isHomeVisible, setIsHomeVisible] = useState(false);
+  const [isAboutVisible, setIsAboutVisible] = useState(false);
+  const [isWorksVisible, setIsWorksVisible] = useState(false);
+  const [isContactVisible, setIsContactVisible] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setTimeout(() => setIsHomeVisible(true), 300);
+      setTimeout(() => setIsAboutVisible(true), 400);
+      setTimeout(() => setIsWorksVisible(true), 500);
+      setTimeout(() => setIsContactVisible(true), 600);
+    } else {
+      setIsHomeVisible(false);
+      setIsAboutVisible(false);
+      setIsWorksVisible(false);
+      setIsContactVisible(false);
+    }
+  }, [inView]);
+
   interface BoxProps {
     title: string;
     subtitle: string;
@@ -23,7 +48,11 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
 
   const Box = ({ title, subtitle, link }: BoxProps) => {
     return (
-      <Link className={styles.linkbox__container} href={link} onClick={() => handleClick()} >
+      <Link
+        className={styles.linkbox__container}
+        href={link}
+        onClick={() => handleClick()}
+      >
         <p className={styles.linkbox__subtitle}>{subtitle}</p>
         <h1 className={styles.linkbox__title}>{title}</h1>
       </Link>
@@ -32,10 +61,38 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
 
   return (
     <div className={styles.wrapper}>
-      <Box title='Home' subtitle='Introduction' link='/' />
-      <Box title='About' subtitle='Skills and Phylosophy' link='/about' />
-      <Box title='Works' subtitle='Projects and labs' link='/works' />
-      <Box title='Contact' subtitle='Get in touch' link='/contact' />
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isHomeVisible ? { opacity: 1, y: 0 } : {}}
+        exit={{ opacity: 0 }}
+      >
+        <Box title='Home' subtitle='Introduction' link='/' />
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isAboutVisible ? { opacity: 1, y: 0 } : {}}
+        exit={{ opacity: 0 }}
+      >
+        <Box title='About' subtitle='Skills and Phylosophy' link='/about' />
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isWorksVisible ? { opacity: 1, y: 0 } : {}}
+        exit={{ opacity: 0 }}
+      >
+        <Box title='Works' subtitle='Projects and labs' link='/works' />
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isContactVisible ? { opacity: 1, y: 0 } : {}}
+        exit={{ opacity: 0 }}
+      >
+        <Box title='Contact' subtitle='Get in touch' link='/contact' />
+      </motion.div>
     </div>
 
   )

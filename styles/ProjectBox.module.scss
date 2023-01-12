@@ -37,12 +37,18 @@
             font-size: 8vw;
             font-family: 'Source Serif 4', serif;
             text-transform: uppercase;
+            transition: all 0.1s ease;
             @include tablet {
                 font-size: 5rem;
             }
             @include mobile {
                 font-size: 3rem;
                 line-height: 2;
+            }
+        }
+        &:hover {
+            p {
+                opacity: 0.3;
             }
         }
     }
