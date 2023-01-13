@@ -17,7 +17,7 @@ const Page = () => {
       <HomePage />
       <About />
       <ScrollingText text='works' />
-      <div className='flex flex-col items-end w-11/12 mb-80'>
+      <div className='flex flex-col items-end w-11/12 mb-80 mt-32'>
         {postPreview}
       </div>
       <ScrollingText text='contact' />

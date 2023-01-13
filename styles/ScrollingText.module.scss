@@ -7,7 +7,7 @@
     overflow: hidden;
     width: 100%;
     position: relative;
-    transform: translateY(-50%);
+    margin-bottom: 10px;
     &::before {
         content: '';
         display: block;
