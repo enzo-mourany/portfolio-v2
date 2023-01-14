@@ -18,7 +18,7 @@ const About: React.FC = () => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: i * 0.04 },
+      transition: { staggerChildren: 0.12, delayChildren: i * 0.54 },
     })
   };
 
@@ -28,7 +28,7 @@ const About: React.FC = () => {
       y: 0,
       transition: {
         type: 'spring',
-        damping: 12,
+        damping: 20,
         stiffness: 100,
       },
     },
@@ -37,15 +37,24 @@ const About: React.FC = () => {
       y: 50,
       transition: {
         type: 'spring',
-        damping: 12,
+        damping: 20,
         stiffness: 100,
       },
     },
   };
 
+  const button = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { delay: 0.4 } },
+  };
+
   return (
     <div className={styles.wrapper}>
-      <p className={styles.title}>MY PHYLOSOPHY</p>
+      <motion.p
+        className={styles.title}
+        variants={titleVariants}
+        animate={isInView ? 'visible' : 'hidden'}
+      >MY PHYLOSOPHY</motion.p>
       <motion.div
         ref={ref}
         variants={container}
@@ -66,9 +75,14 @@ const About: React.FC = () => {
         </motion.p>
       ))}
       <motion.div />
-      <Link href='/about'>
-        <LineButton text='About Me' />
-      </Link>
+      <motion.div
+        variants={button}
+        animate={isInView ? 'visible' : 'hidden'}
+      >
+        <Link href='/about'>
+          <LineButton text='About Me' />
+        </Link>
+      </motion.div>
     </div>
   );
 };
