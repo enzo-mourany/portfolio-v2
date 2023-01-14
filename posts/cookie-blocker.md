@@ -1,5 +1,5 @@
 ---
-title: "CookieBlocker"
+title: "CookieBlock"
 subtitle: "Firefox extension to block cookies"
 date: "2023"
 pinned: true

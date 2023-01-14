@@ -1,5 +1,5 @@
 ---
-title: "Rent Property Bid"
+title: "Property Bid"
 subtitle: "Rent Property Bid"
 date: "2022"
 pinned: true
