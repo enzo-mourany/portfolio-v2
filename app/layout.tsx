@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import LocomotiveScroll from 'locomotive-scroll';
 
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
