@@ -4,6 +4,8 @@ import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import styles from '../../styles/AboutPage.module.scss';
+import ScrollingText from '../../components/ScrollingText';
+import Contact from '../../components/Contact';
 
 const Page: React.FC = () => {
   return (
@@ -44,6 +46,8 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div>
+      <ScrollingText text='Contact' />
+      <Contact />
     </div>
   );
 };
