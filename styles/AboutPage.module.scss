@@ -21,21 +21,43 @@
         width: 80%;
         .about__title__text {
           font-size: 7vw;
-          font-family: 'Source Serif 4', serif;
+          font-family: 'cormorant', serif;
+          font-weight: lighter;
           line-height: 1;
           text-align: center;
         }
       }
     }
-    .about__courses {
-      .about__softsills {
-        section {
-          p {
-            font-size: 3.5vw;
-            font-family: 'Source Serif 4', serif;
-            line-height: 1.5;
-            text-align: center;
-          }
+    .about__course {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .about__objectivs {
+        width: 65%;
+        margin-bottom: 100px;
+        h2 {
+          font-size: 2vw;
+          line-height: 1;
+          text-transform: uppercase;
+        }
+        p {
+          //font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+          font-family: 'garamond', serif;
+          font-size: 4.5vw;
+          line-height: 1.5;
+          font-weight: 100;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 1;
+        }
+      }
+      .about__softskills {
+        p {
+          font-size: 1.3vw;
+          line-height: 1.5;
+          text-transform: uppercase;
+          text-align: center;
         }
       }
     }

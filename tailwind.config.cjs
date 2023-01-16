@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       manrope: ['Manrope', 'sans-serif'],
       sourceSerif: ['Source Serif 4', 'serif'],
+      cormorant: ['Cormorant Garamond', 'serif'],
+      cinzel: ['Cinzel', 'serif'],
+      garamond: ['Garamond', 'sans-serif'],
     },
     screens: {
       xs: '480px',
