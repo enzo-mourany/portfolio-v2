@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import styles from '../../styles/AboutPage.module.scss';
@@ -8,6 +8,12 @@ import ScrollingText from '../../components/ScrollingText';
 import Contact from '../../components/Contact';
 
 const Page: React.FC = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     <div className={styles.about__container}>
       <div className={styles.about__wrapper}>
@@ -24,7 +30,10 @@ const Page: React.FC = () => {
             <p>By combining my skills in design and website performance optimization, I am able to create websites and mobile apps that are both beautiful and fast. I believe that by creating websites and mobile apps with a great UI and UX and optimized for performance, we can make the web a more enjoyable and efficient place for everyone.</p>
           </div>
           <div className={styles.about__softskills}>
-            <div className={styles.box__content}>
+            <div
+              className={`${styles.box__content} ${isClicked ? styles.active : ''}`}
+              onClick={() => handleClick()}
+            >
               <div className={styles.label}>
                 <h2>Frontend</h2>
               </div>
