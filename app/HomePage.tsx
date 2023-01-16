@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
             animate={{ opacity: 1, transition: { delay: 1.8 } }}
           >
             <p
-            >I create inclusive, accessible digital products, with experience working with startups and enterprise products. I believe in using product design as a tool to elevate human interaction with technology that scale .</p>
+            >I create fluid and original solutions and propose unique experiences with experience working with startups. Product design is for me a tool to elevate human interaction with technology that adapts .</p>
           </motion.div>
           <motion.div
             variants={container}

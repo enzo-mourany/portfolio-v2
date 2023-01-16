@@ -11,7 +11,7 @@ const About: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const description = 'I create inclusive, accessible digital products, with experience working with startups and enterprise products. I believe in using product design as a tool to elevate human interaction with technology that scale.';
+  const description = 'I have been passionate about web development for many years. I started learning the basics of coding several years ago and quickly discovered that I loved creating websites and applications. I am constantly looking for new technologies and methods to improve my skills and projects. Web development is a way for me to bring my ideas to life and share them with the world.';
   const linesPresentation = description.split('/n');
 
   const container = {
