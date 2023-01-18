@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 
 import styles from '../../styles/AboutPage.module.scss';
 import ScrollingText from '../../components/ScrollingText';
