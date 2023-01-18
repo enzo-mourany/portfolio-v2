@@ -11,6 +11,7 @@
     align-items: center;
     width: 90%;
     min-height: 100vh;
+    margin-bottom: 50px;
     .about__intro {
       display: flex;
       flex-direction: column;
@@ -67,6 +68,7 @@
         }
       }
       .about__softskills {
+        margin-bottom: 100px;
         .box__content {
           position: relative;
           transition: 0.5s ease;

@@ -40,7 +40,10 @@ const Page: React.FC = () => {
                 <p>My ability to learn quickly and my passion for discovering new technologies are two of my strongest soft skills. I am always eager to expand my knowledge and skills, and I am able to quickly pick up new concepts and technologies. This makes me a valuable asset to any team, as I am able to adapt to changes and new challenges with ease.</p>
               </div>
             </div>
-            <div className={styles.box__content}>
+            <div
+              className={`${styles.box__content} ${isClicked ? styles.active : ''}`}
+              onClick={() => handleClick()}
+            >
               <div className={styles.label}>
                 <h2>Frontend</h2>
               </div>
@@ -48,7 +51,10 @@ const Page: React.FC = () => {
                 <p>In terms of my front-end skills, I am proficient in a wide range of technologies including React, React Native, JavaScript, TypeScript, HTML, CSS, Sass, and TailwindCSS. I have experience building responsive and user-friendly web applications that look great on all devices. I am also familiar with best practices and design patterns to build maintainable and scalable web applications.</p>
               </div>
             </div>
-            <div className={styles.box__content}>
+            <div
+              className={`${styles.box__content} ${isClicked ? styles.active : ''}`}
+              onClick={() => handleClick()}
+            >
               <div className={styles.label}>
                 <h2>Frontend</h2>
               </div>
@@ -56,7 +62,10 @@ const Page: React.FC = () => {
                 <p>When it comes to back-end development, I have a solid understanding of technologies such as Node.js, Express, Java, SQL, MongoDB, and Python. I am experienced in building robust and efficient server-side applications, and I am skilled in integrating these applications with front-end technologies. I have experience in building RESTful APIs, and I am familiar with security best practices to ensure the protection of user data.</p>
               </div>
             </div>
-            <div className={styles.box__content}>
+            <div
+              className={`${styles.box__content} ${isClicked ? styles.active : ''}`}
+              onClick={() => handleClick()}
+            >
               <div className={styles.label}>
                 <h2>Frontend</h2>
               </div>
@@ -70,7 +79,6 @@ const Page: React.FC = () => {
             <p>I am able to lead by example and I am not afraid of taking initiative. I am comfortable with taking a leading role in a project and I am able to make decisions and solve problems independently when necessary. I am able to work well under pressure and I am able to adapt to changes and challenges quickly. These skills make me a valuable asset to any team and I am able to help to make a project successful by making sure that all the team members are working together and that the project is on track.</p>
           </div>
           <div className={styles.about__reviews}>
-            review
           </div>
         </div>
       </div>
