@@ -4,8 +4,6 @@ import React from 'react';
 
 import styles from '../styles/Contact.module.scss';
 
-import TextHoverAnimation from './effect/TextHoverAnimation';
-
 const Contact: React.FC = () => {
 
   return (
