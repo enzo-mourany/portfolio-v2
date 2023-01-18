@@ -1,6 +1,52 @@
+@import './responsive.scss';
+
 .works__container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
-  margin-top: 200px;
+  .works__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 100vh;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    .works__intro {
+      .works__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 100px;
+        .works__title__text {
+          font-size: 11vw;
+          font-weight: semibold;
+          line-height: 1;
+          text-transform: uppercase;
+          &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 50px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            margin-left: 50%;
+            opacity: 0.5;
+          }
+        }
+        p {
+          font-size: 2.5vw;
+          font-weight: 100;
+          text-transform: uppercase;
+          font-family: 'garamond', serif;
+          letter-spacing: 0.05em;
+          @include mobile {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
 }
