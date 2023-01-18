@@ -22,12 +22,12 @@ const Contact: React.FC = () => {
         </div>
       </div>
       <div className={styles.email}>
-        <p>Send me a message</p>
-        <a href='mailto:enzo.mourany@outlook.com'>enzo.mourany@outlook.com</a>
+        <a href='mailto:enzo.mourany@outlook.com'>Send me a message</a>
       </div>
       <div className={styles.links}>
-        <TextHoverAnimation text='GitHub' url='https://github.com/enzo-mourany' />
-        <TextHoverAnimation text='LinkedIn' url='https://www.linkedin.com/in/enzo-mourany/' />
+        <a href='https://github.com/enzo-mourany'>GitHub</a>
+        <a href='https://www.linkedin.com/in/enzo-mourany/'>LinkedIn</a>
+        <a href='#'>Privacy & Terms</a>
       </div>
     </div>
   )

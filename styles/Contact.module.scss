@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 
 .contact {
     display: flex;
@@ -6,6 +7,7 @@
     align-items: center;
     width: 90%;
     top: -100px;
+    margin-bottom: 30px;
     .header {
         display: flex;
         flex-direction: row;
@@ -27,41 +29,44 @@
         }
     }
     .email {
+        width: 70%;
         text-align: center;
         margin-bottom: 100px;
-        p {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
+        overflow-wrap: break-word;
         a {
             text-transform: uppercase;
             font-size: 5vw;
+            font-family: 'Cormorant Garamond', serif;
         }
     }
     .links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        width: 300px;
-        .links__link {
-            display: flex;
-            flex-direction: column;
-            height: 100px;
-            width: fit-content;
-            overflow: hidden;
+        justify-content: center;
+        gap: 50px;
+        a {
             text-transform: uppercase;
-            font-size: 5rem;
-            cursor: pointer;
-            text-align: center;
-        }
-        .links__link__text {
+            font-size: 0.9rem;
             position: relative;
         }
-        .links__link__text__hover {
-            position: relative;
-            font-family: 'Source Serif 4', serif;
-            font-size: 5.5rem;
-        }
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            border-radius: 4px;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+          }
+          
+          a:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+          }
     }
 }
