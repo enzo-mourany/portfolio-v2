@@ -5,7 +5,7 @@ date: "2023"
 pinned: true
 techs: ["React Native", "Typescript"]
 role: "Frontend Developer"
-githubLink: "https://github.com/"
+githubLink: "https://github.com/enzo-mourany/TabaTime"
 type: "Mobile Web App"
 ---
 
@@ -28,3 +28,39 @@ I first developed this application in React Native Javascript, but after a few m
 ## What I learned?
 
 Thanks to this project, I learned how to use React Native and Typescript. I also learned how to build a mobile application with XCode and Android Studio.
+
+## Features
+
+- Create a Tabata session
+- Choose the number of rounds
+- Choose the duration of the exercise and the rest
+
+## Techs
+
+- React Native
+- Typescript
+
+## Libraries
+
+- React Navigation
+- React Native Gesture Handler
+- React Native Reanimated
+- React Native Redash
+- React Native Safe Area Context
+- React Native Screens
+- React Native SVG
+
+## Screenshots
+
+
+
+## What's next?
+
+The goal is to create a complete fitness application where you can create sessions with several exercises. Each exercise would have a duration, a rest time and a number of rounds.
+It would be possible to save sessions to launch them quickly.
+I also plan to add a sound indicator that will be activated each time the timer reaches 0.
+
+
+## Links
+
+- [Github](https://github.com/enzo-mourany/TabaTime)
