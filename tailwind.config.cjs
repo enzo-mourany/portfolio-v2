@@ -2,7 +2,73 @@
 module.exports = {
   content: ['./app/**/*.{js,jsx,ts,tsx,md}', './components/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.blue.500'),
+              textDecoration: 'none',
+              '&:hover': {
+                color: theme('colors.blue.600'),
+                textDecoration: 'underline',
+              },
+            },
+            h1: {
+              fontFamily: theme('fontFamily.sourceSerif'),
+              fontWeight: theme('fontWeight.thin'),
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.tight'),
+              letterSpacing: theme('letterSpacing.tight'),
+              textTransform: 'uppercase',
+              '@screen sm': {
+                fontSize: theme('fontSize.4xl'),
+              },
+              '@screen md': {
+                fontSize: theme('fontSize.5xl'),
+              },
+              '@screen lg': {
+                fontSize: theme('fontSize.6xl'),
+              },
+            },
+            h2: {
+              fontFamily: theme('fontFamily.sourceSerif'),
+              fontWeight: theme('fontWeight.thin'),
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.tight'),
+              letterSpacing: theme('letterSpacing.tight'),
+              textTransform: 'uppercase',
+              '@screen sm': {
+                fontSize: theme('fontSize.2xl'),
+              },
+              '@screen md': {
+                fontSize: theme('fontSize.3xl'),
+              },
+              '@screen lg': {
+                fontSize: theme('fontSize.4xl'),
+              },
+            },
+            h3: {
+              fontFamily: theme('fontFamily.sourceSerif'),
+              fontWeight: theme('fontWeight.thin'),
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.tight'),
+              letterSpacing: theme('letterSpacing.tight'),
+              textTransform: 'uppercase',
+              '@screen sm': {
+                fontSize: theme('fontSize.lg'),
+              },
+              '@screen md': {
+                fontSize: theme('fontSize.5xl'),
+              },
+              '@screen lg': {
+                fontSize: theme('fontSize.2xl'),
+              },
+            },
+          },
+        },
+      }),
+    },
     fontFamily: {
       manrope: ['Manrope', 'sans-serif'],
       sourceSerif: ['Source Serif 4', 'serif'],
