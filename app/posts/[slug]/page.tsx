@@ -32,7 +32,7 @@ const PostPage: React.FC<PostPageProps> = (props) => {
   const post = getPostContent(slug);
   return (
     <div className='flex flex-col items-center'>
-      <article className='prose dark:prose-invert mt-32'>
+      <article className='prose dark:prose-invert mt-32 max-w-[80%] md:w-1/2'>
         <h1 className='text-center font-sourceSerif'>{post.data.title}</h1>
         <Markdown>{post.content}</Markdown>
       </article>
