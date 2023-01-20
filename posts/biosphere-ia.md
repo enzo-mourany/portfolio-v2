@@ -2,10 +2,10 @@
 title: "Biosphere7 AI"
 subtitle: "Game AI - Plant"
 date: "2022"
-pinned: true
+pinned: false
 techs: ["Java"]
 role: "Developer"
-githubLink: "https://github.com/"
+githubLink: "https://github.com/enzo-mourany/Biosphere7-AI"
 type: "Game AI"
 ---
 
