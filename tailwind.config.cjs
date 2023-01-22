@@ -36,7 +36,7 @@ module.exports = {
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.xl'),
               lineHeight: theme('lineHeight.tight'),
-              letterSpacing: theme('letterSpacing.tight'),
+              letterSpacing: theme('letterSpacing.medium'),
               textTransform: 'uppercase',
               '@screen sm': {
                 fontSize: theme('fontSize.2xl'),
@@ -63,6 +63,16 @@ module.exports = {
               },
               '@screen lg': {
                 fontSize: theme('fontSize.2xl'),
+              },
+            },
+            p: {
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: theme('fontSize.sm'),
+              lineHeight: theme('lineHeight.relaxed'),
+              letterSpacing: theme('letterSpacing.wide'),
+              textTransform: 'none',
+              '@screen sm': {
+                fontSize: theme('fontSize.base'),
               },
             },
           },
