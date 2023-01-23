@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
       <head />
-      <body className='bg-white dark:bg-zinc-900'>
+      <body className='bg-zinc-900'>
         <div>
           {menu}
           {header}
