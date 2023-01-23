@@ -11,18 +11,18 @@
         @apply antialiased;
     }
     p {
-        @apply text-black dark:text-white font-manrope;
+        @apply text-white font-manrope;
     }
     a {
-        @apply text-black dark:text-white font-manrope;
+        @apply text-white font-manrope;
     }
     span {
-        @apply text-black dark:text-white font-manrope;
+        @apply text-white font-manrope;
     }
     h1 {
-        @apply text-black dark:text-white font-manrope;
+        @apply text-white font-manrope;
     }
     h2 {
-        @apply text-black dark:text-white font-manrope;
+        @apply text-white font-manrope;
     }
 }

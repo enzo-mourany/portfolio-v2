@@ -21,8 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   const header = (
-    <header>
-      <div className='flex flex-row justify-between items-center fixed z-10 w-full text-center p-6 xs:p-8'>
+    <header className='flex justify-center'>
+      <div className='flex flex-row justify-between items-center fixed z-10 w-5/6 text-center p-6 xs:p-8'>
         <div className='w-1/2 xs:w-48 text-left sm:text-center'>
           <Link href='/'>
             <p className='text-white text-sm sm:text-xl font-normal'>Enzo Mourany</p>
