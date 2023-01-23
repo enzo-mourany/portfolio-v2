@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
 import LinkBox from '../components/LinkBox';
+import LineButton from '../components/input/LineButton';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className='hidden sm:block w-48'>
           <p className='text-white text-sm font-extralight uppercase'>Portfolio ©2023</p>
         </div>
-        <div className='flex justify-end sm:justify-center w-1/2 xs:w-48' onClick={() => toggleMenu()}>
-          <Hamburger isMenuOpen={isMenuOpen} />
+        <div className='flex justify-around items-center sm:justify-center w-1/2 xs:w-52 gap-2'>
+          <LineButton text='Project Request' />
+          <div onClick={() => toggleMenu()}>
+            <Hamburger isMenuOpen={isMenuOpen} />
+          </div>
         </div>
       </div>
     </header>
