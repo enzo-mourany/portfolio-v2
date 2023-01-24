@@ -15,6 +15,7 @@ module.exports = {
               },
             },
             h1: {
+              color: theme('colors.white'),
               fontFamily: theme('fontFamily.sourceSerif'),
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.2xl'),
@@ -32,6 +33,7 @@ module.exports = {
               },
             },
             h2: {
+              color: theme('colors.white'),
               fontFamily: theme('fontFamily.sourceSerif'),
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.xl'),
@@ -49,6 +51,7 @@ module.exports = {
               },
             },
             h3: {
+              color: theme('colors.white'),
               fontFamily: theme('fontFamily.sourceSerif'),
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.2xl'),
@@ -66,6 +69,7 @@ module.exports = {
               },
             },
             p: {
+              color: theme('colors.white'),
               fontWeight: theme('fontWeight.normal'),
               fontSize: theme('fontSize.sm'),
               lineHeight: theme('lineHeight.relaxed'),
