@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const header = (
     <header className='flex justify-center'>
-      <div className='flex flex-row justify-between items-center fixed z-10 w-11/12 text-center p-6 xs:p-8 bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0'>
+      <div className='flex flex-row justify-between items-center fixed z-10 w-full text-center px-16 py-8 bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0'>
         <div className='w-1/2 xs:w-48 text-left sm:text-center'>
           <Link href='/'>
             <p className='text-white text-sm sm:text-xl font-normal font-cormorant uppercase'>Enzo Mourany</p>
