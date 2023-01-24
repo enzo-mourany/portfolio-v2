@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
+import { AnalyticsWrapper } from './components/analytics';
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
 import LinkBox from '../components/LinkBox';
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {menu}
           {header}
           {children}
+          <AnalyticsWrapper />
         </div>
       </body>
     </html>

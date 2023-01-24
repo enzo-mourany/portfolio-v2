@@ -16,6 +16,7 @@
     "@trpc/next": "^10.7.0",
     "@trpc/react-query": "^10.7.0",
     "@trpc/server": "^10.7.0",
+    "@vercel/analytics": "^0.1.8",
     "framer-motion": "^8.4.2",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
