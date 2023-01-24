@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 import styles from '../styles/Contact.module.scss';
 
@@ -26,6 +27,7 @@ const Contact: React.FC = () => {
         <a href='https://github.com/enzo-mourany'>GitHub</a>
         <a href='https://www.linkedin.com/in/enzo-mourany/'>LinkedIn</a>
         <a href='#'>Privacy & Terms</a>
+        <Link href='/request'><p>Project Request</p></Link>
       </div>
     </div>
   )
