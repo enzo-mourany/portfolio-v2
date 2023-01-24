@@ -23,17 +23,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const header = (
     <header className='flex justify-center'>
-      <div className='flex flex-row justify-between items-center fixed z-10 w-5/6 text-center p-6 xs:p-8'>
+      <div className='flex flex-row justify-between items-center fixed z-10 w-11/12 text-center p-6 xs:p-8 bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0'>
         <div className='w-1/2 xs:w-48 text-left sm:text-center'>
           <Link href='/'>
-            <p className='text-white text-sm sm:text-xl font-normal'>Enzo Mourany</p>
+            <p className='text-white text-sm sm:text-xl font-normal font-cormorant uppercase'>Enzo Mourany</p>
           </Link>
         </div>
         <div className='hidden sm:block w-48'>
           <p className='text-white text-sm font-extralight uppercase'>Portfolio ©2023</p>
         </div>
         <div className='flex justify-around items-center sm:justify-center w-1/2 xs:w-52 gap-2'>
-          <LineButton text='Project Request' />
+          <Link href='/request'>
+            <LineButton text='Project Request' />
+          </Link>
           <div onClick={() => toggleMenu()}>
             <Hamburger isMenuOpen={isMenuOpen} />
           </div>
