@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
       <div className={styles.links}>
         <a href='https://github.com/enzo-mourany'>GitHub</a>
         <a href='https://www.linkedin.com/in/enzo-mourany/'>LinkedIn</a>
-        <a href='#'>Privacy & Terms</a>
+        <a href='/privacy'>Privacy & Terms</a>
         <Link href='/request'><p>Project Request</p></Link>
       </div>
     </div>
