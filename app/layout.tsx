@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-import { AnalyticsWrapper } from './components/analytics';
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
 import LinkBox from '../components/LinkBox';
 import LineButton from '../components/input/LineButton';
+
+import { AnalyticsWrapper } from './components/analytics';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
