@@ -15,7 +15,6 @@
         align-items: center;
         width: 100%;
         .contact__header {
-            background-color: red;
             width: 100%;
             .contact__header__title {
                 text-align: center;
@@ -26,17 +25,29 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            background-color: green;
             width: 100%;
             padding-top: 6rem;
             padding-bottom: 6rem;
+            @include tablet {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
             .contact__hero__left {
-                background-color: purple;
                 width: 50%;
+                @include mobile {
+                    padding-bottom: 2rem;
+                }
                 .contact__hero__subtitle {
                     font-size: 7vw;
                     font-weight: 400;
                     margin-bottom: 10px;
+                    @include mobile {
+                        text-align: center;
+                    }
                 }
             }
             .contact__hero__right {
@@ -50,15 +61,30 @@
                             font-size: 1.5rem;
                             font-weight: 400;
                             margin-bottom: 10px;
+                            @include tablet {
+                                font-size: 1rem;
+                            }
+                            @include mobile {
+                                text-align: center;
+                            }
                         }
                     }
                     .link__box__content {
                         ul {
+                            @include mobile {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                            }
                             li {
                                 a {
                                     font-size: 1.5rem;
                                     font-weight: 400;
                                     margin-bottom: 10px;
+                                    @include tablet {
+                                        font-size: 1rem;
+                                    }
                                 }
                             }
                         }
@@ -70,17 +96,31 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            background-color: blue;
             width: 100%;
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
             .contact__footer__left {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                @include mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
                 h3 {
                     font-size: 1.5rem;
                     font-weight: 400;
                     margin-bottom: 10px;
                     margin-right: 20px;
+                    opacity: 0.7;
+                    @include tablet {
+                        font-size: 1rem;
+                    }
+                    @include mobile {
+                        margin-right: 0;
+                    }
                 }
                 ul {
                     display: flex;
@@ -90,6 +130,10 @@
                         font-size: 1rem;
                         font-weight: 400;
                         margin-bottom: 10px;
+                        opacity: 0.5;
+                        @include tablet {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
@@ -100,6 +144,10 @@
                     font-size: 1rem;
                     font-weight: 400;
                     margin-bottom: 10px;
+                    opacity: 0.5;
+                    @include tablet {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
