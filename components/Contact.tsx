@@ -34,10 +34,10 @@ const Contact: React.FC = () => {
                     <a href='https://github.com/enzo-mourany' target='_blank' rel='noreferrer'>GitHub</a>
                   </li>
                   <li>
-                    <a href='#'>Calendly</a>
+                    <a href='https://calendly.com/enzomourany'>Calendly</a>
                   </li>
                   <li>
-                    <a href='#'>Project Request</a>
+                    <Link href='/request'><p>Project Request</p></Link>
                   </li>
                 </ul>
               </div>
