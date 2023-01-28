@@ -54,6 +54,7 @@ const Contact: React.FC = () => {
             </ul>
           </div>
           <div className={styles.contact__footer__right}>
+            <p>Copyright ©2023</p>
           </div>
         </div>
       </div>

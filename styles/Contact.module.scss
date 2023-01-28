@@ -2,11 +2,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import './responsive.scss';
 
-.contact {
+.contact__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
     top: -100px;
     margin-bottom: 30px;
+    .contact__wrapper {
+        .contact__header {
+            .contact__header__title {
+                
+            }
+        }
+        .contact__hero {
+            .contact__hero__left {
+                .contact__hero__subtitle {
+                    font-family: 'Source Serif 4', serif;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
+            .contact__hero__right {
+                .link__box {
+                    .link__box__header {
+                        .link__box__header__title {
+                            font-family: 'Source Serif 4', serif;
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .link__box__content {
+                        ul {
+                            li {
+                                a {
+                                    font-family: 'Source Serif 4', serif;
+                                    font-size: 1.5rem;
+                                    font-weight: 400;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact__footer {
+            .contact__footer__left {
+                h3 {
+                    font-family: 'Source Serif 4', serif;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    li {
+                        font-family: 'Source Serif 4', serif;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .contact__footer__right {
+                p {
+                    font-family: 'Source Serif 4', serif;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
 }
