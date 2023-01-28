@@ -25,4 +25,7 @@
     h2 {
         @apply text-white font-manrope;
     }
+    h3 {
+        @apply text-white font-manrope;
+    }
 }
