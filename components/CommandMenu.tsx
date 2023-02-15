@@ -6,7 +6,7 @@ interface CommandMenuProps {
 }
 
 const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
-  const router = useRouter();
+  //const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -17,27 +17,19 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'k' && event.metaKey) {
-        setIsOpen(true);
-      }
-    };
-
-    const handleKeyUp = (event: KeyboardEvent) => {
-      if (event.key === 'k' && event.metaKey) {
-        setIsOpen(false);
+        setIsOpen(!isOpen);
       }
     };
 
     document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('keyup', handleKeyUp);
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('keyup', handleKeyUp);
     };
   }, []);
 
   const handlePageClick = (path: string) => {
-    router.push(path);
+    //router.push(path);
     setIsOpen(false);
   };
 
