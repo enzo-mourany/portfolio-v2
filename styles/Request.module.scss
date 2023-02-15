@@ -1,21 +1,21 @@
 @import './responsive.scss';
 
 .request__container {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
   padding-top: 5rem;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   @include tablet {
     padding-top: 2rem;
   }
   .request__wrapper {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    display: flex;
     .form__container {
       border: 1px solid rgba(255, 255, 255, 0.4);
       border-radius: 20px;
@@ -23,13 +23,13 @@
         width: 80%;
       }
       .form {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding: 2rem;
         align-items: center;
+        justify-content: center;
         position: relative;
         gap: 30px;
-        padding: 2rem;
+        display: flex;
         @include tablet {
           gap: 15px;
           padding: 1.5rem;
