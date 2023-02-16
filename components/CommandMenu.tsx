@@ -26,7 +26,7 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [isOpen]);
 
   const handlePageClick = (path: string) => {
     //router.push(path);
@@ -36,7 +36,7 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
   return (
     <>
       {isOpen && (
-        <div>
+        <div className='w-fit h-auto fixed z-10 top-1/2 left-1/2 bg-zinc-800 border-zinc-500 border-2 rounded-lg'>
           <input
             type='text'
             placeholder='Search pages'

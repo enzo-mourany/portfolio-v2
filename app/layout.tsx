@@ -8,6 +8,7 @@ import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
 import LinkBox from '../components/LinkBox';
 import LineButton from '../components/input/LineButton';
+import CommandMenu from '../components/CommandMenu';
 
 import { AnalyticsWrapper } from './components/analytics';
 
@@ -22,6 +23,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     open: { display: 'flex', opacity: 1 },
     closed: { opacity: 0, transitionEnd: { display: 'none' } },
   };
+
+  const pages = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Contact', path: '/contact' },
+  ];
 
   const header = (
     <header className='flex justify-center'>
@@ -64,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body className='bg-zinc-900'>
         <div>
+          <CommandMenu pages={pages} />
           {menu}
           {header}
           {children}
