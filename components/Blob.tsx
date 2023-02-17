@@ -27,6 +27,10 @@ export const Blob = () => {
     };
   }, []);
 
+  if (window.innerWidth <= 768) {
+    return null;
+  }
+
   return (
     <>
       <div id='blob' className={styles.blob}></div>

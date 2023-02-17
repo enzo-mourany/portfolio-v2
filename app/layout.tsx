@@ -9,6 +9,7 @@ import Hamburger from '../components/input/Hamburger';
 import LinkBox from '../components/LinkBox';
 import LineButton from '../components/input/LineButton';
 import CommandMenu from '../components/CommandMenu';
+import { Blob } from '../components/Blob';
 
 import { AnalyticsWrapper } from './components/analytics';
 
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {menu}
           {header}
           {children}
+          <Blob />
           <AnalyticsWrapper />
         </div>
       </body>

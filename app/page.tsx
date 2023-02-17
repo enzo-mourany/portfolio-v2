@@ -5,7 +5,6 @@ import PostPreview from '../components/PostPreview';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import ScrollingText from '../components/ScrollingText';
-import { Blob } from '../components/Blob';
 import HomePage from './HomePage';
 
 const Page = () => {
@@ -14,19 +13,16 @@ const Page = () => {
     <PostPreview key={post.slug} {...post} />
   ));
   return (
-    <>
-      <div className='flex flex-col items-center bg-zinc-900'>
-        <HomePage />
-        <About />
-        <ScrollingText text='works' />
-        <div className='flex flex-col items-end w-11/12 mb-80 mt-32'>
-          {postPreview}
-        </div>
-        <ScrollingText text='contact' />
-        <Contact />
+    <div className='flex flex-col items-center bg-zinc-900'>
+      <HomePage />
+      <About />
+      <ScrollingText text='works' />
+      <div className='flex flex-col items-end w-11/12 mb-80 mt-32'>
+        {postPreview}
       </div>
-      <Blob />
-    </>
+      <ScrollingText text='contact' />
+      <Contact />
+    </div>
   )
 };
 
