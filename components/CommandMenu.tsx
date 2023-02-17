@@ -29,7 +29,6 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
   }, [isOpen]);
 
   const handlePageClick = (path: string) => {
-    //router.push(path);
     setIsOpen(false);
   };
 
