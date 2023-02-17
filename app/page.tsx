@@ -5,6 +5,7 @@ import PostPreview from '../components/PostPreview';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import ScrollingText from '../components/ScrollingText';
+import { Blob } from '../components/Blob';
 import HomePage from './HomePage';
 
 const Page = () => {
@@ -14,6 +15,7 @@ const Page = () => {
   ));
   return (
     <div className='flex flex-col items-center bg-zinc-900'>
+      <Blob />
       <HomePage />
       <About />
       <ScrollingText text='works' />
