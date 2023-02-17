@@ -13,8 +13,10 @@ export const Blob = () => {
       const { clientX, clientY } = event;
 
       if (blob) {
-        blob.style.left = `${clientX}px`;
-        blob.style.top = `${clientY}px`;
+        blob.animate({
+          left: `${clientX}px`,
+          top: `${clientY}px`,
+        }, { duration: 3000, fill: 'forwards' });
       }
     };
 
@@ -26,6 +28,9 @@ export const Blob = () => {
   }, []);
 
   return (
-    <div id='blob' className={styles.blob}></div>
+    <>
+      <div id='blob' className={styles.blob}></div>
+      <div id='blur' className={styles.blur}></div>
+    </>
   );
 };

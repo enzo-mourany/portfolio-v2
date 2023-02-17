@@ -11,4 +11,25 @@
     aquamarine,
     mediumpurple
   );
+  animation: rotate 20s infinite;
+  filter: blur(200px);
+}
+.blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(200px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    scale: 1 1.5;
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

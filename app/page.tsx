@@ -14,17 +14,19 @@ const Page = () => {
     <PostPreview key={post.slug} {...post} />
   ));
   return (
-    <div className='flex flex-col items-center bg-zinc-900'>
-      <Blob />
-      <HomePage />
-      <About />
-      <ScrollingText text='works' />
-      <div className='flex flex-col items-end w-11/12 mb-80 mt-32'>
-        {postPreview}
+    <>
+      <div className='flex flex-col items-center bg-zinc-900'>
+        <HomePage />
+        <About />
+        <ScrollingText text='works' />
+        <div className='flex flex-col items-end w-11/12 mb-80 mt-32'>
+          {postPreview}
+        </div>
+        <ScrollingText text='contact' />
+        <Contact />
       </div>
-      <ScrollingText text='contact' />
-      <Contact />
-    </div>
+      <Blob />
+    </>
   )
 };
 
