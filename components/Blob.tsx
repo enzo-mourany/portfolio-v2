@@ -1,10 +1,29 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from '../styles/Blob.module.scss';
 
 export const Blob = () => {
+
+  const [isDisplayed, setIsDisplayed] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsDisplayed(false);
+      } else {
+        setIsDisplayed(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const blob = document.getElementById('blob');
@@ -27,7 +46,7 @@ export const Blob = () => {
     };
   }, []);
 
-  if (window.innerWidth <= 768) {
+  if (!isDisplayed) {
     return null;
   }
 
