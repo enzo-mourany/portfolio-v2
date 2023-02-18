@@ -44,9 +44,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p className='text-white text-sm font-extralight uppercase'>Portfolio ©2023</p>
         </div>
         <div className='flex justify-end md:justify-around items-center sm:justify-center w-1/2 xs:w-52 gap-2'>
-          <Link href='/request' className='hidden md:block'>
-            <LineButton text='Project Request' />
-          </Link>
           <div onClick={() => toggleMenu()}>
             <Hamburger isMenuOpen={isMenuOpen} />
           </div>

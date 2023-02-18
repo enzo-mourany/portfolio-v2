@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 2.1 } }}
           >
-            <Link href='/contact'>
+            <Link href='/request'>
               <LineButton text="Let's Talk" />
             </Link>
           </motion.div>
