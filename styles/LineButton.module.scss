@@ -7,17 +7,18 @@
     cursor: pointer;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 25px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     transition: all 0.2s ease-in-out;
     .button_text {
         color: #fff;
         position: relative;
+        font-weight: 600;
     }
     .button_text_hover {
         color: #fff;
         position: relative;
-        font-family: 'Source Serif 4', serif;
         top: -30px;
+        font-weight: 600;
         opacity: 0;
     }
     &:hover {
