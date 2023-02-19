@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 import type { PrivacyPolicyPageProps } from '../../../interfaces/PrivacyPolicy';
 
 const getMarkdownContent = (): PrivacyPolicyPageProps => {
-  const folder = 'app/privacy/' as string;
+  const folder = 'app/legal/privacy-policy/' as string;
   const file = 'privacy.md' as string;
   const path = `${folder}${file}` as string;
   const content = fs.readFileSync(path, 'utf8') as string;
