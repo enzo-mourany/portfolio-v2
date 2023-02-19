@@ -1,8 +1,8 @@
-import React from 'react';
+import type { NextPage } from 'next';
 
-import styles from '../../styles/Request.module.scss';
+import styles from '../../../styles/Request.module.scss';
 
-const Page: React.FC = () => {
+const Page: NextPage = () => {
   return (
     <div className={styles.request__container}>
       <div className={styles.request__wrapper}>
