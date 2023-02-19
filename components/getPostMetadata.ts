@@ -6,7 +6,7 @@ import type { PostMetadata } from '../interfaces/PostMetadata';
 const getPostMetadata = (): PostMetadata[] => {
   const folder = 'posts/' as string;
   const files = fs.readdirSync(folder) as string[];
-  const markdownPosts = files.filter((file) => file.endsWith('.md')) as string[];
+  const markdownPosts = files.filter((file: string) => file.endsWith('.md')) as string[];
 
   const posts = markdownPosts.map((fileName: string): PostMetadata => {
     const fileContent: string = fs.readFileSync(`${folder}${fileName}`, 'utf8');
