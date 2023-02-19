@@ -1,8 +1,7 @@
 import '../styles/globals.css';
 
+import type { PostMetadata } from '../interfaces/PostMetadata';
 import ProjectBox from './ProjectBox';
-
-import type { PostMetadata } from './PostMetadata';
 
 const postPreview = (props: PostMetadata) => {
   return (

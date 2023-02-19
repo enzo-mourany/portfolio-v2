@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 
-import type { PostMetadata } from './PostMetadata';
+import type { PostMetadata } from '../interfaces/PostMetadata';
 
 const getPostMetadata = (): PostMetadata[] => {
   const folder = 'posts/';
