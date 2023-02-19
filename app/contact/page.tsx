@@ -4,7 +4,7 @@ import styles from '../../styles/ContactPage.module.scss';
 
 import Contact from '../../components/Contact';
 
-const ProjectRequest: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <div className={styles.contact__container}>
       <div className={styles.contact__wrapper}>
@@ -14,4 +14,4 @@ const ProjectRequest: NextPage = () => {
   );
 };
 
-export default ProjectRequest;
+export default AboutPage;
