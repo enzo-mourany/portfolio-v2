@@ -1,6 +1,4 @@
-import type { NextPage } from 'next';
-
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <div>
       <h1>404</h1>

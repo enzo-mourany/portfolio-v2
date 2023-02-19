@@ -1,6 +1,4 @@
-import type { NextPage } from 'next'
-
-const Terms: NextPage = () => {
+const Terms = () => {
   return (
     <div>
       <h1>Terms of Use</h1>
