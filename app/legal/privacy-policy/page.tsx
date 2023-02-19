@@ -3,16 +3,21 @@ import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 
-const getMarkdownContent = () => {
-  const folder = 'app/privacy/';
-  const file = 'privacy.md';
-  const path = `${folder}${file}`;
-  const content = fs.readFileSync(path, 'utf8');
-  const { data, content: md } = matter(content);
+import type { PrivacyPolicyPageProps } from '../../../interfaces/PrivacyPolicy';
+
+const getMarkdownContent = (): PrivacyPolicyPageProps => {
+  const folder = 'app/privacy/' as string;
+  const file = 'privacy.md' as string;
+  const path = `${folder}${file}` as string;
+  const content = fs.readFileSync(path, 'utf8') as string;
+  const { data, content: md } = matter(content) as {
+    data: { [key: string]: string };
+    content: string;
+  };
   return { data, md };
 };
 
-const Page: React.FC = () => {
+const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className='flex flex-col items-center'>
       <article className='prose mt-32 max-w-[80%] md:w-1/2'>
@@ -24,4 +29,4 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default PrivacyPolicyPage;
