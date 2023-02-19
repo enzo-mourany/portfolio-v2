@@ -1,8 +1,8 @@
 import fs from 'fs';
-import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 
+import type { NextPage } from 'next';
 import type { PrivacyPolicyPageProps } from '../../../interfaces/PrivacyPolicy';
 
 const getMarkdownContent = (): PrivacyPolicyPageProps => {
@@ -17,7 +17,7 @@ const getMarkdownContent = (): PrivacyPolicyPageProps => {
   return { data, md };
 };
 
-const PrivacyPolicyPage: React.FC = () => {
+const PrivacyPolicyPage: NextPage = () => {
   return (
     <div className='flex flex-col items-center'>
       <article className='prose mt-32 max-w-[80%] md:w-1/2'>

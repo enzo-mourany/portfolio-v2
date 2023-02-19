@@ -7,14 +7,13 @@ import { motion } from 'framer-motion';
 import '../styles/globals.css';
 import Hamburger from '../components/input/Hamburger';
 import LinkBox from '../components/LinkBox';
-import CommandMenu from '../components/CommandMenu';
 
 import { AnalyticsWrapper } from '../components/analytics';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -23,14 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     closed: { opacity: 0, transitionEnd: { display: 'none' } },
   };
 
-  const pages = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
-  ];
-
-  const header = (
+  const header: JSX.Element = (
     <header className='flex justify-center'>
       <div className='flex flex-row justify-between items-center fixed z-10 w-full text-center px-16 py-8'>
         <div className='w-1/2 xs:w-48 text-left sm:text-center'>
@@ -50,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </header>
   );
 
-  const menu = (
+  const menu: JSX.Element = (
     <motion.div
       className='hidden flex-col justify-center items-center fixed z-10 w-full h-full bg-black opacity-50'
       variants={variants}
@@ -68,7 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body className='bg-zinc-900'>
         <div>
-          <CommandMenu pages={pages} />
           {menu}
           {header}
           {children}

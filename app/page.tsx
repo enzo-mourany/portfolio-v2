@@ -5,11 +5,12 @@ import PostPreview from '../components/PostPreview';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import ScrollingText from '../components/ScrollingText';
+import type { PostMetadata } from '../interfaces/PostMetadata';
 import HomePage from './HomePage';
 
 const Page = () => {
-  const postMetadata = getPostMetadata();
-  const postPreview = postMetadata.map((post) => (
+  const postMetadata: PostMetadata[] = getPostMetadata();
+  const postPreview: JSX.Element[] = postMetadata.map((post: PostMetadata) => (
     <PostPreview key={post.slug} {...post} />
   ));
   return (
