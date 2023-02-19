@@ -1,8 +1,7 @@
 import React from 'react';
 
-import ProjectBox from './ProjectBox';
-
 import type { PostMetadata } from '../interfaces/PostMetadata';
+import ProjectBox from './ProjectBox';
 
 const SelectedProjects: React.FC<PostMetadata> = (props: PostMetadata) => {
   return (

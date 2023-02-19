@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 
 interface CommandMenuProps {
   pages: { name: string; path: string }[];
@@ -28,7 +27,7 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
     };
   }, [isOpen]);
 
-  const handlePageClick = (path: string) => {
+  const handlePageClick = () => {
     setIsOpen(false);
   };
 
@@ -44,7 +43,7 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ pages }) => {
           />
           <ul>
             {filteredPages.map((page) => (
-              <li key={page.path} onClick={() => handlePageClick(page.path)}>
+              <li key={page.path} onClick={() => handlePageClick()}>
                 {page.name}
               </li>
             ))}

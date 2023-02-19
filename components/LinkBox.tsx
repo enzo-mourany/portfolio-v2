@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -21,10 +21,10 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     threshold: 0
   });
 
-  const [isHomeVisible, setIsHomeVisible] = useState(false);
-  const [isAboutVisible, setIsAboutVisible] = useState(false);
-  const [isWorksVisible, setIsWorksVisible] = useState(false);
-  const [isContactVisible, setIsContactVisible] = useState(false);
+  const [isHomeVisible, setIsHomeVisible] = useState<boolean>(false);
+  const [isAboutVisible, setIsAboutVisible] = useState<boolean>(false);
+  const [isWorksVisible, setIsWorksVisible] = useState<boolean>(false);
+  const [isContactVisible, setIsContactVisible] = useState<boolean>(false);
 
   useEffect(() => {
     if (inView) {
@@ -46,7 +46,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     link: string;
   }
 
-  const Box = ({ title, subtitle, link }: BoxProps) => {
+  const Box = ({ title, subtitle, link }: BoxProps): JSX.Element => {
     return (
       <Link
         className={styles.linkbox__container}
