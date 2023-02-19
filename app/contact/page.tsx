@@ -1,10 +1,10 @@
-import React from 'react';
+import type { NextPage } from 'next';
 
 import styles from '../../styles/ContactPage.module.scss';
 
 import Contact from '../../components/Contact';
 
-const Page: React.FC = () => {
+const ProjectRequest: NextPage = () => {
   return (
     <div className={styles.contact__container}>
       <div className={styles.contact__wrapper}>
@@ -14,4 +14,4 @@ const Page: React.FC = () => {
   );
 };
 
-export default Page;
+export default ProjectRequest;
