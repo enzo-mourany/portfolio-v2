@@ -5,6 +5,15 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/404',
+        permanent: false,
+      },
+    ]
+  },
 };
 
 export default nextConfig;
