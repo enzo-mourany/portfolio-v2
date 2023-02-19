@@ -48,8 +48,8 @@ const Contact: React.FC = () => {
           <div className={styles.contact__footer__left}>
             <h3>Ressources</h3>
             <ul>
-              <li><Link href='/'>Privacy Policy</Link></li>
-              <li><Link href='/'>Terms and Conditions</Link></li>
+              <li><Link href='/legal/privacy-policy'>Privacy Policy</Link></li>
+              <li><Link href='/legal/terms-of-use'>Terms and Conditions</Link></li>
               <li><Link href='/'>Blog</Link></li>
             </ul>
           </div>
