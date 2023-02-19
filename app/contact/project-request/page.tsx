@@ -1,8 +1,6 @@
-import type { NextPage } from 'next';
-
 import styles from '../../../styles/Request.module.scss';
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <div className={styles.request__container}>
       <div className={styles.request__wrapper}>
