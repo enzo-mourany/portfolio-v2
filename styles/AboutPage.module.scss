@@ -78,6 +78,7 @@
           align-items: center;
           justify-content: space-between;
           border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          width: 100%;
           padding: 50px;
           @include tablet {
             flex-direction: column;
