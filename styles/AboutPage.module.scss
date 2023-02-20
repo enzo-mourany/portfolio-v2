@@ -34,32 +34,46 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 120px;
+        h2 {
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 100;
+          text-align: center;
+          line-height: 1;
+        }
+      }
       .objectivs {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 100px;
-        gap: 300px;
-        @include laptop {
-          gap: 90px;
-        }
-        @include tablet {
-          gap: 70px;
-        }
         .content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 50px;
           h2 {
-            font-size: 2vw;
-            line-height: 1;
+            font-size: 1rem;
             text-transform: uppercase;
-            margin-bottom: 100px;
           }
           p {
-            width: 65%;
-            //font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-            font-family: 'garamond', serif;
-            font-size: 4.5vw;
+            width: 60%;
+            font-size: 1.4rem;
             font-weight: 100;
-            text-transform: uppercase;
             text-align: center;
             line-height: 1;
             @include tablet {

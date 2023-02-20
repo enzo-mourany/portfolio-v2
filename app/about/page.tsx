@@ -14,10 +14,15 @@ const Page: React.FC = () => {
           </div>
         </div>
         <div className={styles.course}>
-          <div className={styles.objectivs}>
+          <div className={styles.presentation}>
             <h2>Creating beautiful and fast websites and mobile applications is something that I am truly passionate about</h2>
             <p>Hi! I'm a passionate web and mobile developer who loves creating innovative and modern websites and mobile applications. My goal is to help businesses go digital by providing them with superior digital solutions. I am very detail-oriented and enjoy creating unique and custom designs for each project.</p>
-            <p>My development skills include using JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, Sass, Tailwind CSS and Java. I love using the latest technologies to create fast, user-friendly and responsive websites and mobile applications.</p>
+          </div>
+          <div className={styles.objectivs}>
+            <div className={styles.content}>
+              <h2>Hardskills</h2>
+              <p>My development skills include using JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, Sass, Tailwind CSS and Java. I love using the latest technologies to create fast, user-friendly and responsive websites and mobile applications.</p>
+            </div>
             <div className={styles.content}>
               <h2>Creating innovative and handcrafted websites</h2>
               <p>I believe that every website is unique and should be treated as such. That's why I take the time to understand each client's needs and create a custom design that reflects their business and vision. My handcrafted approach ensures that every website I create is unique and memorable.</p>
