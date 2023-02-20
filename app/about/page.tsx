@@ -24,7 +24,7 @@ const Page: React.FC = () => {
               <p>My development skills include using JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, Sass, Tailwind CSS and Java. I love using the latest technologies to create fast, user-friendly and responsive websites and mobile applications.</p>
             </div>
             <div className={styles.content}>
-              <h2>Creating innovative and handcrafted websites</h2>
+              <h2>Creating innovative websites</h2>
               <p>I believe that every website is unique and should be treated as such. That's why I take the time to understand each client's needs and create a custom design that reflects their business and vision. My handcrafted approach ensures that every website I create is unique and memorable.</p>
             </div>
             <div className={styles.content}>
