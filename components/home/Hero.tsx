@@ -1,9 +1,25 @@
 import React from 'react';
+import Link from 'next/Link';
 
 import styles from '../../styles/Hero.module.scss';
 
+import LineButton from '../input/LineButton';
+
 export const Hero: React.FC = () => (
   <section className={styles.container}>
-
+    <div className={styles.titles}>
+      <h1 className={styles.main__title}>Frontend web and web mobile developer</h1>
+      <h3 className={styles.subtitle}>Hi, I am Enzo Mourany</h3>
+    </div>
+    <div className={styles.description}>
+      <p>
+        I create inclusive, accessible digital products, with experience working with startups and enterprise products.
+      </p>
+    </div>
+    <div className={styles.buttons}>
+      <Link href='/contact'>
+        <LineButton text="Let's talk" />
+      </Link>
+    </div>
   </section>
 );

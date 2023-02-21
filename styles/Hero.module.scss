@@ -3,4 +3,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  gap: 30px;
+  .titles {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    .main__title {
+      font-weight: 400;
+      font-size: 6rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      word-break: break-word;
+      text-align: center;
+    }
+    .subtitle {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      opacity: 0.5;
+      text-align: center;
+    }
+  }
+  .description {
+    width: 30%;
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      opacity: 0.5;
+      word-break: break-all;
+      text-align: center;
+    }
+  }
 }
