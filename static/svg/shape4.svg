@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1208" height="1452" fill="none" viewBox="0 0 1208 1452">
+<svg xmlns="http://www.w3.org/2000/svg" width="1207" height="961" fill="none" viewBox="0 0 1207 961">
   <g filter="url(#a)">
-    <path fill="#4F6C9D" d="M371.064 325.878c57.035-110.23 381.291 168.263 536.29 321.289-96.666 134.54-305.845 421.053-369.231 490.763-79.233 87.14-167.434-258.828-227.887-382.917-60.453-124.088 185.015-64.701 227.567-150.49 42.553-85.789-238.033-140.856-166.739-278.645Z"/>
+    <path fill="#4F6C9D" d="M370.352-165.121c57.036-110.231 381.291 168.263 536.29 321.289-96.666 134.54-305.845 421.049-369.231 490.761-79.233 87.14-167.434-258.827-227.887-382.915-60.453-124.089 185.015-64.701 227.567-150.49 42.553-85.79-238.033-140.857-166.739-278.645Z"/>
   </g>
   <defs>
-    <filter id="a" width="1206.64" height="1451.12" x=".713" y=".713" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+    <filter id="a" width="1206.64" height="1451.12" x=".001" y="-490.287" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur result="effect1_foregroundBlur_208_3054" stdDeviation="150"/>
+      <feGaussianBlur result="effect1_foregroundBlur_204_2646" stdDeviation="150"/>
     </filter>
   </defs>
 </svg>

@@ -6,7 +6,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import ScrollingText from '../components/ScrollingText';
 import type { PostMetadata } from '../interfaces/PostMetadata';
-import { OptimizedShape1 } from '../components/background/OptimizedSVG';
+import * as OSVG from '../components/background/OptimizedSVG';
 import HomePage from './HomePage';
 
 const Page = () => {
@@ -16,7 +16,12 @@ const Page = () => {
   ));
   return (
     <div className='flex flex-col items-center bg-zinc-900'>
-      <OptimizedShape1 />
+      <OSVG.OptimizedNoise />
+      <OSVG.OptimizedShape1 />
+      <OSVG.OptimizedShape2 />
+      <OSVG.OptimizedShape3 />
+      <OSVG.OptimizedShape4 />
+      <OSVG.OptimizedShape5 />
       <HomePage />
       <About />
       <ScrollingText text='works' />
