@@ -5,6 +5,7 @@ import PostPreview from '../components/PostPreview';
 
 import type { PostMetadata } from '../interfaces/PostMetadata';
 import { HomeBackground } from '../components/background/HomeBackground';
+import { Hero } from '../components/home/Hero';
 
 const Page = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
@@ -16,6 +17,7 @@ const Page = () => {
     <>
       <HomeBackground />
       <div className={styles.container}>
+        <Hero />
       </div>
     </>
   )
