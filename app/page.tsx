@@ -1,14 +1,10 @@
 import '../styles/globals.css';
-import styles from '../styles/HomePage.module.css';
+import styles from '../styles/HomePage.module.scss';
 import getPostMetadata from '../components/getPostMetadata';
 import PostPreview from '../components/PostPreview';
 
-import About from '../components/About';
-import Contact from '../components/Contact';
-import ScrollingText from '../components/ScrollingText';
 import type { PostMetadata } from '../interfaces/PostMetadata';
 import { HomeBackground } from '../components/background/HomeBackground';
-import HomePage from './HomePage';
 
 const Page = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
@@ -19,6 +15,8 @@ const Page = () => {
   return (
     <>
       <HomeBackground />
+      <div className={styles.container}>
+      </div>
     </>
   )
 };
