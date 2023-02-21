@@ -31,7 +31,8 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "assets/svg/*.svg"
   ],
   "exclude": [
     "node_modules"
