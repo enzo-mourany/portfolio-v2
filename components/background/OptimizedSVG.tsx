@@ -66,9 +66,9 @@ export const OptimizedNoise: React.FC = () => (
     <Image
       priority
       src='/static/svg/noise.svg'
-      height={1518}
-      width={4068}
-      alt='Shape 5'
+      height={1899}
+      width={960}
+      alt='Noise'
     />
   </div>
 );
