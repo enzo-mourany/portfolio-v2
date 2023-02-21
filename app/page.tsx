@@ -7,7 +7,7 @@ import type { PostMetadata } from '../interfaces/PostMetadata';
 import { HomeBackground } from '../components/background/HomeBackground';
 import { Hero } from '../components/home/Hero';
 
-const Page = () => {
+const HomePage = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
   const postPreview: JSX.Element[] = postMetadata.map((post: PostMetadata) => (
     <PostPreview key={post.slug} {...post} />
@@ -23,4 +23,4 @@ const Page = () => {
   )
 };
 
-export default Page;
+export default HomePage;

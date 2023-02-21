@@ -1,3 +1,5 @@
+@import './responsive.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -13,13 +15,19 @@
     align-items: center;
     justify-content: center;
     width: 50%;
+    @include tablet {
+      width: 70%;
+    }
     .main__title {
       font-weight: 400;
-      font-size: 6rem;
+      font-size: 6vw;
       line-height: 1;
       margin-bottom: 0.5rem;
-      word-break: break-word;
+      word-wrap: normal;
       text-align: center;
+      @include tablet {
+        font-size: 7vw;
+      }
     }
     .subtitle {
       font-weight: 400;
@@ -32,14 +40,23 @@
   }
   .description {
     width: 30%;
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile {
+      width: 70%;
+    }
     p {
       font-weight: 400;
       font-size: 1.4rem;
       line-height: 1.2;
       margin-bottom: 0.5rem;
       opacity: 0.5;
-      word-break: break-all;
+      word-wrap: normal;
       text-align: center;
+      @include mobile {
+        font-size: 1.2rem;
+      }
     }
   }
 }
