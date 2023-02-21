@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import styles from '../styles/HomePage.module.css';
 import getPostMetadata from '../components/getPostMetadata';
 import PostPreview from '../components/PostPreview';
 
@@ -18,16 +19,6 @@ const Page = () => {
   return (
     <>
       <HomeBackground />
-      <div className='flex flex-col items-center'>
-        <HomePage />
-        <About />
-        <ScrollingText text='works' />
-        <div className='flex flex-col items-end w-11/12 mb-80 mt-32'>
-          {postPreview}
-        </div>
-        <ScrollingText text='contact' />
-        <Contact />
-      </div>
     </>
   )
 };
