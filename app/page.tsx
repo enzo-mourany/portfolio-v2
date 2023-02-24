@@ -7,6 +7,7 @@ import type { PostMetadata } from '../interfaces/PostMetadata';
 import { HomeBackground } from '../components/background/HomeBackground';
 import { Hero } from '../components/home/Hero';
 import { About } from '../components/home/About';
+import { Skills } from '../components/home/Skills';
 
 const HomePage = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
@@ -20,6 +21,7 @@ const HomePage = () => {
       <div className={styles.container}>
         <Hero />
         <About />
+        <Skills />
       </div>
     </>
   )
