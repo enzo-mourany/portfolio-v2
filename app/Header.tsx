@@ -1,11 +1,14 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 
 import Hamburger from '../components/input/Hamburger';
 
-export const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+interface HeaderProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: (isMenuOpen: boolean) => void;
+}
 
+export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen}) => {
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
