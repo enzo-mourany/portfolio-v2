@@ -1,0 +1,24 @@
+import React from 'react'
+
+import styles from '../../styles/About.module.scss';
+
+export const About: React.FC = () => {
+  return (
+    <section id='about' className={styles.container}>
+      <div className={styles.wrapper}>
+        <div className={styles.title}>
+          <div className={styles.roadmap__line}>
+            <div className={styles.icon}>
+            </div>
+            <div className={styles.line}>
+            </div>
+          </div>
+          <div className={styles.text}>
+            <h3 className={styles.text__title}>About Me</h3>
+            <h2 className={styles.text__description}>I am a developer web...</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
