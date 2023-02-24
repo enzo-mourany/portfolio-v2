@@ -5,9 +5,9 @@ import PostPreview from '../components/PostPreview';
 
 import type { PostMetadata } from '../interfaces/PostMetadata';
 import { HomeBackground } from '../components/background/HomeBackground';
-import Hero from '../components/home/Hero';
-import { About } from '../components/home/About';
-import { Skills } from '../components/home/Skills';
+import Hero from '../components/homepage/Hero';
+import { About } from '../components/homepage/About';
+import { Skills } from '../components/homepage/Skills';
 
 const HomePage = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
