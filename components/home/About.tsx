@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsFillPersonFill } from 'react-icons/bs';
 
 import styles from '../../styles/About.module.scss';
 
@@ -9,6 +10,8 @@ export const About: React.FC = () => {
         <div className={styles.title}>
           <div className={styles.roadmap__line}>
             <div className={styles.icon}>
+              <div className={styles.filter}></div>
+              <BsFillPersonFill style={{ color: '#fff', width: 25, height: 25, zIndex: 1 }} />
             </div>
             <div className={styles.line}>
             </div>
