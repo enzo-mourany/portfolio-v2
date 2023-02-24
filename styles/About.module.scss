@@ -6,15 +6,18 @@
         .title {
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            gap: 1rem;
+            gap: 3rem;
             .roadmap__line {
                 .icon {
 
                 }
                 .line {
-
+                    background: linear-gradient(#ffd6cc, #ec6547, #ec6547, #ec6547);
+                    transition-delay: 500ms;
+                    width: 3px;
+                    height: 500px;
                 }
             }
             .text {
@@ -35,7 +38,7 @@
                     span {
                         font-size: 3rem;
                         font-weight: 400;
-                        color: red;
+                        color: #ec6547;
                     }
                 }
             }
