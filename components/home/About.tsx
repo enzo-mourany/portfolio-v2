@@ -15,7 +15,9 @@ export const About: React.FC = () => {
           </div>
           <div className={styles.text}>
             <h3 className={styles.text__title}>About Me</h3>
-            <h2 className={styles.text__description}>I am a developer web...</h2>
+            <h2 className={styles.text__description}>
+              <span>Supercharge collaboration.</span> We provide unlimited repositories, best-in-class version control, and the world’s most powerful open source community—so your team can work more efficiently together.
+            </h2>
           </div>
         </div>
       </div>
