@@ -20,7 +20,7 @@
                     align-items: center;
                     justify-content: center;
                     .filter {
-                        background-color: #ffd6cc;
+                        background-color: #abb4ff;
                         filter: blur(18px);
                         width: 30px;
                         height: 30px;
@@ -28,7 +28,7 @@
                     }
                 }
                 .line {
-                    background: linear-gradient(#ffd6cc, #ec6547, #ec6547, #222222);
+                    background: linear-gradient(#abb4ff, #939aff, #939aff, #222222);
                     transition-delay: 500ms;
                     width: 3px;
                     height: 300px;
@@ -53,7 +53,7 @@
                     span {
                         font-size: 3rem;
                         font-weight: 400;
-                        color: #ec6547;
+                        color: #939aff;
                     }
                 }
                 p {

@@ -18,9 +18,9 @@ export const Skills: React.FC = () => {
           <div id='description' className={styles.text}>
             <h3 className={styles.text__title}>Skills</h3>
             <h2 className={styles.text__description}>
-              <span>My development skills</span> include using JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, Sass, Tailwind CSS and Java. I love using the latest technologies to create fast, user-friendly and responsive websites and mobile applications.
+              <span>Evolution and adaptability.</span> I use and stay informed on the latest technologies to develop efficient and easily maintainable applications and websites
             </h2>
-            <p>My goal is to help businesses go digital by providing them with superior digital solutions. I am very attentive to details and love to create unique and custom designs for each project.</p>
+            <p>My development skills include using JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, HTML, CSS, Sass, Tailwind CSS and Java. I love using the latest technologies to create fast, user-friendly and responsive websites and mobile applications.</p>
           </div>
         </div>
       </div>
