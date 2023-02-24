@@ -5,7 +5,7 @@ import styles from '../../styles/Hero.module.scss';
 
 import LineButton from '../input/LineButton';
 
-export const Hero: React.FC = () => (
+const Hero: React.FC = () => (
   <section className={styles.container} id='hero__container'>
     <div className={styles.titles}>
       <h1 className={styles.main__title} id='title'>Frontend web and web mobile developer</h1>
@@ -23,3 +23,5 @@ export const Hero: React.FC = () => (
     </div>
   </section>
 );
+
+export default Hero;
