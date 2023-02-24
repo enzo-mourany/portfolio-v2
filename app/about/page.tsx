@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from '../../styles/AboutPage.module.scss';
-import ScrollingText from '../../components/ScrollingText';
 import Contact from '../../components/Contact';
 
 const Page: React.FC = () => {
@@ -38,7 +37,6 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div>
-      <ScrollingText text='Contact' />
       <Contact />
     </div>
   );
