@@ -7,7 +7,6 @@ import { AnalyticsWrapper } from '../components/analytics';
 import { Header } from './Header';
 import { Menu } from './Menu';
 
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
