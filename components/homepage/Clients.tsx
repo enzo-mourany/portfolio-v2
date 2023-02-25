@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaPeopleCarry } from 'react-icons/fa';
 
-import styles from '../../styles/WebDevelopment.module.scss';
+import styles from '../../styles/Clients.module.scss';
 
 export const Clients: React.FC = () => {
   return (
@@ -18,9 +18,9 @@ export const Clients: React.FC = () => {
           <div id='description' className={styles.text}>
             <h3 className={styles.text__title}>Client-centered approach</h3>
             <h2 className={styles.text__description}>
-              <span>I believe</span> I am very client-focused and believe in open and honest communication throughout the development process. I work closely with my clients to ensure that their needs are met and that the final product is exactly what they wanted.
+              I am very <span>client-focused</span> and believe in open and honest communication throughout the development process.
             </h2>
-            <p>That&apos;s why I take the time to understand each client&apos;s needs and create a custom design that reflects their business and vision. My handcrafted approach ensures that every website I create is unique and memorable.</p>
+            <p>I work closely with my clients to ensure that their needs are met and that the final product is exactly what they wanted.</p>
           </div>
         </div>
       </div>

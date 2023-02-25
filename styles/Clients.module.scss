@@ -1,0 +1,122 @@
+@import './responsive.scss';
+
+.container {
+  z-index: 1;
+  margin-bottom: 2rem;
+  .wrapper {
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 3rem;
+      @include tablet {
+        gap: 1.5rem;
+      }
+      @include mobile {
+        gap: 1rem;
+      }
+      .roadmap__line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0.2rem;
+        @include laptop {
+          gap: 1.5rem;
+        }
+        @include tablet {
+          gap: 1rem;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .filter {
+            background-color: #eae787;
+            filter: blur(18px);
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            @include laptop {
+              width: 20px;
+              height: 20px;
+            }
+            @include tablet {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .line {
+          background: linear-gradient(#eae787, #d8d327, #d8d327, #222222);
+          transition-delay: 500ms;
+          width: 3px;
+          height: 300px;
+          border-radius: 10px;
+          @include laptop {
+            height: 230px;
+          }
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 60%;
+        gap: 1rem;
+        @include mobile {
+          width: 75%;
+        }
+        .text__title {
+          font-size: 1.5rem;
+          font-weight: 600;
+          @include laptop {
+            font-size: 1.2rem;
+          }
+          @include tablet {
+            font-size: 1rem;
+          }
+          @include mobile {
+            font-size: 0.8rem;
+          }
+        }
+        .text__description {
+          font-size: 3rem;
+          font-weight: 400;
+          line-height: 1.1;
+          @include laptop {
+            font-size: 2rem;
+          }
+          @include tablet {
+            font-size: 1.5rem;
+          }
+          span {
+            font-size: 3rem;
+            font-weight: 400;
+            color: #eae787;
+            @include laptop {
+              font-size: 2rem;
+            }
+            @include tablet {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.2;
+          opacity: 0.5;
+          @include laptop {
+            font-size: 1.2rem;
+          }
+          @include tablet {
+            font-size: 1rem;
+          }  
+        }
+      }
+    }
+  }
+}
