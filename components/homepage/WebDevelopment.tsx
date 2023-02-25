@@ -20,7 +20,7 @@ export const WebDevelopment: React.FC = () => {
             <h2 className={styles.text__description}>
               <span>I believe</span> that every website is unique and should be treated as such.
             </h2>
-            <p>That's why I take the time to understand each client's needs and create a custom design that reflects their business and vision. My handcrafted approach ensures that every website I create is unique and memorable.</p>
+            <p>That&apos;s why I take the time to understand each client&apos;s needs and create a custom design that reflects their business and vision. My handcrafted approach ensures that every website I create is unique and memorable.</p>
           </div>
         </div>
       </div>
