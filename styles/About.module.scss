@@ -13,6 +13,9 @@
             @include tablet {
                 gap: 1.5rem;
             }
+            @include mobile {
+                gap: 1rem;
+            }
             .roadmap__line {
                 display: flex;
                 flex-direction: column;
@@ -63,6 +66,9 @@
                 justify-content: center;
                 width: 60%;
                 gap: 1rem;
+                @include mobile {
+                    width: 75%;
+                }
                 .text__title {
                     font-size: 1.5rem;
                     font-weight: 600;
@@ -71,6 +77,9 @@
                     }
                     @include tablet {
                         font-size: 1rem;
+                    }
+                    @include mobile {
+                        font-size: 0.8rem;
                     }
                 }
                 .text__description {
@@ -103,6 +112,9 @@
                     @include laptop {
                         font-size: 1.2rem;
                     }
+                    @include tablet {
+                        font-size: 1rem;
+                    }           
                 }
             }
         }
