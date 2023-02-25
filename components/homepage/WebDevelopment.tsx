@@ -5,7 +5,7 @@ import styles from '../../styles/WebDevelopment.module.scss';
 
 export const WebDevelopment: React.FC = () => {
   return (
-    <section id='skills' className={styles.container}>
+    <section id='web-development' className={styles.container}>
       <div className={styles.wrapper}>
         <div id='section-title' className={styles.title}>
           <div className={styles.roadmap__line}>
