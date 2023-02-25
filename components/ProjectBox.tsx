@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from 'next/Link';
 import styles from '../styles/ProjectBox.module.scss';
 
 import TechItem from './TechItem';

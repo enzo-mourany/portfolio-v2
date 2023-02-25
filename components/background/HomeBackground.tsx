@@ -3,7 +3,7 @@ import React from 'react';
 import * as OSVG from '../../components/background/OptimizedSVG';
 
 export const HomeBackground: React.FC = () => (
-  <div style={{ width: '100vw', zIndex: '-1' }}>
+  <div style={{ width: 'auto', height: 'auto', zIndex: '-1' }}>
     <OSVG.OptimizedNoise />
     <OSVG.OptimizedShape1 />
     <OSVG.OptimizedShape2 />
