@@ -25,22 +25,19 @@ export const Footer: React.FC = () => (
           </li>
         </ul>
       </div>
-      <div className={styles.center}>
-        <p>Copyright @2023</p>
-      </div>
       <div className={styles.right}>
         <ul>
           <li>
-            <BsGithub style={{ color: '#fff', width: 20, height: 20, zIndex: 1 }} />
+            <BsGithub style={{ width: 20, height: 20, zIndex: 1 }} />
           </li>
           <li>
-            <BsLinkedin style={{ color: '#fff', width: 20, height: 20, zIndex: 1 }} />
+            <BsLinkedin style={{ width: 15, height: 15, zIndex: 1 }} />
           </li>
           <li>
-            <IoIosMail style={{ color: '#fff', width: 20, height: 20, zIndex: 1 }} />
+            <IoIosMail style={{ width: 20, height: 20, zIndex: 1 }} />
           </li>
           <li>
-            <IoCall style={{ color: '#fff', width: 20, height: 20, zIndex: 1 }} />
+            <IoCall style={{ width: 20, height: 20, zIndex: 1 }} />
           </li>
         </ul>
       </div>
