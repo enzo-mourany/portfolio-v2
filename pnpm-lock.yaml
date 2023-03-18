@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@geist-ui/core': ^2.3.8
   '@prisma/client': ^4.10.1
   '@tailwindcss/typography': ^0.5.9
   '@tanstack/react-query': ^4.24.10
@@ -40,6 +41,7 @@ specifiers:
   zod: ^3.20.6
 
 dependencies:
+  '@geist-ui/core': 2.3.8_biqbaboplfbrettd7655fr4n2y
   '@prisma/client': 4.10.1
   '@tanstack/react-query': 4.24.10_biqbaboplfbrettd7655fr4n2y
   '@trpc/client': 10.13.2_@trpc+server@10.13.2
@@ -122,6 +124,17 @@ packages:
     resolution: {integrity: sha512-JXdzbRiWclLVoD8sNUjR443VVlYqiYmDVT6rGUEIEHU5YJW0gaVZwV2xgM7D4arkvASqD0IlLUVjHiFuxaftRw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@geist-ui/core/2.3.8_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-OKwGgTA4+fBM41eQbqDoUj4XBycZbYH7Ynrn6LPO5yKX7zeWPu/R7HN3vB4/oHt34VTDQI5sDNb1SirHvNyB5w==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.21.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
