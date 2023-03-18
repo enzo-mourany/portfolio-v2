@@ -9,6 +9,5 @@ export const HomeBackground: React.FC = () => (
     <OSVG.OptimizedShape2 />
     <OSVG.OptimizedShape3 />
     <OSVG.OptimizedShape4 />
-    <OSVG.OptimizedShape5 />
   </div>
 );
