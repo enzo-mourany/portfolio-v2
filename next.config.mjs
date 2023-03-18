@@ -8,17 +8,6 @@ const nextConfig = {
   i18n: {
     locales: ['en-US', 'fr'],
     defaultLocale: 'en-US',
-    domains: [
-      {
-        domain: 'enzomourany.com',
-        defaultLocale: 'en-US',
-      },
-      {
-        domain: 'enzomourany.fr',
-        defaultLocale: 'fr',
-        http: true,
-      },
-    ],
   },
 };
 
