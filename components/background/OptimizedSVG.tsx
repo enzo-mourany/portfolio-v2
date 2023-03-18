@@ -49,18 +49,6 @@ export const OptimizedShape4: React.FC = () => (
   </div>
 );
 
-export const OptimizedShape5: React.FC = () => (
-  <div className='absolute top-0 left-0'>
-    <Image
-      priority
-      src='/static/svg/shape5.svg'
-      height={1150}
-      width={1476}
-      alt='Shape 5'
-    />
-  </div>
-);
-
 export const OptimizedNoise: React.FC = () => (
   <div className='absolute top-0 left-0'>
     <Image
