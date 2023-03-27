@@ -9,6 +9,7 @@
 @layer base {
     * {
         @apply antialiased;
+        -webkit-font-smoothing: antialiased;
     }
     p {
         @apply text-white font-manrope;
