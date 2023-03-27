@@ -4,7 +4,6 @@ import getPostMetadata from '../components/getPostMetadata';
 import PostPreview from '../components/PostPreview';
 
 import type { PostMetadata } from '../interfaces/PostMetadata';
-import { HomeBackground } from '../components/background/HomeBackground';
 import Hero from '../components/homepage/Hero';
 import { About } from '../components/homepage/About';
 import { Skills } from '../components/homepage/Skills';
@@ -20,7 +19,6 @@ const HomePage = () => {
 
   return (
     <>
-      <HomeBackground />
       <div className={styles.container}>
         <Hero />
         <About />
