@@ -1,0 +1,32 @@
+.button_outline {
+  outline: none;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s ease;
+  &:hover {
+    transform: scale(1.2);
+    svg {
+      .filled {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  &:active {
+    transform: scale(1.5);
+  }
+  svg {
+    .bg_svg {
+      stroke: #b8b8b834;
+      stroke-width: 3;
+    }
+    .filled {
+      stroke: #fff;
+      stroke-width: 3;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke-dashoffset 0.4s ease-in-out;
+    }
+  }
+}
