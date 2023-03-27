@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
       <head />
-      <body className='bg-zinc-900'>
+      <body>
         <div>
           <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
           <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />

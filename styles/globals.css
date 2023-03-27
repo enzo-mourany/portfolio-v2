@@ -12,21 +12,21 @@
         -webkit-font-smoothing: antialiased;
     }
     p {
-        @apply text-white font-manrope;
+        @apply font-manrope;
     }
     a {
-        @apply text-white font-manrope;
+        @apply font-manrope;
     }
     span {
-        @apply text-white font-manrope;
+        @apply font-manrope;
     }
     h1 {
-        @apply text-white font-manrope;
+        @apply font-manrope;
     }
     h2 {
-        @apply text-white font-manrope;
+        @apply font-manrope;
     }
     h3 {
-        @apply text-white font-manrope;
+        @apply font-manrope;
     }
 }
