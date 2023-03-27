@@ -4,7 +4,6 @@ import Link from 'next/link';
 import styles from '../../styles/Hero.module.scss';
 
 import LineButton from '../input/LineButton';
-import { ButtonOutline } from '../button/ButtonOutline';
 
 const Hero: React.FC = () => (
   <section className={styles.container} id='hero__container'>
@@ -21,7 +20,6 @@ const Hero: React.FC = () => (
       <Link href='/contact'>
         <LineButton text="Let's talk" />
       </Link>
-      <ButtonOutline />
     </div>
   </section>
 );

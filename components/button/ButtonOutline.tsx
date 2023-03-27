@@ -1,10 +1,16 @@
+import React from 'react';
+
 import styles from '../../styles/ButtonOutline.module.scss';
 
-export const ButtonOutline = () => (
+interface ButtonOutlineProps {
+  text: string;
+}
+
+export const ButtonOutline: React.FC<ButtonOutlineProps> = ({ text }) => (
   <button className={styles.button_outline}>
     <svg
-      width='280'
-      height='70'
+      width='100%'
+      height='100%'
       viewBox='-10 -10 300 90'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
@@ -28,5 +34,6 @@ export const ButtonOutline = () => (
         pathLength='1'
       />
     </svg>
+    <span>{text}</span>
   </button>
 )

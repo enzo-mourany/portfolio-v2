@@ -5,6 +5,8 @@
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
+  width: auto;
+  height: 70px;
   &:hover {
     transform: scale(1.2);
     svg {
@@ -29,5 +31,15 @@
       transform-origin: 50%;
       transition: stroke-dashoffset 0.4s ease-in-out;
     }
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1rem;
+    will-change: transform;
+    width: calc(100% - 3em);
   }
 }

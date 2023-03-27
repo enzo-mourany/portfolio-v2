@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import Hamburger from '../components/input/Hamburger';
+import { ButtonOutline } from '../components/button/ButtonOutline';
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -21,10 +22,10 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen}) => {
             <p className='text-white text-sm sm:text-xl font-normal'>Enzo MOURANY</p>
           </Link>
         </div>
-        <div className='hidden sm:block w-48'>
-          <p className='text-white text-sm font-extralight uppercase'>Portfolio ©2023</p>
-        </div>
         <div className='flex justify-end md:justify-around items-center sm:justify-center w-1/2 xs:w-52 gap-2'>
+          <div>
+            <ButtonOutline text='contact' />
+          </div>
           <div onClick={() => toggleMenu()}>
             <Hamburger isMenuOpen={isMenuOpen} />
           </div>
