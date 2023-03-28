@@ -10,6 +10,7 @@ import { Skills } from '../components/homepage/Skills';
 import { WebDevelopment } from '../components/homepage/WebDevelopment';
 import { MobileApps } from '../components/homepage/MobileApps';
 import { Clients } from '../components/homepage/Clients';
+import { Solution } from '../components/homepage/Solution';
 
 const HomePage = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
@@ -22,6 +23,7 @@ const HomePage = () => {
       <div className={styles.container}>
         <Hero />
         <Clients />
+        <Solution />
         <About />
         <Skills />
         <WebDevelopment />
