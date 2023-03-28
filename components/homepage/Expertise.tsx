@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Card } from '../cards/Card';
+
 import { ButtonOutline } from '../button/ButtonOutline'
 
 export const Expertise: React.FC = () => {
