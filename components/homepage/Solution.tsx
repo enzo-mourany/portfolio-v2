@@ -4,7 +4,7 @@ import { ButtonOutline } from '../button/ButtonOutline'
 
 export const Solution: React.FC = () => {
   return (
-    <section id='solution' className='h-screen bg-blue'>
+    <section id='solution' className='w-screen h-screen bg-blue'>
       <div className='flex flex-col h-full'>
         <div className='flex flex-col justify-start w-full lg:w-3/5 h-full p-20 gap-5'>
           <h3 className='text-w-xl lg:text-w-base text-white leading-tight'>En positionnant mes clients en tant que références dans leur secteur d&apos;activité, je les aide à sortir du lot et à se démarquer significativement sur un marché concurrentiel.</h3>
