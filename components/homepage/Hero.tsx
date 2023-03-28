@@ -8,12 +8,11 @@ import LineButton from '../input/LineButton';
 const Hero: React.FC = () => (
   <section className={styles.container} id='hero__container'>
     <div className={styles.titles}>
-      <h1 className={styles.main__title} id='title'>Frontend web and web mobile developer</h1>
-      <h3 className={styles.subtitle}>Hi, I am Enzo Mourany</h3>
+      <h1 className={styles.main__title} id='title'>Créer des solutions web pour donner de la visibilité à votre marque</h1>
     </div>
     <div className={styles.description}>
       <p id='description'>
-        I create inclusive, accessible digital products, with experience working with startups and enterprise products.
+        Développeur web et mobile basé en France, spécialisé dans la création de solutions web pour les freelances, starups et entreprises
       </p>
     </div>
     <div className={styles.buttons}>
