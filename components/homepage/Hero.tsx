@@ -1,9 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 
 import styles from '../../styles/Hero.module.scss';
-
-import LineButton from '../input/LineButton';
 
 const Hero: React.FC = () => (
   <section className={styles.container} id='hero__container'>
@@ -14,11 +11,6 @@ const Hero: React.FC = () => (
       <p id='description'>
         Développeur web et mobile basé en France, spécialisé dans la création de solutions web pour les freelances, starups et entreprises
       </p>
-    </div>
-    <div className={styles.buttons}>
-      <Link href='/contact'>
-        <LineButton text="Let's talk" />
-      </Link>
     </div>
   </section>
 );
