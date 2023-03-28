@@ -2,12 +2,11 @@
 
 .button_outline {
   outline: none;
-  background-color: none;
   border: none;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
-  width: auto;
+  width: fit-content;
   height: 70px;
   &:hover {
     transform: scale(1.2);
