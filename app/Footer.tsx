@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ButtonOutline } from '../components/button/ButtonOutline';
 
 export const Footer: React.FC = () => (
-  <footer className='bg-blue'>
+  <footer className='bg-blue z-10'>
     <div className='flex flex-col md:flex-row justify-between p-6'>
       <div>
         <h2 className='text-white'>Contactez-moi pour parlez de votre projet</h2>

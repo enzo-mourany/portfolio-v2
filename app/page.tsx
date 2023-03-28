@@ -19,6 +19,7 @@ const HomePage = () => {
 
   return (
     <>
+      <Blob />
       <div className='flex flex-col'>
         <Hero />
         <Clients />
@@ -27,7 +28,6 @@ const HomePage = () => {
         <Strategy />
         <Expertise />
       </div>
-      <Blob />
     </>
   )
 };
