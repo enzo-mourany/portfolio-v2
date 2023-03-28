@@ -7,11 +7,17 @@ import { ButtonOutline } from '../components/button/ButtonOutline';
 interface HeaderProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (isMenuOpen: boolean) => void;
+  isEmailPageOpen: boolean;
+  setIsEmailPageOpen: (isEmailPageOpen: boolean) => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen}) => {
+export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, isEmailPageOpen, setIsEmailPageOpen }) => {
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleEmailPage = (): void => {
+    setIsEmailPageOpen(!isEmailPageOpen);
   };
 
   return (
@@ -23,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen}) => {
           </Link>
         </div>
         <div className='flex justify-end md:justify-around items-center sm:justify-center w-1/2 xs:w-52 gap-2'>
-          <div className='hidden sm:flex'>
+          <div className='hidden sm:flex' onClick={() => toggleEmailPage()}>
             <ButtonOutline text='contact' />
           </div>
           <div onClick={() => toggleMenu()}>
