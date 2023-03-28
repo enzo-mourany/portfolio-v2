@@ -1,46 +1,21 @@
-import Link from 'next/link';
 import React from 'react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { IoIosMail } from 'react-icons/io';
-import { IoCall } from 'react-icons/io5';
 
-import styles from '../styles/Footer.module.scss';
+import { ButtonOutline } from '../components/button/ButtonOutline';
 
 export const Footer: React.FC = () => (
-  <div id='footer' className={styles.container}>
-    <div className={styles.wrapper}>
-      <div className={styles.left}>
-        <ul>
-          <li>
-            <Link href='/contact'><p>Contact</p></Link>
-          </li>
-          <li>
-            <Link href='/legal/privacy-policy'><p>Privacy Policy</p></Link>
-          </li>
-          <li>
-            <Link href='/contact/terms-of-use'><p>Terms and condition</p></Link>
-          </li>
-          <li>
-            <Link href='/blog'><p>Blog</p></Link>
-          </li>
-        </ul>
+  <footer className='bg-blue'>
+    <div>
+      <div>
+        <h2 className='text-white'>Contactez-moi pour parlez de votre projet</h2>
+        <ButtonOutline text='Discuttons' />
       </div>
-      <div className={styles.right}>
-        <ul>
-          <li>
-            <BsGithub style={{ width: 20, height: 20, zIndex: 1 }} />
-          </li>
-          <li>
-            <BsLinkedin style={{ width: 15, height: 15, zIndex: 1 }} />
-          </li>
-          <li>
-            <IoIosMail style={{ width: 20, height: 20, zIndex: 1 }} />
-          </li>
-          <li>
-            <IoCall style={{ width: 20, height: 20, zIndex: 1 }} />
-          </li>
-        </ul>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-  </div>
+    <div></div>
+  </footer>
 );
