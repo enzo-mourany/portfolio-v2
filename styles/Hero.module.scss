@@ -25,6 +25,7 @@
       margin-bottom: 0.5rem;
       word-wrap: normal;
       text-align: center;
+      color: white;
       @include tablet {
         font-size: 7vw;
       }
@@ -54,6 +55,7 @@
       opacity: 0.5;
       word-wrap: normal;
       text-align: center;
+      color: white;
       @include mobile {
         font-size: 1.2rem;
       }
