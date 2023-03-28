@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .hamburger__container {
     cursor: pointer;
     display: flex;
@@ -7,7 +9,7 @@
     width: 46px;
     position: relative;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(81, 96, 240, 0.25);
     transition: all 0.3s ease;
     .hamburger__box {
         display: flex;
@@ -18,7 +20,7 @@
         width: 100%;
         transition: all 0.3s ease;
         .hamburger__inner {
-            background-color: white;
+            background-color: $blue;
             content: "";
             display: block;
             width: 15px;
@@ -32,7 +34,7 @@
         }
     }
     &:hover {
-        border: 1px solid rgba(255, 255, 255, 1);
+        border: 1px solid rgba(81, 96, 240, 1);
         transition: all 0.3s ease;
         .hamburger__box {
             transition: all 0.3s ease;
@@ -57,7 +59,7 @@
         transition: all 0.3s ease;
         .hamburger__inner {
             transition: all 0.3s ease;
-            background-color: white;
+            background-color: $blue;
             content: "";
             display: block;
             width: 15px;
