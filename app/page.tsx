@@ -9,6 +9,7 @@ import { Clients } from '../components/homepage/Clients';
 import { Solution } from '../components/homepage/Solution';
 import { Services } from '../components/homepage/Services';
 import { Strategy } from '../components/homepage/Strategy';
+import { Expertise } from '../components/homepage/Expertise';
 
 const HomePage = () => {
   const postMetadata: PostMetadata[] = getPostMetadata();
@@ -24,6 +25,7 @@ const HomePage = () => {
         <Solution />
         <Services />
         <Strategy />
+        <Expertise />
       </div>
     </>
   )
