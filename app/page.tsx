@@ -21,11 +21,11 @@ const HomePage = () => {
     <>
       <div className={styles.container}>
         <Hero />
+        <Clients />
         <About />
         <Skills />
         <WebDevelopment />
         <MobileApps />
-        <Clients />
       </div>
     </>
   )
