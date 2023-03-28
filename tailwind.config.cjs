@@ -104,6 +104,15 @@ module.exports = {
       '1/4': '25%',
       '1/5': '20%',
     },
+    colors: {
+      transparent: 'transparent',
+      black: '#000',
+      blue: '#5160F0',
+      cyan: '#0095e7',
+      red: '#ff005d',
+      purple: '#c238ff',
+      pink: '#cea9f3',
+    },
   },
   plugins: [require('@tailwindcss/typography'),],
 };
