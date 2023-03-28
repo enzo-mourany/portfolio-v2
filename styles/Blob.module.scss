@@ -1,25 +1,27 @@
+@import './colors.scss';
+
 .blob {
-  height: 500px;
+  height: 900px;
   aspect-ratio: 1;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 23%;
+  top: 5%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: linear-gradient(
     to right,
-    aquamarine,
-    mediumpurple
+    $cyan,
+    $red
   );
   animation: rotate 20s infinite;
-  filter: blur(200px);
+  filter: blur(80px);
 }
 .blur {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 2;
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(10px);
 }
 
 @keyframes rotate {
@@ -27,7 +29,7 @@
     transform: rotate(0deg);
   }
   50% {
-    scale: 1 1.5;
+    scale: 1 1.2;
   }
   to {
     transform: rotate(360deg);
