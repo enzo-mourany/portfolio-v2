@@ -119,6 +119,7 @@ module.exports = {
       lg: '980px',
       xl: '1024px',
       '2xl': '1280px',
+      '3xl': '1536px',
     },
     maxWidth: {
       '4/5': '80%',
