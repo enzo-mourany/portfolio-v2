@@ -23,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen}) => {
           </Link>
         </div>
         <div className='flex justify-end md:justify-around items-center sm:justify-center w-1/2 xs:w-52 gap-2'>
-          <div>
+          <div className='hidden sm:flex'>
             <ButtonOutline text='contact' />
           </div>
           <div onClick={() => toggleMenu()}>

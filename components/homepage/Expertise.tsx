@@ -8,7 +8,7 @@ export const Expertise: React.FC = () => {
   return (
     <section id='expertise' className='w-screen'>
       <div className='flex flex-col w-full h-full'>
-        <div className='p-20'>
+        <div className='p-8 sm:p-20'>
           <h2 className='text-blue text-4xl'>Mon expertise en tant que développeur</h2>
         </div>
         <div className='flex flex-row flex-wrap justify-center gap-5'>

@@ -5,12 +5,12 @@ import { ButtonOutline } from '../components/button/ButtonOutline';
 
 export const Footer: React.FC = () => (
   <footer className='bg-blue'>
-    <div className='flex flex-row justify-between p-6'>
+    <div className='flex flex-col md:flex-row justify-between p-6'>
       <div>
         <h2 className='text-white'>Contactez-moi pour parlez de votre projet</h2>
         <ButtonOutline text='Discuttons' />
       </div>
-      <div className='flex flex-row gap-8'>
+      <div className='flex flex-row flex-wrap gap-8'>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Navigation</li>
           <li className='opacity-50'>
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => (
         </ul>
       </div>
     </div>
-    <div className='flex flex-row justify-center gap-5 text-md mt-20 pb-3'>
+    <div className='flex flex-row flex-wrap justify-center gap-5 text-md mt-20 pb-3'>
       <p className='text-center text-white opacity-50'>©2023 legal</p>
       <p className='text-center text-white opacity-50'>Privacy Policy</p>
       <p className='text-center text-white opacity-50'>Terms of Service</p>
