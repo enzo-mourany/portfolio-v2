@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Clients: React.FC = () => {
   return (
-    <section id='clients' className='w-screen h-screen'>
-      <div className='flex flex-col lg:flex-row w-full h-full'>
+    <section id='clients' className='w-screen'>
+      <div className='flex flex-col lg:flex-row w-full'>
         <div className='flex w-full lg:w-1/2 h-full p-20'>
           <h2 className='w-3/5 lg:w-3/4 text-w-base lg:text-w-xs'>Une image qui correspond à votre marque</h2>
         </div>
