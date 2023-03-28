@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .button_outline {
   outline: none;
   background-color: none;
@@ -24,7 +26,7 @@
       stroke-width: 1;
     }
     .filled {
-      stroke: #fff;
+      stroke: $blue;
       stroke-width: 1;
       stroke-dasharray: 1;
       stroke-dashoffset: 1;
@@ -37,7 +39,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: $blue;
     font-size: 1rem;
     will-change: transform;
     width: calc(100% - 3em);
