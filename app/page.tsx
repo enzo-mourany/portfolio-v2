@@ -1,5 +1,4 @@
 import '../styles/globals.css';
-import styles from '../styles/HomePage.module.scss';
 import getPostMetadata from '../components/getPostMetadata';
 import PostPreview from '../components/PostPreview';
 
@@ -19,7 +18,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className='flex flex-col items-center'>
         <Hero />
         <Clients />
         <Solution />
