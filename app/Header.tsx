@@ -22,7 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, isEma
 
   return (
     <header className='flex justify-center'>
-      <div className='flex flex-row justify-between items-center fixed z-10 w-full text-center px-16 py-8'>
+      <div className='flex flex-row justify-between items-center fixed z-20 w-full text-center px-16 py-8'>
         <div className='w-1/2 xs:w-48 text-left sm:text-center'>
           <Link href='/'>
             <p className='text-sm sm:text-xl font-normal text-blue'>Enzo MOURANY</p>
