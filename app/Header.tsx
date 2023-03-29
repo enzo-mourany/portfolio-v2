@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, isEma
             <p className='text-sm sm:text-xl font-normal text-blue'>Enzo MOURANY</p>
           </Link>
         </div>
-        <div className='flex justify-around items-center w-1/2 xs:w-1/4 gap-2'>
+        <div className='flex justify-around items-center w-1/2 xs:w-1/4'>
           <div className='hidden sm:flex' onClick={() => toggleEmailPage()}>
             <ButtonOutline text='contact' />
           </div>
