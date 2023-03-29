@@ -8,7 +8,9 @@ export const Footer: React.FC = () => (
     <div className='flex flex-col md:flex-row justify-between p-6'>
       <div>
         <h2 className='text-white'>Contactez-moi pour parlez de votre projet</h2>
-        <ButtonOutline text='Discuttons' />
+        <Link href='/contact' >
+          <ButtonOutline text='Discuttons' />
+        </Link>
       </div>
       <div className='flex flex-row flex-wrap gap-8'>
         <ul className='flex flex-col text-white text-lg gap-2'>

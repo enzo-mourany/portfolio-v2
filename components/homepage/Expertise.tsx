@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 import { Card } from '../cards/Card';
 
@@ -18,7 +19,9 @@ export const Expertise: React.FC = () => {
           <Card title='CMS' description='Je développe des sites web avec Webflow.' />
         </div>
         <div className='flex justify-center p-20'>
-          <ButtonOutline text='Améliorez votre visibilité' />
+          <Link href='/contact'>
+            <ButtonOutline text='Améliorez votre visibilité' />
+          </Link>
         </div>
       </div>
     </section>

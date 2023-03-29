@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { ButtonOutline } from '../button/ButtonOutline'
 
@@ -11,7 +12,9 @@ export const Strategy: React.FC = () => {
         </div>
         <div className='flex flex-col w-full lg:w-1/2 h-full p-8 sm:p-20 gap-5'>
           <p className='text-w-xl lg:text-w-base text-white leading-tight'>Je joins mes forces à celles de votre équipe par le biais d&apos;une stratégie, d&apos;une conception et d&apos;un développement technique. Votre marque raconte une histoire unique, et je suis là pour lui donner vie.</p>
-          <ButtonOutline text='Boostez votre entreprise' />
+          <Link href='/contact'>
+            <ButtonOutline text='Boostez votre entreprise' />
+          </Link>
         </div>
       </div>
     </section>
