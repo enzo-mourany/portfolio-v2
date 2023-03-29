@@ -38,11 +38,19 @@ export const Footer: React.FC = () => (
         </ul>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Contact</li>
-          <li className='opacity-50'>contact@enzomourany.com</li>
-          <li className='opacity-50'>LinkedIn</li>
-          <li className='opacity-50'>Malt</li>
-          <li className='opacity-50'>Calendly</li>
-          <li className='opacity-50'>GitHub</li>
+          <li className='opacity-50 hover:opacity-100'>contact@enzomourany.com</li>
+          <li className='opacity-50 hover:opacity-100'>
+            <a href='https://www.linkedin.com/in/enzomourany/'>LinkedIn</a>
+          </li>
+          <li className='opacity-50 hover:opacity-100'>
+            <a href='https://www.malt.fr/profile/enzomourany/'>Malt</a>
+          </li>
+          <li className='opacity-50 hover:opacity-100'>
+            <a href='https://calendly.com/enzomourany/projectrequest'>Calendly</a>
+          </li>
+          <li className='opacity-50 hover:opacity-100'>
+            <a href='https://githuv.com/enzo-mourany'>GitHub</a>
+          </li>
         </ul>
       </div>
     </div>
