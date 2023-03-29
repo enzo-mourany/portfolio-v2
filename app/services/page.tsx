@@ -1,9 +1,13 @@
-const Services = () => {
+import Hero from './Hero';
+import Services from './Services';
+
+const ServicesPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center w-full h-full'>
-      <h1>Services</h1>
-    </div>
+    <>
+      <Hero />
+      <Services />
+    </>
   );
 };
 
-export default Services;
+export default ServicesPage;
