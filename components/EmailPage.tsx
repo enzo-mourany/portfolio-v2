@@ -20,17 +20,19 @@ export const EmailPage: React.FC<EmailPageProps> = ({ isEmailPageOpen, setIsEmai
 
   return (
     <motion.div
-      className='hidden flex-col justify-center items-center fixed z-10 w-full h-full bg-blue'
+      className='hidden flex-col justify-center items-center fixed z-30 w-full h-full bg-blue'
       variants={variants}
       initial='closed'
       animate={isEmailPageOpen ? 'open' : 'closed'}
     >
       <div>
         <div
-          className='absolute top-0 right-0 p-4 border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-blue'
+          className='absolute top-0 right-0 p-4 m-10 border-2 border-white opacity-50 hover:opacity-100 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:rotate-180'
           onClick={() => handleEmailPageClose()}
         >
-          <p>Close</p>
+          <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='white'>
+            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M6 18L18 6M6 6l12 12' />
+          </svg>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center'>
