@@ -10,9 +10,27 @@ const Page = () => {
   const [budget, setBudget] = useState<string>('');
   const [description, setDescription] = useState<string>('');
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(name, email, position, company, budget, description);
+
+    try {
+      const res = await fetch(`/api/contact/`, {
+        method: 'POST',
+        body: JSON.stringify({
+          name,
+          email,
+          position,
+          company,
+          budget,
+          description,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+    } catch (error: any) {
+      console.error(error);
+    }
   };
 
   return (
