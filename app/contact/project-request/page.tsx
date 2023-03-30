@@ -62,48 +62,84 @@ const Page = () => {
         {!isSubmitted ? (
           <div className='flex flex-col items-center justify-center'>
             <form className='flex flex-col' onSubmit={onSubmit}>
-              <div className={`flex flex-col ${hasError && !name ? 'border-red' : ''}`}>
-                <label htmlFor='name'>Full name</label>
-                <input
-                  type='text'
-                  id='name'
-                  name='name'
-                  placeholder='John Doe'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
+              <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+                <div className='sm:col-span-4'>
+                  <label htmlFor='username' className='block text-sm font-medium leading-6 text-gray-900'>
+                    Prénom et Nom
+                  </label>
+                  <div className='mt-2'>
+                    <div className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+                      <input
+                        type='text'
+                        name='username'
+                        id='username'
+                        autoComplete='username'
+                        className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                        placeholder='John Doe'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className='flex flex-col'>
-                <label htmlFor='email'>Email</label>
-                <input
-                  type='email'
-                  id='email'
-                  name='email'
-                  placeholder='john.doe@example.com'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+
+              <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+                <div className='sm:col-span-4'>
+                  <label htmlFor='username' className='block text-sm font-medium leading-6 text-gray-900'>
+                    Email
+                  </label>
+                  <div className='mt-2'>
+                    <div className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+                      <input
+                        type='email'
+                        name='email'
+                        id='email'
+                        autoComplete='email'
+                        className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                        placeholder='johndoe@gmail.com'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div className='flex flex-col'>
-                <label htmlFor='name'>Position and Company</label>
-                <div>
-                  <input
-                    type='text'
-                    id='name'
-                    name='name'
-                    placeholder='CEO'
-                    value={position}
-                    onChange={(e) => setPosition(e.target.value)}
-                  />
-                  <p>at</p>
-                  <input
-                    type='text'
-                    id='name'
-                    name='name'
-                    placeholder='Apple'
-                    value={company}
-                    onChange={(e) => setCompany(e.target.value)}
-                  />
+                <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+                  <label htmlFor='name'>Position and Company</label>
+                  <div className='flex flex-row items-center justify-center gap-6'>
+                    <div className='mt-2'>
+                      <div className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+                        <input
+                          type='text'
+                          name='position'
+                          id='position'
+                          autoComplete='position'
+                          className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                          placeholder='CEO'
+                          value={position}
+                          onChange={(e) => setPosition(e.target.value)}
+                        />
+                      </div>
+                    </div>
+                    <p>chez</p>
+                    <div className='mt-2'>
+                      <div className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+                        <input
+                          type='text'
+                          name='company'
+                          id='company'
+                          autoComplete='company'
+                          className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                          placeholder='Google'
+                          value={company}
+                          onChange={(e) => setCompany(e.target.value)}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className='flex flex-col'>
