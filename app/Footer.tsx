@@ -38,7 +38,9 @@ export const Footer: React.FC = () => (
         </ul>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Contact</li>
-          <li className='opacity-50 hover:opacity-100'>contact@enzomourany.com</li>
+          <li className='opacity-50 hover:opacity-100'>
+            <a href='mailto:contact@enzomourany.com'>contact@enzomourany.com</a>
+          </li>
           <li className='opacity-50 hover:opacity-100'>
             <a href='https://www.linkedin.com/in/enzomourany/'>LinkedIn</a>
           </li>
