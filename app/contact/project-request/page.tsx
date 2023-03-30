@@ -14,7 +14,7 @@ const Page = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`/api/contact/`, {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         body: JSON.stringify({
           name,
@@ -25,9 +25,10 @@ const Page = () => {
           description,
         }),
         headers: {
-          'Content-Type': 'application/json',
+          'content-Type': 'application/json',
         },
       });
+
     } catch (error: any) {
       console.error(error);
     }
