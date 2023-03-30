@@ -9,105 +9,137 @@ const Page = () => {
   const [company, setCompany] = useState<string>('');
   const [budget, setBudget] = useState<string>('');
   const [description, setDescription] = useState<string>('');
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [hasError, setHasError] = useState<boolean>(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        body: JSON.stringify({
-          name,
-          email,
-          position,
-          company,
-          budget,
-          description,
-        }),
-        headers: {
-          'content-Type': 'application/json',
-        },
-      });
+    if (!name || !email || !position || !company || !budget || !description) {
+      setHasError(true);
+      return;
+    } else {
+      setHasError(false);
+    }
 
-    } catch (error: any) {
-      console.error(error);
+    if (!hasError) {
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          body: JSON.stringify({
+            name,
+            email,
+            position,
+            company,
+            budget,
+            description,
+          }),
+          headers: {
+            'content-Type': 'application/json',
+          },
+        });
+
+      } catch (error: any) {
+        console.error(error);
+      }
+
+      setIsSubmitted(true);
+    } else {
+      const inputs = document.querySelectorAll('input, textarea');
+      inputs.forEach((input: any) => {
+        if (!input.value) {
+          input.classList.add('error');
+        } else {
+          input.classList.remove('error');
+        }
+      });
     }
   };
 
   return (
     <div className='flex flex-col items-center justify-center w-screen h-screen'>
       <div className='flex flex-col items-center justify-center'>
-        <div className='flex flex-col items-center justify-center'>
-          <form className='flex flex-col' onSubmit={onSubmit}>
-            <div className='flex flex-col'>
-              <label htmlFor='name'>Full name</label>
-              <input
-                type='text'
-                id='name'
-                name='name'
-                placeholder='John Doe'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className='flex flex-col'>
-              <label htmlFor='email'>Email</label>
-              <input
-                type='email'
-                id='email'
-                name='email'
-                placeholder='john.doe@example.com'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className='flex flex-col'>
-              <label htmlFor='name'>Position and Company</label>
-              <div>
+        {!isSubmitted ? (
+          <div className='flex flex-col items-center justify-center'>
+            <form className='flex flex-col' onSubmit={onSubmit}>
+              <div className={`flex flex-col ${hasError && !name ? 'border-red' : ''}`}>
+                <label htmlFor='name'>Full name</label>
                 <input
                   type='text'
                   id='name'
                   name='name'
-                  placeholder='CEO'
-                  value={position}
-                  onChange={(e) => setPosition(e.target.value)}
-                />
-                <p>at</p>
-                <input
-                  type='text'
-                  id='name'
-                  name='name'
-                  placeholder='Apple'
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
+                  placeholder='John Doe'
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
-            </div>
-            <div className='flex flex-col'>
-              <label htmlFor='budget'>Budget</label>
-              <input
-                type='text'
-                id='budget'
-                name='budget'
-                placeholder='3000 - 5000€'
-                value={budget}
-                onChange={(e) => setBudget(e.target.value)}
-              />
-            </div>
-            <div className='flex flex-col'>
-              <label htmlFor='description'>Project Description</label>
-              <textarea
-                name='description'
-                id='description'
-                cursor-ix='true'
-                placeholder='Tell me more about your project. Please include details like goals, timeline, and design links if available.' value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              >
-              </textarea>
-            </div>
-            <button type='submit'>Submit</button>
-          </form>
-        </div>
+              <div className='flex flex-col'>
+                <label htmlFor='email'>Email</label>
+                <input
+                  type='email'
+                  id='email'
+                  name='email'
+                  placeholder='john.doe@example.com'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor='name'>Position and Company</label>
+                <div>
+                  <input
+                    type='text'
+                    id='name'
+                    name='name'
+                    placeholder='CEO'
+                    value={position}
+                    onChange={(e) => setPosition(e.target.value)}
+                  />
+                  <p>at</p>
+                  <input
+                    type='text'
+                    id='name'
+                    name='name'
+                    placeholder='Apple'
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor='budget'>Budget</label>
+                <input
+                  type='text'
+                  id='budget'
+                  name='budget'
+                  placeholder='3000 - 5000€'
+                  value={budget}
+                  onChange={(e) => setBudget(e.target.value)}
+                />
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor='description'>Project Description</label>
+                <textarea
+                  name='description'
+                  id='description'
+                  cursor-ix='true'
+                  placeholder='Tell me more about your project. Please include details like goals, timeline, and design links if available.' value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                >
+                </textarea>
+              </div>
+              <button type='submit'>Submit</button>
+            </form>
+          </div>
+        ) : (
+          <div className='flex flex-col items-center justify-center'>
+            <h1 className='text-blue text-w-base break-words w-1/2 text-center' id='title'>Votre présence numérique
+              peut être votre avantage
+              stratégique.</h1>
+          </div>
+        )
+        }
+
       </div>
     </div>
   );
