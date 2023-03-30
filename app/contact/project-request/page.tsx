@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import styles from '../../../styles/Request.module.scss';
 
 const Page = () => {
   const [name, setName] = useState<string>('');
@@ -10,14 +9,18 @@ const Page = () => {
   const [company, setCompany] = useState<string>('');
   const [budget, setBudget] = useState<string>('');
   const [description, setDescription] = useState<string>('');
-  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(name, email, position, company, budget, description);
+  };
 
   return (
-    <div className={styles.request__container}>
-      <div className={styles.request__wrapper}>
-        <div className={styles.form__container}>
-          <form className={styles.form}>
-            <div className={styles.form__group}>
+    <div className='flex flex-col items-center justify-center w-screen h-screen'>
+      <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center'>
+          <form className='flex flex-col' onSubmit={onSubmit}>
+            <div className='flex flex-col'>
               <label htmlFor='name'>Full name</label>
               <input
                 type='text'
@@ -28,7 +31,7 @@ const Page = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className={styles.form__group}>
+            <div className='flex flex-col'>
               <label htmlFor='email'>Email</label>
               <input
                 type='email'
@@ -39,7 +42,7 @@ const Page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className={styles.form__group}>
+            <div className='flex flex-col'>
               <label htmlFor='name'>Position and Company</label>
               <div>
                 <input
@@ -61,7 +64,7 @@ const Page = () => {
                 />
               </div>
             </div>
-            <div className={styles.form__group}>
+            <div className='flex flex-col'>
               <label htmlFor='budget'>Budget</label>
               <input
                 type='text'
@@ -71,7 +74,7 @@ const Page = () => {
                 value={budget}
               />
             </div>
-            <div className={styles.form__group}>
+            <div className='flex flex-col'>
               <label htmlFor='description'>Project Description</label>
               <textarea
                 name='description'
