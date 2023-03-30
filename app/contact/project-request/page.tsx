@@ -72,6 +72,7 @@ const Page = () => {
                 name='budget'
                 placeholder='3000 - 5000€'
                 value={budget}
+                onChange={(e) => setBudget(e.target.value)}
               />
             </div>
             <div className='flex flex-col'>
