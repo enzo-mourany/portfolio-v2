@@ -67,7 +67,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isHomeVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Home' subtitle='Introduction' link='/' />
+        <Box title='Acceuil' subtitle='Introduction' link='/' />
       </motion.div>
       <motion.div
         ref={ref}
@@ -75,7 +75,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isAboutVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='About' subtitle='Skills and Phylosophy' link='/about' />
+        <Box title='Services' subtitle='Prestations et méthodes' link='/about' />
       </motion.div>
       <motion.div
         ref={ref}
@@ -83,7 +83,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isWorksVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Works' subtitle='Projects and labs' link='/works' />
+        <Box title='Portfolio' subtitle='Réalisations et projets' link='/works' />
       </motion.div>
       <motion.div
         ref={ref}
@@ -91,7 +91,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isContactVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Contact' subtitle='Get in touch' link='/contact' />
+        <Box title='Contact' subtitle='Travaillons ensemble' link='/contact' />
       </motion.div>
     </div>
 
