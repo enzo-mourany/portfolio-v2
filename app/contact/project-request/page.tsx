@@ -198,7 +198,7 @@ const Page = () => {
                 type='submit'
                 className='mt-4 rounded-md bg-blue hover:bg-white px-3 py-2 text-sm font-semibold text-white hover:text-blue border-blue border-solid border-2 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-100 ease-in-out'
               >
-                Save
+                Envoyer
               </button>
             </form>
           </div>
