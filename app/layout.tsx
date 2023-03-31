@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
       <head />
-      <body>
+      <body className='bg-white'>
         <div>
           <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
           <EmailPage isEmailPageOpen={isEmailPageOpen} setIsEmailPageOpen={setIsEmailPageOpen} />

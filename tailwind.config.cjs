@@ -133,10 +133,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       black: '#000',
-      white: '#fff',
+      white: '#EFEBE4',
       gray: {
         50: '#f9fafb',
-        100: '#f4f5f7',
+        100: '#E9E4DC',
         200: '#e5e7eb',
         300: '#d2d6dc',
         400: '#9fa6b2',
