@@ -1,11 +1,9 @@
-import styles from '../../styles/ContactPage.module.scss';
-
 import Contact from '../../components/Contact';
 
 const ContactPage = () => {
   return (
-    <div className={styles.contact__container}>
-      <div className={styles.contact__wrapper}>
+    <div className='flex flex-col items-center pt-52'>
+      <div className='flex flex-col items-center w-full'>
         <Contact />
       </div>
     </div>
