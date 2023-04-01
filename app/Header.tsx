@@ -32,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, isEma
           <div className='hidden sm:flex' onClick={() => toggleEmailPage()}>
             <ButtonOutline text='contact' />
           </div>
-          <div onClick={() => toggleMenu()}>
+          <div onClick={() => toggleMenu()} className='flex justify-end'>
             <Hamburger isMenuOpen={isMenuOpen} />
           </div>
         </div>
