@@ -62,11 +62,15 @@ export const Footer: React.FC = () => (
         </ul>
       </div>
     </div>
-    <div className='flex flex-row flex-wrap justify-center gap-5 text-md mt-20 pb-3'>
-      <p className='text-center text-white opacity-50'>©2023 legal</p>
-      <p className='text-center footer-link'>Privacy Policy</p>
-      <p className='text-center footer-link'>Terms of Service</p>
-      <p className='text-center text-white opacity-50'>enzomourany.com</p>
-    </div>
+    <ul className='flex flex-row flex-wrap justify-center gap-5 text-md mt-20 pb-3'>
+      <li className='text-center text-white opacity-50'>©2023 legal</li>
+      <li className='text-center footer-link'>
+        <Link href='/legal/privacy-policy'>Privacy Policy</Link>
+      </li>
+      <li className='text-center footer-link'>
+        <Link href='/legal/terms-of-use'>Terms of Use</Link>
+      </li>
+      <li className='text-center text-white opacity-50'>enzomourany.com</li>
+    </ul>
   </footer>
 );
