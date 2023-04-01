@@ -15,27 +15,27 @@ export const Footer: React.FC = () => (
       <div className='flex flex-row flex-wrap gap-8'>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Navigation</li>
-          <li className='opacity-50'>
+          <li className='footer-link'>
             <Link href='/'>Accueil</Link>
           </li>
-          <li className='opacity-50'>
+          <li className='footer-link'>
             <Link href='/services'>Services</Link>
           </li>
-          <li className='opacity-50'>
+          <li className='footer-link'>
             <Link href='/portfolio'>Portfolio</Link>
           </li>
-          <li className='opacity-50'>
+          <li className='footer-link'>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Services</li>
-          <li className='opacity-50'>
+          <li className='footer-link'>
             <Link href='/'>Site Vitrine</Link>
           </li>
-          <li className='opacity-50'>Landing Page</li>
-          <li className='opacity-50'>Web App</li>
-          <li className='opacity-50'>Mobile App</li>
+          <li className='footer-link'>Landing Page</li>
+          <li className='footer-link'>Web App</li>
+          <li className='footer-link'>Application Mobile</li>
         </ul>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Informations</li>
@@ -64,8 +64,8 @@ export const Footer: React.FC = () => (
     </div>
     <div className='flex flex-row flex-wrap justify-center gap-5 text-md mt-20 pb-3'>
       <p className='text-center text-white opacity-50'>©2023 legal</p>
-      <p className='text-center text-white opacity-50'>Privacy Policy</p>
-      <p className='text-center text-white opacity-50'>Terms of Service</p>
+      <p className='text-center footer-link'>Privacy Policy</p>
+      <p className='text-center footer-link'>Terms of Service</p>
       <p className='text-center text-white opacity-50'>enzomourany.com</p>
     </div>
   </footer>

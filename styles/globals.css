@@ -34,7 +34,9 @@
 @layer components {
     .footer-link {
         @apply font-manrope;
+        color: white;
         opacity: 0.5;
+        cursor: pointer;
         transition: all 0.1s ease-in-out;
     }
     .footer-link:hover {
