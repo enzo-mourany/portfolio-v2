@@ -18,9 +18,15 @@ export const Footer: React.FC = () => (
           <li className='opacity-50'>
             <Link href='/'>Accueil</Link>
           </li>
-          <li className='opacity-50'>Services</li>
-          <li className='opacity-50'>Blog</li>
-          <li className='opacity-50'>Contact</li>
+          <li className='opacity-50'>
+            <Link href='/services'>Services</Link>
+          </li>
+          <li className='opacity-50'>
+            <Link href='/portfolio'>Portfolio</Link>
+          </li>
+          <li className='opacity-50'>
+            <Link href='/contact'>Contact</Link>
+          </li>
         </ul>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Services</li>
@@ -38,19 +44,19 @@ export const Footer: React.FC = () => (
         </ul>
         <ul className='flex flex-col text-white text-lg gap-2'>
           <li className='font-medium'>Contact</li>
-          <li className='opacity-50 hover:opacity-100'>
+          <li className='footer-link'>
             <a href='mailto:contact@enzomourany.com'>contact@enzomourany.com</a>
           </li>
-          <li className='opacity-50 hover:opacity-100'>
+          <li className='footer-link'>
             <a href='https://www.linkedin.com/in/enzomourany/'>LinkedIn</a>
           </li>
-          <li className='opacity-50 hover:opacity-100'>
+          <li className='footer-link'>
             <a href='https://www.malt.fr/profile/enzomourany/'>Malt</a>
           </li>
-          <li className='opacity-50 hover:opacity-100'>
+          <li className='footer-link'>
             <a href='https://calendly.com/enzomourany/projectrequest'>Calendly</a>
           </li>
-          <li className='opacity-50 hover:opacity-100'>
+          <li className='footer-link'>
             <a href='https://githuv.com/enzo-mourany'>GitHub</a>
           </li>
         </ul>
