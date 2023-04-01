@@ -7,16 +7,15 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.blue.500'),
-              textDecoration: 'none',
+              color: theme('colors.black'),
+              textDecoration: theme('textDecoration.underline'),
               '&:hover': {
                 color: theme('colors.blue.600'),
-                textDecoration: 'underline',
+                textDecoration: 'none',
               },
             },
             h1: {
-              color: theme('colors.white'),
-              fontFamily: theme('fontFamily.sourceSerif'),
+              color: theme('colors.blue'),
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.2xl'),
               lineHeight: theme('lineHeight.tight'),
@@ -33,8 +32,7 @@ module.exports = {
               },
             },
             h2: {
-              color: theme('colors.white'),
-              fontFamily: theme('fontFamily.sourceSerif'),
+              color: theme('colors.blue'),
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.xl'),
               lineHeight: theme('lineHeight.tight'),
@@ -51,8 +49,7 @@ module.exports = {
               },
             },
             h3: {
-              color: theme('colors.white'),
-              fontFamily: theme('fontFamily.sourceSerif'),
+              color: theme('colors.blue'),
               fontWeight: theme('fontWeight.thin'),
               fontSize: theme('fontSize.2xl'),
               lineHeight: theme('lineHeight.tight'),
@@ -69,7 +66,7 @@ module.exports = {
               },
             },
             p: {
-              color: theme('colors.white'),
+              color: theme('colors.black'),
               fontWeight: theme('fontWeight.normal'),
               fontSize: theme('fontSize.sm'),
               lineHeight: theme('lineHeight.relaxed'),
