@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import '../styles/globals.css';
 import { AnalyticsWrapper } from '../components/analytics';
 import { EmailPage } from '../components/EmailPage';
+import GoogleAnalytics from './GoogleAnalytics';
 import { Header } from './Header';
 import { Menu } from './Menu';
 import { Footer } from './Footer';
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
       <head />
+      <GoogleAnalytics />
       <body className='bg-white'>
         <div>
           <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
