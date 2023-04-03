@@ -1,8 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
 import styles from '../../styles/Works.module.scss';
 import getPostMetadata from '../../components/getPostMetadata';
 import PostPreview from '../../components/PostPreview';
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+};
 
 const Page = () => {
   const postMetadata = getPostMetadata();
