@@ -30,6 +30,19 @@ const Hero: React.FC = () => {
     }
   };
 
+  const descriptionVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 0.5,
+      transition: {
+        type: 'spring',
+        damping: 16,
+        stiffness: 200,
+        delay: 1.5
+      }
+    }
+  };
+
   return (
     <section className={styles.container} id='hero__container'>
       <div className={styles.titles}>
@@ -54,9 +67,14 @@ const Hero: React.FC = () => {
         </motion.h1>
       </div>
       <div className={styles.description}>
-        <p id='description'>
+        <motion.p
+          id='description'
+          variants={descriptionVariants}
+          initial='hidden'
+          animate='visible'
+        >
           Développeur web et mobile basé en France à Périgueux, spécialisé dans la création de solutions web pour les freelances, startups et entreprises
-        </p>
+        </motion.p>
       </div>
     </section>
   );
