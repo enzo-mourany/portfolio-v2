@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
 
 import '../styles/globals.css';
-import getPostMetadata from '../components/getPostMetadata';
-import PostPreview from '../components/PostPreview';
 
-import type { PostMetadata } from '../interfaces/PostMetadata';
 import Hero from '../components/homepage/Hero';
 import { Clients } from '../components/homepage/Clients';
 import { Solution } from '../components/homepage/Solution';
@@ -42,11 +39,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const postMetadata: PostMetadata[] = getPostMetadata();
-  const postPreview: JSX.Element[] = postMetadata.map((post: PostMetadata) => (
-    <PostPreview key={post.slug} {...post} />
-  ));
-
   return (
     <>
       <Blob />
