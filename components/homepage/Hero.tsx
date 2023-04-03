@@ -9,7 +9,7 @@ const Hero: React.FC = () => (
     </div>
     <div className={styles.description}>
       <p id='description'>
-        Développeur web et mobile basé en France, spécialisé dans la création de solutions web pour les freelances, startups et entreprises
+        Développeur web et mobile basé en France à Périgueux, spécialisé dans la création de solutions web pour les freelances, startups et entreprises
       </p>
     </div>
   </section>
