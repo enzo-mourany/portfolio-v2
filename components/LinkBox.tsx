@@ -75,7 +75,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isAboutVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Services' subtitle='Prestations et méthodes' link='/about' />
+        <Box title='Services' subtitle='Prestations et méthodes' link='/services' />
       </motion.div>
       <motion.div
         ref={ref}

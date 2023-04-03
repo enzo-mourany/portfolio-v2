@@ -36,7 +36,7 @@ export const EmailPage: React.FC<EmailPageProps> = ({ isEmailPageOpen, setIsEmai
         </div>
       </div>
       <div className='flex flex-col justify-center items-center'>
-        <a href='mailto:contact@enzomourany.com' className='text-white text-w-base'>contact@enzomourany.com</a>
+        <a href='mailto:enzo.mourany@outlook.com' className='text-white text-w-base'>contact@enzomourany.com</a>
       </div>
     </motion.div>
   )
