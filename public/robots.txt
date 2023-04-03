@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://enzomourany.com
+
+# Sitemaps
+Sitemap: https://enzomourany.com/sitemap.xml
