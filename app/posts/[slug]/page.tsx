@@ -33,7 +33,7 @@ const PostPage: React.FC<PostPageProps> = (props) => {
   return (
     <div className='flex flex-col items-center'>
       <article className='prose mt-32 max-w-[80%] md:w-1/2'>
-        <h1 className='text-center font-sourceSerif'>{post.data.title}</h1>
+        <h2 className='text-center font-sourceSerif'>{post.data.title}</h2>
         <Markdown>{post.content}</Markdown>
       </article>
     </div>

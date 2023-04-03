@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     <div className={styles.contact__container}>
       <div className={styles.contact__wrapper}>
         <div className={styles.contact__header}>
-          <h1 className={styles.contact__header__title}>Get In Touch</h1>
+          <h2 className={styles.contact__header__title}>Get In Touch</h2>
         </div>
         <div className={styles.contact__hero}>
           <div className={styles.contact__hero__left}>

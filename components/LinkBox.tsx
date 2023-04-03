@@ -54,7 +54,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         onClick={() => handleClick()}
       >
         <p className={styles.linkbox__subtitle}>{subtitle}</p>
-        <h1 className={styles.linkbox__title}>{title}</h1>
+        <h2 className={styles.linkbox__title}>{title}</h2>
       </Link>
     );
   };

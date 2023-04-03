@@ -1,6 +1,6 @@
 const Landing = () => (
   <div>
-    <h1>Services</h1>
+    <h2>Services</h2>
   </div>
 );
 
