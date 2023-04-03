@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 
   return (
-    <html>
+    <html lang='fr'>
       <head />
       <GoogleAnalytics />
       <body className='bg-white'>
