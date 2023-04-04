@@ -1,51 +1,38 @@
 @import './colors.scss';
 @import './responsive.scss';
 
-.blob {
-  height: 900px;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 23%;
-  top: 4%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: linear-gradient(
-    to right,
-    #DE3C09,
-    $blue
-  );
-  animation: rotate 20s infinite;
-  filter: blur(70px);
-  @include laptop {
-    height: 700px;
-    top: 10%;
-    left: 17%;
-  }
-  @include tablet {
-    height: 500px;
-    top: 20%;
-    left: 17%;
-  }
-  @include mobile {
-    height: 350px;
-    top: 27%;
-    left: 12%;
-  }
-}
-.blur {
-  height: 100%;
+.container {
+  position: relative;
   width: 100%;
-  position: absolute;
-  z-index: 2;
-  backdrop-filter: blur(10px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .blob {
+    display: inline-block;
+    width: 70%;
+    aspect-ratio: 1;
+    position: absolute;
+    left: (100% - 70%) / 2;
+    top: (100% - 70%) / 2;
+    border-radius: 50%;
+    line-height: 0;
+    background: linear-gradient(to right, #F95A5C, $blue);
+    animation: rotate 20s infinite;
+    filter: blur(70px);
+  }
+  .blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+  }
 }
 
 @keyframes rotate {
   from {
     transform: rotate(0deg);
-  }
-  50% {
-    scale: 1 1.2;
   }
   to {
     transform: rotate(360deg);

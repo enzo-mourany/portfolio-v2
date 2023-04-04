@@ -72,7 +72,7 @@ export default function Page() {
   return (
     <>
       <Blob />
-      <div className='flex flex-col'>
+      <div className='flex flex-col overflow-x-hidden'>
         <Hero />
         <Clients />
         <Solution />
