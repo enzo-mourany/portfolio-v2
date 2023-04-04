@@ -22,28 +22,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     exit: { opacity: 0, x: 0, y: -100 },
   }
 
+  const Main = ({ children }: { children: React.ReactNode }) => (
+    <motion.main
+      variants={variants}
+      initial='hidden'
+      animate='enter'
+      exit='exit'
+      transition={{ type: 'linear' }}
+    >
+      {children}
+    </motion.main>
+  );
+
   return (
     <html lang='fr'>
       <head />
       <GoogleAnalytics />
-      <body className='bg-white'>
+      <body>
         <MenuProvider>
           <EmailPageProvider>
-            <motion.main
-              variants={variants}
-              initial='hidden'
-              animate='enter'
-              exit='exit'
-              transition={{ type: 'linear' }}
-              className=''
-            >
+            <Main>
               <Menu />
               <EmailPage />
               <Header />
               {children}
               <Footer />
               <AnalyticsWrapper />
-            </motion.main>
+            </Main>
           </EmailPageProvider>
         </MenuProvider>
       </body>
