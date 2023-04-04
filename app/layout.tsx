@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import '../styles/globals.css';
 
-import { MenuContext, MenuProvider } from '../contexts/MenuContextProvider';
+import { MenuProvider } from '../contexts/MenuContextProvider';
 import { AnalyticsWrapper } from '../components/analytics';
 import { EmailPage } from '../components/EmailPage';
 import GoogleAnalytics from './GoogleAnalytics';
@@ -14,7 +14,6 @@ import { Menu } from './Menu';
 import { Footer } from './Footer';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
   const [isEmailPageOpen, setIsEmailPageOpen] = useState<boolean>(false);
 
   const variants = {
