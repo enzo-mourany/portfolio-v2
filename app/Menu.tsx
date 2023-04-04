@@ -16,7 +16,7 @@ export const Menu = () => {
 
   return (
     <motion.div
-      className='hidden flex-col justify-center items-center fixed z-10 w-full h-full bg-white opacity-50'
+      className='hidden flex-col justify-center items-center fixed z-30 w-full h-full bg-white opacity-50'
       variants={variants}
       initial='closed'
       animate={isMenuOpen ? 'open' : 'closed'}
