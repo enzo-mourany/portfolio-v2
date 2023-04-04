@@ -15,14 +15,14 @@ import { Header } from './Header';
 import { Menu } from './Menu';
 import { Footer } from './Footer';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const Main = ({ children }: { children: React.ReactNode }) => {
   const variants = {
     hidden: { opacity: 0, x: -200, y: 0 },
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: -100 },
   }
 
-  const Main = ({ children }: { children: React.ReactNode }) => (
+  return (
     <motion.main
       variants={variants}
       initial='hidden'
@@ -33,7 +33,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {children}
     </motion.main>
   );
+}
 
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='fr'>
       <head />

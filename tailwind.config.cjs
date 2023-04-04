@@ -106,6 +106,7 @@ module.exports = {
       'w-2xl': '9vw',
       'w-3xl': '10vw',
       'w-4xl': '11vw',
+      'w-5xl': '12vw',
     },
     lineHeight: {
       none: '1',

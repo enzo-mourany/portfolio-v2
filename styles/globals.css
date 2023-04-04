@@ -46,4 +46,12 @@
         @apply font-manrope;
         opacity: 1;
     }
+    .default-text-blue {
+        font-size: 4vw;
+        color: #5160F0;
+        line-height: 1.15;
+        @media (max-width: 980px) {
+            font-size: 8vw;
+        }
+    }
 }
