@@ -12,7 +12,6 @@ interface LinkBoxProps {
 }
 
 const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
-
   const [ref, inView] = useInView({
     threshold: 0
   });
