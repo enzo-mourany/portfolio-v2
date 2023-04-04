@@ -10,6 +10,36 @@ import { Strategy } from '../components/homepage/Strategy';
 import { Expertise } from '../components/homepage/Expertise';
 import { Blob } from '../components//Blob';
 
+const idJsonObject = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  url: 'https://enzomourany.com',
+  logo: 'https://enzomourany.com/logo.png',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    EmailPage: 'mailto:contact@enzomourany.com',
+  },
+  sameAs: [
+    'https://www.linkedin.com/in/enzomourany/',
+  ],
+  type: 'Service',
+  name: 'Service de Création de sites web',
+  description: 'Création de sites web pour les entreprises, startups et freelances | Développeur Web et Mobile basé sur Périgueux, Dordogne',
+  brand: {
+    '@type': 'Brand',
+    name: 'Enzo Mourany'
+  },
+  offers: {
+    '@type': 'Offer',
+    url: 'https://enzomourany.com/services/',
+    priceCurrency: 'EUR',
+    seller: {
+      '@type': 'Organization',
+      name: 'Enzo Mourany'
+    }
+  }
+}
+
 export const metadata: Metadata = {
   title: {
     default: 'Enzo Mourany | Création de sites Web',
@@ -35,7 +65,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/favicon.ico',
-  }
+  },
 };
 
 export default function Page() {

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Script from 'next/script';
 import { motion } from 'framer-motion';
 
 import '../styles/globals.css';
@@ -38,9 +39,8 @@ const Main = ({ children }: { children: React.ReactNode }) => {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='fr'>
-      <head />
-      <GoogleAnalytics />
       <body>
+        <GoogleAnalytics />
         <MenuProvider>
           <EmailPageProvider>
             <Main>
@@ -54,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </EmailPageProvider>
         </MenuProvider>
       </body>
+      <Script src='/js/main.js' />
     </html>
   )
 }
