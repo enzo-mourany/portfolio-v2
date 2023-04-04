@@ -1,11 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-import styles from '../styles/LinkBox.module.scss';
+import { PageLink } from './PageLink';
 
 interface LinkBoxProps {
   isMenuOpen: boolean;
@@ -13,9 +12,6 @@ interface LinkBoxProps {
 }
 
 const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
-  const handleClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   const [ref, inView] = useInView({
     threshold: 0
@@ -40,34 +36,28 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     }
   }, [inView]);
 
-  interface BoxProps {
-    title: string;
-    subtitle: string;
-    link: string;
-  }
+  const [isHovering, setIsHovering] = useState<boolean>(false);
 
-  const Box = ({ title, subtitle, link }: BoxProps): JSX.Element => {
-    return (
-      <Link
-        className={styles.linkbox__container}
-        href={link}
-        onClick={() => handleClick()}
-      >
-        <p className={styles.linkbox__subtitle}>{subtitle}</p>
-        <h2 className={styles.linkbox__title}>{title}</h2>
-      </Link>
-    );
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 30 }}
         animate={isHomeVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Acceuil' subtitle='Introduction' link='/' />
+        <PageLink title='Acceuil' subtitle='Introduction' link='/' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
@@ -75,7 +65,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isAboutVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Services' subtitle='Prestations et méthodes' link='/services' />
+        <PageLink title='Services' subtitle='Prestations et méthodes' link='/services' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
@@ -83,7 +73,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isWorksVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Portfolio' subtitle='Réalisations et projets' link='/works' />
+        <PageLink title='Portfolio' subtitle='Réalisations et projets' link='/works' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
@@ -91,7 +81,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isContactVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <Box title='Contact' subtitle='Travaillons ensemble' link='/contact' />
+        <PageLink title='Contact' subtitle='Travaillons ensemble' link='/contact' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
     </div>
 
