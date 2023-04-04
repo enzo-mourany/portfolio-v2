@@ -70,7 +70,7 @@ const LinkBox = () => {
         animate={isWorksVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <PageLink title='Portfolio' subtitle='Réalisations et projets' link='/works' style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
+        <PageLink title='Portfolio' subtitle='Réalisations et projets' link='/portfolio' style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
