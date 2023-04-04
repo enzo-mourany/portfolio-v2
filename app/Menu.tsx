@@ -3,14 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { MenuContext } from '../contexts/MenuContextProvider';
 import LinkBox from '../components/LinkBox';
 
-interface MenuProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: (isMenuOpen: boolean) => void;
-}
+export const Menu = () => {
+  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
 
-export const Menu: React.FC<MenuProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   const variants = {
     open: { display: 'flex', opacity: 1 },
     closed: { opacity: 0, transitionEnd: { display: 'none' } },
@@ -24,7 +22,7 @@ export const Menu: React.FC<MenuProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       animate={isMenuOpen ? 'open' : 'closed'}
     >
       <div>
-        <LinkBox isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <LinkBox />
       </div>
     </motion.div>
   );

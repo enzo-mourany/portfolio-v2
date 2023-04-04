@@ -1,12 +1,13 @@
 'use client';
 
+import React, { useContext } from 'react';
+
 import styles from '../../styles/Hamburger.module.scss';
 
-interface HamburgerProps {
-  isMenuOpen: boolean;
-}
+import { MenuContext } from '../../contexts/MenuContextProvider';
 
-const Hamburger: React.FC<HamburgerProps> = ({ isMenuOpen }) => {
+const Hamburger = () => {
+  const { isMenuOpen } = useContext(MenuContext);
   return (
     <div
       className={styles.hamburger__container}

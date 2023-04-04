@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import '../styles/globals.css';
+
+import { MenuContext, MenuProvider } from '../contexts/MenuContextProvider';
 import { AnalyticsWrapper } from '../components/analytics';
 import { EmailPage } from '../components/EmailPage';
 import GoogleAnalytics from './GoogleAnalytics';
@@ -12,7 +14,7 @@ import { Menu } from './Menu';
 import { Footer } from './Footer';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
   const [isEmailPageOpen, setIsEmailPageOpen] = useState<boolean>(false);
 
   const variants = {
@@ -26,21 +28,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <GoogleAnalytics />
       <body className='bg-white'>
-        <motion.main
-          variants={variants}
-          initial='hidden'
-          animate='enter'
-          exit='exit'
-          transition={{ type: 'linear' }}
-          className=''
-        >
-          <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-          <EmailPage isEmailPageOpen={isEmailPageOpen} setIsEmailPageOpen={setIsEmailPageOpen} />
-          <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} isEmailPageOpen={isEmailPageOpen} setIsEmailPageOpen={setIsEmailPageOpen} />
-          {children}
-          <Footer />
-          <AnalyticsWrapper />
-        </motion.main>
+        <MenuProvider>
+          <motion.main
+            variants={variants}
+            initial='hidden'
+            animate='enter'
+            exit='exit'
+            transition={{ type: 'linear' }}
+            className=''
+          >
+            <Menu />
+            <EmailPage isEmailPageOpen={isEmailPageOpen} setIsEmailPageOpen={setIsEmailPageOpen} />
+            <Header isEmailPageOpen={isEmailPageOpen} setIsEmailPageOpen={setIsEmailPageOpen} />
+            {children}
+            <Footer />
+            <AnalyticsWrapper />
+          </motion.main>
+        </MenuProvider>
       </body>
     </html>
   )

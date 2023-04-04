@@ -3,16 +3,18 @@ import Link from 'next/link';
 
 import styles from '../styles/PageLink.module.scss';
 
+import { MenuContext } from '../contexts/MenuContextProvider';
+
 interface PageLinksProps {
   title: string;
   subtitle: string;
   link: string;
-  isMenuOpen: boolean;
-  setIsMenuOpen: (isMenuOpen: boolean) => void;
   style?: React.CSSProperties;
 }
 
-export const PageLink: React.FC<PageLinksProps> = ({ title, subtitle, link, isMenuOpen, setIsMenuOpen, style }) => {
+export const PageLink: React.FC<PageLinksProps> = ({ title, subtitle, link, style }) => {
+  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
+
   const handleClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };

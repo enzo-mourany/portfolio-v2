@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
 
+import { MenuContext } from '../contexts/MenuContextProvider';
 import Hamburger from '../components/input/Hamburger';
 import { ButtonOutline } from '../components/button/ButtonOutline';
 
 interface HeaderProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: (isMenuOpen: boolean) => void;
   isEmailPageOpen: boolean;
   setIsEmailPageOpen: (isEmailPageOpen: boolean) => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, isEmailPageOpen, setIsEmailPageOpen }) => {
+export const Header: React.FC<HeaderProps> = ({ isEmailPageOpen, setIsEmailPageOpen }) => {
+  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
+
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -33,7 +34,7 @@ export const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, isEma
             <ButtonOutline text='contact' />
           </div>
           <div onClick={() => toggleMenu()} className='flex justify-end'>
-            <Hamburger isMenuOpen={isMenuOpen} />
+            <Hamburger />
           </div>
         </div>
       </div>

@@ -4,14 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
+import { MenuContext } from '../contexts/MenuContextProvider';
 import { PageLink } from './PageLink';
 
-interface LinkBoxProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: (isMenuOpen: boolean) => void;
-}
+const LinkBox = () => {
+  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
 
-const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   const [ref, inView] = useInView({
     threshold: 0
   });
@@ -56,7 +54,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isHomeVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <PageLink title='Acceuil' subtitle='Introduction' link='/' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
+        <PageLink title='Acceuil' subtitle='Introduction' link='/' style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
@@ -64,7 +62,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isAboutVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <PageLink title='Services' subtitle='Prestations et méthodes' link='/services' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
+        <PageLink title='Services' subtitle='Prestations et méthodes' link='/services' style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
@@ -72,7 +70,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isWorksVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <PageLink title='Portfolio' subtitle='Réalisations et projets' link='/works' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
+        <PageLink title='Portfolio' subtitle='Réalisations et projets' link='/works' style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
       <motion.div
         ref={ref}
@@ -80,7 +78,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         animate={isContactVisible ? { opacity: 1, y: 0 } : {}}
         exit={{ opacity: 0 }}
       >
-        <PageLink title='Contact' subtitle='Travaillons ensemble' link='/contact' isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
+        <PageLink title='Contact' subtitle='Travaillons ensemble' link='/contact' style={isHovering ? {opacity: 0.2} : { opacity: 1 }} />
       </motion.div>
     </div>
 
