@@ -1,14 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 
-interface EmailPageProps {
-  isEmailPageOpen: boolean;
-  setIsEmailPageOpen: (isEmailPageOpen: boolean) => void;
-}
+import { EmailPageContext } from '../contexts/EmailPageContextProvider';
 
-export const EmailPage: React.FC<EmailPageProps> = ({ isEmailPageOpen, setIsEmailPageOpen }) => {
+export const EmailPage = () => {
+  const { isEmailPageOpen, setIsEmailPageOpen } = useContext(EmailPageContext);
+
   const variants = {
     open: { display: 'flex', opacity: 1 },
     closed: { opacity: 0, transitionEnd: { display: 'none' } },

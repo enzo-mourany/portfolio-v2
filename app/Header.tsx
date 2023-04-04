@@ -1,17 +1,15 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { MenuContext } from '../contexts/MenuContextProvider';
+import { EmailPageContext } from '../contexts/EmailPageContextProvider';
+
 import Hamburger from '../components/input/Hamburger';
 import { ButtonOutline } from '../components/button/ButtonOutline';
 
-interface HeaderProps {
-  isEmailPageOpen: boolean;
-  setIsEmailPageOpen: (isEmailPageOpen: boolean) => void;
-}
-
-export const Header: React.FC<HeaderProps> = ({ isEmailPageOpen, setIsEmailPageOpen }) => {
-  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
+export const Header = () => {
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+  const { isEmailPageOpen, setIsEmailPageOpen } = useContext(EmailPageContext);
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
