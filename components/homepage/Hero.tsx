@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import styles from '../../styles/Hero.module.scss';
 
 const Hero: React.FC = () => {
-  const title = 'Donner de la visibilité aux entreprises de demain';
+  const title = 'Création de sites web pour les entreprises, startups et freelances';
   const words: string[] = title.split(' ');
 
   const sentenceVariants = {
@@ -67,14 +67,14 @@ const Hero: React.FC = () => {
         </motion.h1>
       </div>
       <div className={styles.description}>
-        <motion.p
+        <motion.h2
           id='description'
           variants={descriptionVariants}
           initial='hidden'
           animate='visible'
         >
           Développeur web et mobile basé en France à Périgueux, spécialisé dans la création de solutions web pour les freelances, startups et entreprises
-        </motion.p>
+        </motion.h2>
       </div>
     </section>
   );
