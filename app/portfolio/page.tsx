@@ -19,8 +19,8 @@ const Page = () => {
       <div className={styles.works__wrapper}>
         <div className={styles.works__intro}>
           <div className={styles.works__title}>
-            <h2 className={styles.works__title__text}>Works</h2>
-            <p>Some of my projects and labs projects</p>
+            <h2 className={styles.works__title__text}>Portfolio</h2>
+            <h3>Certains de mes projets et collaborations</h3>
           </div>
         </div>
         {postPreview}
