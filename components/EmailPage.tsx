@@ -19,7 +19,7 @@ export const EmailPage = () => {
 
   return (
     <motion.div
-      className='hidden flex-col justify-center items-center fixed z-30 w-full h-full bg-blue'
+      className='hidden flex-col justify-center items-center fixed z-50 w-full h-full bg-blue'
       variants={variants}
       initial='closed'
       animate={isEmailPageOpen ? 'open' : 'closed'}
