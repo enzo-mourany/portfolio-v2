@@ -6,7 +6,7 @@ import type { TermsOfUse } from '../../../interfaces/TermsOfUse';
 
 const getMarkdownContent = (): TermsOfUse => {
   const folder = 'app/legal/terms-of-use/' as string;
-  const file = 'privacy.md' as string;
+  const file = 'condition.md' as string;
   const path = `${folder}${file}` as string;
   const content = fs.readFileSync(path, 'utf8') as string;
   const { data, content: md } = matter(content) as {
