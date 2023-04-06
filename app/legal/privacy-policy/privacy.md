@@ -2,28 +2,29 @@
 title: "Privacy Policy"
 ---
 
-# Privacy Policy
+## Politique de confidentialité
+Je m'engage à protéger la vie privée de mes visiteurs de site web. Cette Politique de confidentialité explique comment je collecte et utilise les informations personnelles que je peux collecter de vous lorsque vous utilisez mon site web.
 
-At "Enzo Mourany Portfolio", we are committed to protecting the privacy of our website visitors. This Privacy Policy explains how we collect, use, and disclose personal information that we may collect from you when you use our website.
+## Collecte d'informations :
+Je peux collecter des informations personnelles de vous lorsque vous visitez mon site web, telles que votre nom, votre adresse e-mail et d'autres informations de contact. Je peux également collecter des informations sur votre utilisation de mon site web, telles que les pages visitées et les actions entreprises. Ces informations sont collectées grâce à l'utilisation de cookies et d'autres technologies de suivi.
 
-## Information Collection:
-We may collect personal information from you when you visit our website, such as your name, email address, and other contact information. We may also collect information about your usage of our website, such as pages visited and actions taken. This information is collected through the use of cookies and other tracking technologies.
+## Utilisation des informations :
+Je peux utiliser les informations personnelles collectées auprès de vous pour les objectifs suivants :
 
-## Use of Information:
-We may use the personal information collected from you for the following purposes:
+Fournir les services et les informations que vous demandez.
+Améliorer le contenu et la fonctionnalité de mon site web.
+Vous envoyer des mises à jour et des documents promotionnels.
+Analyser et comprendre comment mon site web est utilisé.
 
-To provide you with the services and information that you request
-To improve the content and functionality of our website
-To send you updates and promotional materials
-To analyze and understand how our website is used
-Disclosure of Information:
-We may disclose personal information to third-party service providers to assist with website maintenance, analytics, and other services. We may also disclose personal information if required by law or in response to a valid legal request.
 
-## Security:
-We take reasonable measures to protect personal information from unauthorized access, use, or disclosure. However, no internet transmission is completely secure, and we cannot guarantee the security of personal information transmitted through our website.
+## Divulgation des informations :
+Je m'engage à ne divulguer aucune information personnelle que je peux collecter de vous à des tiers. Cependant, je peux divulguer des informations personnelles si je suis tenu de le faire par la loi ou si vous enfreignez mes Conditions d'utilisation.
 
-## Changes:
-We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. The most current version of the Privacy Policy will be available on our website.
+## Sécurité :
+Je prends des mesures raisonnables pour protéger les informations personnelles contre l'accès non autorisé, l'utilisation ou la divulgation. Cependant, aucune transmission internet n'est entièrement sécurisée et je ne peux garantir la sécurité des informations personnelles transmises via mon site web.
 
-## Contact:
-If you have any questions or concerns about our Privacy Policy, please contact us at enzo.mourany@outlook.com.
+## Modifications :
+Je peux mettre à jour cette Politique de confidentialité de temps à autre pour refléter les changements dans mes pratiques ou les lois applicables. La version la plus récente de la Politique de confidentialité sera disponible sur mon site web.
+
+## Contact :
+Si vous avez des questions ou des préoccupations concernant ma Politique de confidentialité, veuillez me contacter à l'adresse contact@enzomourany.com.

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     url: 'https://enzomourany.com/',
   },
-  keywords: ['Développeur Web', 'Création de sites web', 'Site Web', 'Périgueux', 'Développeur Web Périgueux', 'Agence Web Périgueux', 'Site Vitrine', 'Site E-commerce', 'Site Web Périgueux'],
+  keywords: ['Développeur Web', 'Création de sites web', 'Site Web', 'Périgueux', 'Développeur Web Périgueux', 'Agence Web Périgueux', 'Site Vitrine', 'Agence de communication Dordogne', 'Agence Web Dordogne'],
   authors: [{ name: 'Enzo Mourany', url: 'https://enzomourany.com' }],
   colorScheme: 'light',
   creator: 'Enzo Mourany',
