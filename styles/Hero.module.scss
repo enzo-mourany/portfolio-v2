@@ -19,24 +19,24 @@
       width: 70%;
     }
     .main__title {
-      font-weight: 400;
-      width: 95%;
-      font-size: 5vw;
-      line-height: 1;
-      margin-bottom: 0.5rem;
       text-align: center;
-      color: white;
-      @include tablet {
-        font-size: 7vw;
-      }
-      @include mobile {
-        font-size: 9vw;
-        width: 100%;
-      }
       .title {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        display: inline-block;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+        color: white;
+        @include tablet {
+          font-size: 7vw;
+        }
+        @include mobile {
+          font-size: 9vw;
+        }
+        overflow: hidden;
+        span {
+          transform: translateY(100%);
+          display: inline-block;
+        }
       }
     }
     .subtitle {
@@ -61,7 +61,7 @@
       font-size: 1.4rem;
       line-height: 1.2;
       margin-bottom: 0.5rem;
-      opacity: 0.5;
+      opacity: 0;
       word-wrap: normal;
       text-align: center;
       color: white;
