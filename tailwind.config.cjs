@@ -154,6 +154,7 @@ module.exports = {
       red: '#ff005d',
       purple: '#c238ff',
       pink: '#cea9f3',
+      orange: '#F95A5C'
     },
   },
   plugins: [require('@tailwindcss/typography'),],
