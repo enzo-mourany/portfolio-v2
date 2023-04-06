@@ -26,13 +26,6 @@ const Hero: React.FC = () => {
           </span>
         </h1>
       </div>
-      <div className={styles.description}>
-        <h2
-          id='description'
-        >
-          Développeur web et mobile basé en France à Périgueux, spécialisé dans la création de solutions web pour les freelances, startups et entreprises
-        </h2>
-      </div>
     </section>
   );
 };

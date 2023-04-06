@@ -19,7 +19,12 @@
       width: 70%;
     }
     .main__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      position: absolute;
       .title {
         font-weight: 400;
         font-size: 5vw;
@@ -34,39 +39,8 @@
         }
         overflow: hidden;
         span {
-          transform: translateY(100%);
           display: inline-block;
         }
-      }
-    }
-    .subtitle {
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1;
-      margin-bottom: 0.5rem;
-      opacity: 0.5;
-      text-align: center;
-    }
-  }
-  .description {
-    width: 30%;
-    @include tablet {
-      width: 50%;
-    }
-    @include mobile {
-      width: 70%;
-    }
-    h2 {
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 1.2;
-      margin-bottom: 0.5rem;
-      opacity: 0;
-      word-wrap: normal;
-      text-align: center;
-      color: white;
-      @include mobile {
-        font-size: 1rem;
       }
     }
   }
