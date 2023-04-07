@@ -1,13 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 
 import { MenuContext } from '../contexts/MenuContextProvider';
 import LinkBox from '../components/LinkBox';
 
 export const Menu = () => {
-  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
+  const { isMenuOpen } = useContext(MenuContext);
 
   const variants = {
     open: { display: 'flex', opacity: 1 },

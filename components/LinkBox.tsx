@@ -4,12 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-import { MenuContext } from '../contexts/MenuContextProvider';
 import { PageLink } from './PageLink';
 
 const LinkBox = () => {
-  const { isMenuOpen, setIsMenuOpen } = React.useContext(MenuContext);
-
   const [ref, inView] = useInView({
     threshold: 0
   });
