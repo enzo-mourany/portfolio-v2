@@ -9,7 +9,7 @@ interface ButtonOutlineProps {
 export const ButtonOutline: React.FC<ButtonOutlineProps> = ({ text }) => (
   <button className={styles.button_outline}>
     <svg
-      width='100%'
+      min-width='100%'
       height='100%'
       viewBox='-10 -10 300 90'
       fill='none'
