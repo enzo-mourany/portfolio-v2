@@ -1,10 +1,18 @@
+import Image from 'next/image';
+
 export const Presentation = () => {
+
   return (
-    <div>
-      <section id='presentation'>
-        <div>
+    <div className='flex flex-col p-10'>
+      <section
+        id='presentation'
+        className='flex flex-col lg:flex-row'
+      >
+        <div className='w-1/2'>
+        </div>
+        <div className='w-1/2'>
           <h3></h3>
-          <p>Mon parcours professionnel m&apos;a permis d&apos;acquérir une expertise inégalée dans le domaine, ce qui me permet de proposer des solutions innovantes, modernes et performantes à mes clients, des entreprises aux startups, en passant par les freelances, en France et plus particulièrement dans la région de Dordogne. </p>
+          <p className='text-3xl'>Mon parcours professionnel m&apos;a permis d&apos;acquérir une expertise inégalée dans le domaine, ce qui me permet de proposer des solutions innovantes, modernes et performantes à mes clients, des entreprises aux startups, en passant par les freelances, en France et plus particulièrement dans la région de Dordogne. </p>
         </div>
       </section>
       <section id='design-and-digital'>

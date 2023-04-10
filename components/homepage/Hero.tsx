@@ -13,10 +13,10 @@ const Hero: React.FC = () => {
           className={styles.main__title}
         >
           <span className={styles.title} id='title'>
-            <span>Création de sites</span>
+            <span>Création de </span>
           </span>
           <span className={styles.title} id='title'>
-            <span>web pour les </span>
+            <span>sites web pour les </span>
           </span>
           <span className={styles.title} id='title'>
             <span>entreprises, startups </span>
