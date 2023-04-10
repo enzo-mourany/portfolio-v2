@@ -24,7 +24,7 @@ export const Header = () => {
       <div className='flex flex-row justify-between items-center fixed z-40 w-full text-center px-16 py-8'>
         <div className='w-1/2 xs:w-48 text-left sm:text-center'>
           <Link href='/'>
-            <p className='text-sm sm:text-xl font-normal text-blue'>Enzo MOURANY</p>
+            <p className='text-sm sm:text-2xl font-semibold text-blue'>Enzo MOURANY</p>
           </Link>
         </div>
         <div className='flex justify-end xs:justify-around items-center w-1/2 xs:w-1/4'>

@@ -15,12 +15,12 @@ export const Clients: React.FC = () => {
         </div>
         <div className='flex w-full lg:w-1/2 h-full p-8 sm:p-20'>
           <h4
-            className='text-w-xl lg:text-w-base leading-tight'
+            className='text-w-xl lg:text-w-base leading-none'
           >
             {words.map((word, index) => (
               <span
                 key={index}
-                className='inline-block text-blue'
+                className='inline-block text-blue font-medium'
               >
                 {word}&nbsp;
               </span>
