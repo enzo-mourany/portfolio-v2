@@ -1,4 +1,5 @@
 @import './responsive.scss';
+@import url("https://api.fontshare.com/v2/css?f[]=chillax@600,500,300,700,400,200&display=swap");
 
 .container {
   display: flex;
@@ -26,8 +27,7 @@
       text-align: center;
       position: absolute;
       .title {
-        font-weight: 400;
-        font-size: 5vw;
+        font-size: 6vw;
         line-height: 1;
         margin-bottom: 0.5rem;
         color: white;
@@ -40,6 +40,9 @@
         overflow: hidden;
         span {
           display: inline-block;
+          font-family: 'Chillax', sans-serif;
+          font-weight: 500;
+          letter-spacing: 0.1px;
         }
       }
     }

@@ -84,6 +84,8 @@ module.exports = {
       manrope: ['Manrope', 'sans-serif'],
       sourceSerif: ['Source Serif 4', 'serif'],
       cormorant: ['Cormorant Garamond', 'serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      chillax : ['Chillax', 'sans-serif']
     },
     fontSize: {
       xs: '0.75rem',
