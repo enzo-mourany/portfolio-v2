@@ -29,7 +29,7 @@ export const Header = () => {
         </div>
         <div className='flex justify-end xs:justify-around items-center w-1/2 xs:w-1/4'>
           <div className='hidden sm:flex' onClick={() => toggleEmailPage()}>
-            <ButtonOutline text='contact' />
+            <ButtonOutline text='contacte-moi' />
           </div>
           <div onClick={() => toggleMenu()} className='flex justify-end'>
             <Hamburger />

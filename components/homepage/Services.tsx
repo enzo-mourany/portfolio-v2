@@ -9,7 +9,7 @@ export const Services: React.FC = () => {
     <section id='services' className='w-screen h-fit pb-20'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='flex flex-col items-center p-20'>
-          <h2 className='w-3/5 lg:w-3/4 text-2xl sm:text-w-xs lg:text-w-base text-blue text-center'>Services</h2>
+          <h2 className='w-3/5 lg:w-3/4 text-2xl sm:text-w-xs lg:text-w-base text-blue text-center font-medium'>Services</h2>
           <h3 className='w-full sm:w-3/5 lg:w-3/4 text-xl sm:text-3xl lg:text-xl opacity-50 text-center'>Je construis votre marque pour que vous puissiez vous concentrer sur le reste.</h3>
         </div>
         <div className='flex flex-col lg:flex-row flex-wrap justify-center gap-16 mb-20'>

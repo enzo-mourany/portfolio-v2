@@ -12,7 +12,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) 
       <div className='p-8'>
         <CgWebsite className='text-6xl text-blue' />
       </div>
-      <h3 className='text-3xl'>
+      <h3 className='text-3xl font-medium'>
         {title}
       </h3>
       <p className='w-4/5 text-lg text-center opacity-50'>

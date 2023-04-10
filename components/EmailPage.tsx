@@ -35,7 +35,11 @@ export const EmailPage = () => {
         </div>
       </div>
       <div className='flex flex-col justify-center items-center'>
-        <a href='mailto:enzo.mourany@outlook.com' className='text-white text-w-base'>contact@enzomourany.com</a>
+        <a
+          href='mailto:enzo.mourany@outlook.com'
+          className='text-white text-w-base before:email-link before:hober:email-link-hover'
+        >
+          contact@enzomourany.com</a>
       </div>
     </motion.div>
   )
