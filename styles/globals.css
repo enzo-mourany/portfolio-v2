@@ -46,6 +46,15 @@
         @apply font-chillax;
         font-weight: 600;
     }
+    label {
+        @apply font-chillax;
+    }
+    input {
+        @apply font-chillax;
+    }
+    textarea {
+        @apply font-chillax;
+    }
 }
 
 @layer components {
