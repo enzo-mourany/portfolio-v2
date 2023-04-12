@@ -1,8 +1,13 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
+import type { Metadata } from 'next';
 
 import type { TermsOfUse } from '../../../interfaces/TermsOfUse';
+
+export const metadata: Metadata = {
+  title: 'Conditions Générales d\'Utilisation | Enzo Mourany',
+};
 
 const getMarkdownContent = (): TermsOfUse => {
   const folder = 'app/legal/terms-of-use/' as string;

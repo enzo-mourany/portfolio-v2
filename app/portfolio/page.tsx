@@ -6,7 +6,8 @@ import getPostMetadata from '../../components/getPostMetadata';
 import PostPreview from '../../components/PostPreview';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'Portfolio | Enzo Mourany',
+  description: 'Découvrez mes travaux, projets et collaborations en développement web freelance pour les startups, freelances et entreprises. Consultez mon portfolio pour voir comment je peux créer des sites web de qualité pour votre activité.',
 };
 
 const Page = () => {

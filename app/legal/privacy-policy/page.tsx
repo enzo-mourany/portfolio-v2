@@ -1,8 +1,13 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
+import type { Metadata } from 'next';
 
 import type { PrivacyPolicyPageProps } from '../../../interfaces/PrivacyPolicy';
+
+export const metadata: Metadata = {
+  title: 'Politique de Confidentialité | Enzo Mourany',
+};
 
 const getMarkdownContent = (): PrivacyPolicyPageProps => {
   const folder = 'app/legal/privacy-policy/' as string;
