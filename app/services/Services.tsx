@@ -15,14 +15,14 @@ const Services: React.FC = () => {
         <div className='flex flex-col lg:flex-row flex-wrap justify-center gap-16 mb-20'>
           <ServiceCard
             title='Site Vitrine'
-            description='Service de création de sites vitrines de qualité supérieure pour une présence en ligne professionnelle et convaincante.'
+            description='Faites connaître votre entreprise avec un site web vitrine professionnel. Contactez-nous pour obtenir un devis !'
           />
           <ServiceCard
             title='Landing Page'
             description='Service de création de landing pages efficaces pour une conversion maximale et un retour sur investissement optimal.'
           />
           <ServiceCard
-            title='Web App'
+            title='Application Web'
             description='Développement d’applications web personnalisées et performantes pour une expérience utilisateur exceptionnelle.'
           />
           <ServiceCard
@@ -31,11 +31,11 @@ const Services: React.FC = () => {
           />
           <ServiceCard
             title='Site E-commerce'
-            description='Service de création de sites e-commerce de qualité supérieure pour une présence en ligne professionnelle et convaincante.'
+            description='Lancez votre boutique en ligne avec notre service de création de site e-commerce. Obtenez un devis dès maintenant !'
           />
           <ServiceCard
-            title='Design Graphique'
-            description='Service de création de design graphique de qualité supérieure pour une présence en ligne professionnelle et convaincante.'
+            title='Refonte de site web'
+            description='Boostez votre présence en ligne avec notre service de refonte de site web'
           />
         </div>
         <Link href='/contact'>
