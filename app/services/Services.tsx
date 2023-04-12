@@ -15,27 +15,27 @@ const Services: React.FC = () => {
         <div className='flex flex-col lg:flex-row flex-wrap justify-center gap-16 mb-20'>
           <ServiceCard
             title='Site Vitrine'
-            description='Faites connaître votre entreprise avec un site web vitrine professionnel. Contactez-nous pour obtenir un devis !'
+            description='Obtenez un site vitrine de qualité pour présenter votre entreprise. Augmentez votre visibilité en ligne dès maintenant.'
           />
           <ServiceCard
             title='Landing Page'
-            description='Service de création de landing pages efficaces pour une conversion maximale et un retour sur investissement optimal.'
+            description='Convertissez vos visiteurs en clients avec une landing page optimisée. Boostez vos ventes et améliorez votre ROI.'
           />
           <ServiceCard
             title='Application Web'
-            description='Développement d’applications web personnalisées et performantes pour une expérience utilisateur exceptionnelle.'
+            description='Obtenez une application web adaptée à vos besoins. Automatisez vos processus métier et améliorez votre productivité.'
           />
           <ServiceCard
             title='Application Mobile'
-            description='Développement d’applications mobiles personnalisées et performantes pour une expérience utilisateur exceptionnelle.'
+            description="Lancez votre application mobile pour toucher un public toujours plus large. Augmentez votre visibilité et votre chiffre d'affaires."
           />
           <ServiceCard
             title='Site E-commerce'
-            description='Lancez votre boutique en ligne avec notre service de création de site e-commerce. Obtenez un devis dès maintenant !'
+            description="Lancez votre boutique en ligne avec un site e-commerce efficace. Gagnez en visibilité et en chiffre d'affaires."
           />
           <ServiceCard
             title='Refonte de site web'
-            description='Boostez votre présence en ligne avec notre service de refonte de site web'
+            description="Découvrez les avantages d'une refonte de site web et les étapes à suivre pour réussir votre projet. Améliorez votre site pour augmenter votre trafic."
           />
         </div>
         <Link href='/contact'>
