@@ -21,6 +21,7 @@ const idJsonObject = {
   },
   sameAs: [
     'https://www.linkedin.com/in/enzomourany/',
+    'https://github.com/enzo-mourany/'
   ],
   type: 'Service',
   name: 'Service de Création de sites web',
@@ -42,10 +43,10 @@ const idJsonObject = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Enzo Mourany | Création de sites Web',
+    default: 'Améliorez votre présence en ligne avec un site web',
     template: '%s | Enzo Mourany',
   },
-  description: 'Création de sites web pour les entreprises, startups et freelances | Développeur Web et Mobile basé sur Périgueux, Dordogne',
+  description: 'Vous êtes à la recherche d\'un site web professionnel pour votre entreprise ou startup ? Je suis un développeur web freelance basé sur Périgueux en Dordogne, spécialisé dans la création de sites web, vitrine, landing page, application web et d\'autres pour les freelances, startups et entreprises.',
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
